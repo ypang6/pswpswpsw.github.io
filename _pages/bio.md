@@ -11,9 +11,10 @@ redirect_from:
 
 ## Education
 
-* B.S. in Remote Sensing, Whuhan University, 2012
-* M.S. in Geographic Information Science, Clark University, 2014
 * Ph.D in GeoInformation Science, George Mason University, 2018 (expected)
+* M.S. in Geographic Information Science, Clark University, 2014
+* B.S. in Remote Sensing, Whuhan University, 2012
+
 
 ## Research interests
 

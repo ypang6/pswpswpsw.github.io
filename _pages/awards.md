@@ -18,10 +18,10 @@ author_profile: true
 
 ## RESEARCH GRANTS
 
-* Improving Earth Data Discovery through Deep Query Understanding, ESIP Testbed project, _PI_, $7k
-* OceanWorks, NASA AIST funded project, student _Co-I_, $1.7M
-* An Automatic Approach to Building Earth Science Knowledge Graph (ESKG) to Improve Data Discovery, ESIP Testbed project, _Co-I_, $7k
-* Microsoft Azure for Research Award, _PI_, $20k
+* Improving Earth Data Discovery through Deep Query Understanding, ESIP Testbed project, __PI__, $7k
+* OceanWorks, NASA AIST funded project, student __Co-I__, $1.7M
+* An Automatic Approach to Building Earth Science Knowledge Graph (ESKG) to Improve Data Discovery, ESIP Testbed project, __Co-I__, $7k
+* Microsoft Azure for Research Award, __PI__, $20k
 
 ## CERTIFICATES
 
