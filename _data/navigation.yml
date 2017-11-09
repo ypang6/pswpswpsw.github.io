@@ -1,7 +1,7 @@
 # main links links
 main:
-  - title: "Education"
-    url: /education/
+  - title: "Short Bio"
+    url: /bio/
 
   - title: "Publications"
     url: /publications/
