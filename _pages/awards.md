@@ -7,7 +7,7 @@ author_profile: true
 
 {% include base_path %}
 
-## HONORS AND AWARDS
+## Honors and awards
 
 * Federation of Earth Science Information Partners (ESIP) Student Fellowship, 2016
 * NSF EarthCube Visiting Graduate Student and Early-Career Scientist Award, 2016
@@ -16,14 +16,14 @@ author_profile: true
 * Graduate School Fellowship at Clark University, 2012
 * Second-class scholarship at Wuhan University, 2008
 
-## RESEARCH GRANTS
+## Research grants
 
 * Improving Earth Data Discovery through Deep Query Understanding, ESIP Testbed project, __PI__, $7k
 * OceanWorks, NASA AIST funded project, student __Co-I__, $1.7M
 * An Automatic Approach to Building Earth Science Knowledge Graph (ESKG) to Improve Data Discovery, ESIP Testbed project, __Co-I__, $7k
 * Microsoft Azure for Research Award, __PI__, $20k
 
-## CERTIFICATES
+## Certificates
 
 * Neural Networks and Deep Learning by deeplearning.ai on Coursera Certificate, 2017
 * Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization by deeplearning.ai on Coursera Certificate, 2017
