@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Yongyao Jiang"
+title                    : "About me"
 title_separator          : "-"
 name                     : &name "Yongyao Jiang"
 description              : &description "Ph.D. candidate in GeoInformation Science, George Mason University"
