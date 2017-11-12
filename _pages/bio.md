@@ -7,8 +7,6 @@ redirect_from:
   - /resume
 ---
 
-{% include base_path %}
-
 ## Education
 
 * __Ph.D__ in GeoInformation Science, George Mason University, 2018 (expected)

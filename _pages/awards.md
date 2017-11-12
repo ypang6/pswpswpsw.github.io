@@ -5,8 +5,6 @@ permalink: /awards/
 author_profile: true
 ---
 
-{% include base_path %}
-
 ## Honors and awards
 
 * [Federation of Earth Science Information Partners (ESIP) Student Fellowship](http://www.esipfed.org/about/community/leadership/student-fellows/yongyao-jiang-2), 2016
