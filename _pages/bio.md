@@ -11,9 +11,9 @@ redirect_from:
 
 ## Education
 
-* Ph.D in GeoInformation Science, George Mason University, 2018 (expected)
-* M.S. in Geographic Information Science, Clark University, 2014
-* B.S. in Remote Sensing, Whuhan University, 2012
+* __Ph.D__ in GeoInformation Science, George Mason University, 2018 (expected)
+* __M.S.__ in Geographic Information Science, Clark University, 2014
+* __B.S.__ in Remote Sensing, Whuhan University, 2012
 
 
 ## Research interests
@@ -27,11 +27,11 @@ redirect_from:
 ## Work experience
 
 * 2014 - present: Research Assistant
-  * NSF Spatiotemporal Innovation Center, George Mason University
+  * [NSF Spatiotemporal Innovation Center](http://stcenter.net/stc/), George Mason University
   * Supervisor: Dr. Chaowei (Phil) Yang
 
 * 2012 - 2014: Research Developer
-  * Clark Labs, Clark University
+  * [Clark Labs](https://clarklabs.org/), Clark University
   * Supervisor: Dr. Ron Eastman
   
 ## Skills
