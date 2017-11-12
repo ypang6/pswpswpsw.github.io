@@ -43,7 +43,7 @@ ESKG proposes to develop an automatic approach to building a dynamic knowledge g
 ESKG proposes to develop an automatic approach to building a dynamic knowledge graph for ES to improve data discovery by leveraging implicit, latent existing knowledge present within the Web Pages of NASA DAACs websites. This project will strengthen ties between observations and user communities by: 1) developing a knowledge graph derived from Web Pages via natural language processing and knowledge extraction techniques; 2) allowing users to traverse, explore, query, reason and navigate ES data via knowledge graph interaction.
 * Role: Technical lead
 * [ESM website](https://clarklabs.org/terrset/earth-trends-modeler/)<br />
-<img src='/images/idrisi.png' width="500" height="300">
+<img src='/images/esm.png' width="500" height="300">
 
 ## Global Diffusion Pattern and Hot Spot Analysis of Vaccine-Preventable Diseases
 Spatial characteristics reveal the concentration of vaccine-preventable disease is in Africa and the Near East and that disease dispersion is variable depending on disease. The exception is whooping cough, which has a highly variable center of concentration from year to year. Measles exhibited the only statistically significant spatial autocorrelation among all the diseases under investigation. Hottest spots of measles are in Africa and coldest spots are in United States, warm spots are in Near East and cool spots are in Western Europe. Finally, cases of measles could not be explained by the independent variables, including Gini index, health expenditure, or rate of immunization.
