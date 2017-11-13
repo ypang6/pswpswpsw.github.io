@@ -26,6 +26,6 @@ author_profile: true
 ## Conference proceedings
 
 * Yang, C.P., Yu, M., Xu, M., __Jiang, Y.__, Qin, H., Li, Y., Bambacus, M., Leung, R.Y., Barbee, B.W., Nuth, J.A. and Seery, B., (2017, March). An Architecture for Mitigating Near Earth Object's Impact to the Earth. In _Aerospace Conference, 2017 IEEE (pp. 1-13)_. IEEE.
-* Li, Y., _Jiang, Y._, Hu, F., Yang, C., Huang, T., Moroni, D., & Fench, C. (2016, September). Leveraging Cloud Computing to Speedup User Access Log Mining. In _OCEANS 2016 MTS/IEEE Monterey (pp. 1-6)_. IEEE.
+* Li, Y., __Jiang, Y.__, Hu, F., Yang, C., Huang, T., Moroni, D., & Fench, C. (2016, September). Leveraging Cloud Computing to Speedup User Access Log Mining. In _OCEANS 2016 MTS/IEEE Monterey (pp. 1-6)_. IEEE.
 * Tian, J., __Jiang, Y.__, Chen, Y., Li, W., & Mu, N. (2014, June). Automated Human Mobility Mode Detection based on GPS Tracking Data. In _Geoinformatics (GeoInformatics), 2014 22nd International Conference on (pp. 1-6)_. IEEE.
 
