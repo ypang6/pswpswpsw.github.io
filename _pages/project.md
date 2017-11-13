@@ -3,7 +3,7 @@ title: "Projects"
 permalink: /projects/
 author_profile: true
 ---
-## OceanWorks / Apache Science Data Analytics Platform (SDAP)
+## OceanWorks / Apache Science Data Analytics Platform (NASA funded)
 In typical investigations, oceanographers follow a traditional workflow for using datasets: search, evaluate, download, and apply tools and algorithms to look for trends. While this workflow has been working very well historically for the oceanographic community, it cannot scale if the research involves massive amount of data. SDAP establishes an integrated data analytic center for Big Science problems. It focuses on technology integration, advancement and maturity. SDAP brings together a number of big data technologies including a NASA funded OceanXtremes (Anomaly detection and ocean science), NEXUS (Deep data analytic platform), DOMS (Distributed in-situ to satellite matchup), MUDROD (Search relevancy and discovery) and VQSS (Virtualized Quality Screening Service) under a single umbrella.
 * Role: Co-I, Lead developer of MUDROD, Apache committer
 * [Website](https://wiki.apache.org/incubator/SDAPProposal), [Source code](https://github.com/apache/incubator-sdap-mudrod)<br />
@@ -33,7 +33,7 @@ One longstanding problem in Earth data discovery is understanding the manner in 
 * [Source code](https://github.com/ESIPFed)<br />
 <img src='/images/queryunderstanding.png' width="500" height="300">
 
-## Polar CI: A Cloud based Polar Resource Discovery Portal (NSF and Microsoft funded) PI: [Wenwen Li](http://www.public.asu.edu/~wenwenl1/)
+## Polar CI: A Cloud based Polar Resource Discovery Portal (NSF and Microsoft funded)
 ESKG proposes to develop an automatic approach to building a dynamic knowledge graph for ES to improve data discovery by leveraging implicit, latent existing knowledge present within the Web Pages of NASA DAACs websites. This project will strengthen ties between observations and user communities by: 1) developing a knowledge graph derived from Web Pages via natural language processing and knowledge extraction techniques; 2) allowing users to traverse, explore, query, reason and navigate ES data via knowledge graph interaction.
 * Role: Technical lead
 * [Related book](https://books.google.com/books?hl=en&lr=&id=WVnBBwAAQBAJ&oi=fnd&pg=PA163&dq=info:MpUL3axO6NIJ:scholar.google.com&ots=R1IoiogQcF&sig=2IV5et4Eo7J5CmexRsNKEg0isFE#v=onepage&q&f=false)<br />
