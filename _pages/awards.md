@@ -25,6 +25,7 @@ author_profile: true
 
 * [Neural Networks and Deep Learning by deeplearning.ai on Coursera Certificate](https://www.coursera.org/account/accomplishments/verify/CC85GEEQUFX5), 2017
 * [Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization by deeplearning.ai on Coursera Certificate](https://www.coursera.org/account/accomplishments/verify/U353W6WZWFRM), 2017
+* [Convolutional Neural Networks](https://www.coursera.org/account/accomplishments/records/HY3PD4EK5RHS), 2017
 
 
 
