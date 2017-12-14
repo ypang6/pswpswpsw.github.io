@@ -52,12 +52,6 @@ Spatial characteristics reveal the concentration of vaccine-preventable disease 
 * [Related paper](https://www.isprs-ann-photogramm-remote-sens-spatial-inf-sci.net/IV-4-W2/167/2017/isprs-annals-IV-4-W2-167-2017.pdf)<br />
 <img src='/images/health.png' width="500" height="300">
 
-## Social Media as a Distributed Sensor System: a Case Study in 2015 Spring Festival in the New York
-Social media feeds are rapidly emerging as a novel avenue for the contribution and dissemination of information. We analyze the spatial, temporal and statistical characteristics of the twitter feed activity responding to 2015 Chinese New Year in New York City. We argue that these feeds represent a form of a distributed sensor system that allows for the identification of changing trend and impact area of the event.
-* Role: Project lead
-* [Related book](https://www.crcpress.com/Introduction-to-GIS-Programming-and-Fundamentals-with-Python-and-ArcGIS/Yang/p/book/9781466510081)<br />
-<img src='/images/socialmedia.png' width="500" height="300">
-
 
 
 
