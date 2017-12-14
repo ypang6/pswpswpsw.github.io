@@ -35,9 +35,9 @@ One longstanding problem in Earth data discovery is understanding the manner in 
 <img src='/images/queryunderstanding.png' width="500" height="300">
 
 ## Polar CI: A Cloud based Polar Resource Discovery Portal (NSF and Microsoft funded)
-ESKG proposes to develop an automatic approach to building a dynamic knowledge graph for ES to improve data discovery by leveraging implicit, latent existing knowledge present within the Web Pages of NASA DAACs websites. This project will strengthen ties between observations and user communities by: 1) developing a knowledge graph derived from Web Pages via natural language processing and knowledge extraction techniques; 2) allowing users to traverse, explore, query, reason and navigate ES data via knowledge graph interaction.
+The Polar CI Portal is a one stop portal that makes it easy for users to discover and access polar-related geospatial resources available across different online environments. In general, (1) a lightweight web engine framework is developed to search geospatial resources; (2) a data warehouse is built to harvest, store, search, and distribute geospatial information; (3) a harvesting middleware is established to harvest data from different online environments and convert them into formats that data warehouse supports; (4) a semantic-based query statement refinement is proposed to improve recall level and precision; (5) sophisticated functionalities (e.g. service quality monitoring and polar viewer) are used as a means of improving user experience and assisting decision-making; and (6) a quality of service engine is used to provide users with service quality information
 * Role: Technical lead
-* [Related book](https://books.google.com/books?hl=en&lr=&id=WVnBBwAAQBAJ&oi=fnd&pg=PA163&dq=info:MpUL3axO6NIJ:scholar.google.com&ots=R1IoiogQcF&sig=2IV5et4Eo7J5CmexRsNKEg0isFE#v=onepage&q&f=false)<br />
+* [Source code](https://github.com/Yongyao/polarci), [Related book](https://books.google.com/books?hl=en&lr=&id=WVnBBwAAQBAJ&oi=fnd&pg=PA163&dq=info:MpUL3axO6NIJ:scholar.google.com&ots=R1IoiogQcF&sig=2IV5et4Eo7J5CmexRsNKEg0isFE#v=onepage&q&f=false)<br />
 <img src='/images/polarci.png' width="500" height="300">
 
 ## Ecological Service Modeler (ESM) of IDRISI Geospatial Software 
