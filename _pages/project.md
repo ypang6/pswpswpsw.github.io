@@ -41,7 +41,7 @@ The Polar CI Portal is a one stop portal that makes it easy for users to discove
 <img src='/images/polarci.png' width="500" height="300">
 
 ## Ecological Service Modeler (ESM) of IDRISI Geospatial Software 
-ESKG proposes to develop an automatic approach to building a dynamic knowledge graph for ES to improve data discovery by leveraging implicit, latent existing knowledge present within the Web Pages of NASA DAACs websites. This project will strengthen ties between observations and user communities by: 1) developing a knowledge graph derived from Web Pages via natural language processing and knowledge extraction techniques; 2) allowing users to traverse, explore, query, reason and navigate ES data via knowledge graph interaction.
+The Earth Trends Modeler (ETM) is an integrated suite of tools within TerrSet for the analysis of image time series data associated with Earth Observation remotely sensed imagery. With Earth Trends Modeler, users can rapidly assess long term climate trends, measure seasonal trends in phenology, and decompose image time series to seek recurrent patterns in space and time.
 * Role: Technical lead
 * [ESM website](https://clarklabs.org/terrset/earth-trends-modeler/)<br />
 <img src='/images/esm.png' width="500" height="300">
