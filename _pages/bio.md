@@ -34,8 +34,11 @@ redirect_from:
   
 ## Skills
 
-* Programming languages: Java, Python, C++, Javascript, HTML5, CSS
-* Data analytics tools: Spark MLlib, Keras/Tensorflow, scikit-learn, stanford NLP, Genism, Weka, Apache Nutch, Tika, Gora, Kibana, D3.js
-* Data storage tools: Elasticsearch, Mysql, MangoDB
+* Programming languages: Java, Python, C++, Delphi, Javascript, HTML5, CSS
+* Data analytics tools: •	Keras/Tensorflow, scikit-learn, Stanford NLP, Genism, Weka, Apache Nutch, Tika
+* Data processing tools: Apache Spark, Hadoop
+* Data visualization tools: OpenLayers, Google Maps & Earth APIs, Kibana, D3.js
+* Data storage tools: Elasticsearch, Mysql, MangoDB, Neo4j, Apache Gora
+
 
 
