@@ -31,7 +31,7 @@ ESKG proposes to develop an automatic approach to building a dynamic knowledge g
 ## Improve Earth Data Discovery through Deep Query Understanding (ESIP Incubator project)
 One longstanding problem in Earth data discovery is understanding the manner in which one uses existing user queries to interpret the user’s search intent. While Google has a “did you mean this…” feature, other search engines are lacking in such technology, especially with regard to the utilization of e.g., fuzzy logic. To fill this gap, we therefore propose to develop a query understanding tool to better interpret users’ search intents for Earth data search engines by mining metadata and user query logs. 
 * Role: PI and technical lead
-* [Source code](https://github.com/ESIPFed)<br />
+* [Source code](https://github.com/ESIPFed), [Slides](https://www.slideshare.net/YongyaoJiang/earth-science-knowledge-graph)<br />
 <img src='/images/queryunderstanding.png' width="500" height="300">
 
 ## Polar CI: A Cloud based Polar Resource Discovery Portal (NSF and Microsoft funded)
