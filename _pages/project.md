@@ -44,7 +44,7 @@ The Polar CI Portal is a one stop portal that makes it easy for users to discove
 The Earth Trends Modeler (ETM) is an integrated suite of tools within TerrSet for the analysis of image time series data associated with Earth Observation remotely sensed imagery. With Earth Trends Modeler, users can rapidly assess long term climate trends, measure seasonal trends in phenology, and decompose image time series to seek recurrent patterns in space and time.
 * Role: Technical lead
 * [ESM website](https://clarklabs.org/terrset/earth-trends-modeler/)<br />
-<img src='/images/esm.png' width="420" height="300"><img src='/images/lcm.png' align="left" width="480" height="300">
+<img src='/images/esm.png' width="430" height="300"><img src='/images/lcm.png' align="left" width="480" height="300">
 
 ## Global Diffusion Pattern and Hot Spot Analysis of Vaccine-Preventable Diseases
 Spatial characteristics reveal the concentration of vaccine-preventable disease is in Africa and the Near East and that disease dispersion is variable depending on disease. The exception is whooping cough, which has a highly variable center of concentration from year to year. Measles exhibited the only statistically significant spatial autocorrelation among all the diseases under investigation. Hottest spots of measles are in Africa and coldest spots are in United States, warm spots are in Near East and cool spots are in Western Europe. Finally, cases of measles could not be explained by the independent variables, including Gini index, health expenditure, or rate of immunization.
