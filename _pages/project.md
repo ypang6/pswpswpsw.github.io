@@ -8,7 +8,7 @@ author_profile: true
 In typical investigations, oceanographers follow a traditional workflow for using datasets: search, evaluate, download, and apply tools and algorithms to look for trends. While this workflow has been working very well historically for the oceanographic community, it cannot scale if the research involves massive amount of data. SDAP establishes an integrated data analytic center for Big Science problems. It focuses on technology integration, advancement and maturity. SDAP brings together a number of big data technologies including a NASA funded OceanXtremes (Anomaly detection and ocean science), NEXUS (Deep data analytic platform), DOMS (Distributed in-situ to satellite matchup), MUDROD (Search relevancy and discovery) and VQSS (Virtualized Quality Screening Service) under a single umbrella.
 * Role: Co-I, Lead developer of MUDROD, Apache committer
 * [Website](https://wiki.apache.org/incubator/SDAPProposal), [Source code](https://github.com/apache/incubator-sdap-mudrod)<br />
-<img src='/images/oceanworks.png' width="450" height="300"><img src='/images/sessiontree.png' align="right" width="450" height="300">
+<img src='/images/oceanworks.png' width="450" height="300"><img src='/images/sessiontree.png' align="left" width="450" height="300">
 
 ## Mining and Utilizing Dataset Relevancy from Data Access logs, Metadata and User Metrics to Improve Data Discovery (MUDROD) (NASA AIST funded)
 MUDROD is focused on mining oceanic knowledge from the [PO.DAAC](https://podaac.jpl.nasa.gov/) user log files to improve the end user data discovery experience at PO.DAAC. There are three steps in the research: a) the oceanographic semantics were extracted from three resources of SWEET, GCMD ontology, and the keywords used by end users for searching PO.DAAC datasets, b) mining the linkage among different vocabularies based on user data discvoery sessions, and c) build the linkage among vocabularies based on a comprehensive approach by considering domain de facto standard, e.g., SWEET and GCMD, and the knowledge mined from the log files. The semantics is used to improve data discovery for ranking results, navigating among vocabularies, and recommending data based on user searches.
@@ -44,7 +44,7 @@ The Polar CI Portal is a one stop portal that makes it easy for users to discove
 The Earth Trends Modeler (ETM) is an integrated suite of tools within TerrSet for the analysis of image time series data associated with Earth Observation remotely sensed imagery. With Earth Trends Modeler, users can rapidly assess long term climate trends, measure seasonal trends in phenology, and decompose image time series to seek recurrent patterns in space and time.
 * Role: Technical lead
 * [ESM website](https://clarklabs.org/terrset/earth-trends-modeler/)<br />
-<img src='/images/esm.png' width="450" height="300"><img src='/images/lcm.png' align="right" width="450" height="300">
+<img src='/images/esm.png' width="420" height="300"><img src='/images/lcm.png' align="left" width="480" height="300">
 
 ## Global Diffusion Pattern and Hot Spot Analysis of Vaccine-Preventable Diseases
 Spatial characteristics reveal the concentration of vaccine-preventable disease is in Africa and the Near East and that disease dispersion is variable depending on disease. The exception is whooping cough, which has a highly variable center of concentration from year to year. Measles exhibited the only statistically significant spatial autocorrelation among all the diseases under investigation. Hottest spots of measles are in Africa and coldest spots are in United States, warm spots are in Near East and cool spots are in Western Europe. Finally, cases of measles could not be explained by the independent variables, including Gini index, health expenditure, or rate of immunization.
@@ -56,7 +56,7 @@ Spatial characteristics reveal the concentration of vaccine-preventable disease 
 New developments in global positioning systems (GPS) have facilitated the continuous collection of highly accurate locational data for moving objects including humans. The mobility mode implied in volunteered raw GPS tracking data can provide us with valuable information to understand the user. In this paper, we propose an approach that can be used to detect mobility mode by mining/analyzing the geographic location, duration, speed as well as spatial context information in the data. Other ancillary GIS layers such as building footprints are also included to help classify the data. Our approach has been tested on three datasets. Five mobility modes: “transporting”, “parking”, “walking”, “roaming” and “indoor” are detected in our results. A quantitative comparison with the human interpretation results suggested an overall accuracy of 95%. The proposed approach is expected to facilitate the research of many geographic communities and development of location-based service.
 * Role: Project lead
 * [Related paper](http://wordpress.clarku.edu/jietian/files/2015/01/2014-Conference-Proceeding-GeoInformatics.pdf), [Related slides](https://www.slideshare.net/YongyaoJiang/automated-mobility-mode-detection-based-on-gps-tracking-data)<br />
-<img src='/images/gps.png' width="500" height="300">
+<img src='/images/gps.png' width="520" height="310">
 
 
 
