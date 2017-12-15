@@ -44,7 +44,7 @@ The Polar CI Portal is a one stop portal that makes it easy for users to discove
 The Earth Trends Modeler (ETM) is an integrated suite of tools within TerrSet for the analysis of image time series data associated with Earth Observation remotely sensed imagery. With Earth Trends Modeler, users can rapidly assess long term climate trends, measure seasonal trends in phenology, and decompose image time series to seek recurrent patterns in space and time.
 * Role: Technical lead
 * [ESM website](https://clarklabs.org/terrset/earth-trends-modeler/)<br />
-<img src='/images/esm.png' width="430" height="300"><img src='/images/lcm.png' align="left" width="480" height="300">
+<img src='/images/esm.png' width="440" height="310"><img src='/images/lcm.png' align="left" width="480" height="300">
 
 ## Global Diffusion Pattern and Hot Spot Analysis of Vaccine-Preventable Diseases
 Spatial characteristics reveal the concentration of vaccine-preventable disease is in Africa and the Near East and that disease dispersion is variable depending on disease. The exception is whooping cough, which has a highly variable center of concentration from year to year. Measles exhibited the only statistically significant spatial autocorrelation among all the diseases under investigation. Hottest spots of measles are in Africa and coldest spots are in United States, warm spots are in Near East and cool spots are in Western Europe. Finally, cases of measles could not be explained by the independent variables, including Gini index, health expenditure, or rate of immunization.
@@ -56,7 +56,7 @@ Spatial characteristics reveal the concentration of vaccine-preventable disease 
 New developments in global positioning systems (GPS) have facilitated the continuous collection of highly accurate locational data for moving objects including humans. The mobility mode implied in volunteered raw GPS tracking data can provide us with valuable information to understand the user. In this paper, we propose an approach that can be used to detect mobility mode by mining/analyzing the geographic location, duration, speed as well as spatial context information in the data. Other ancillary GIS layers such as building footprints are also included to help classify the data. Our approach has been tested on three datasets. Five mobility modes: “transporting”, “parking”, “walking”, “roaming” and “indoor” are detected in our results. A quantitative comparison with the human interpretation results suggested an overall accuracy of 95%. The proposed approach is expected to facilitate the research of many geographic communities and development of location-based service.
 * Role: Project lead
 * [Related paper](http://wordpress.clarku.edu/jietian/files/2015/01/2014-Conference-Proceeding-GeoInformatics.pdf), [Related slides](https://www.slideshare.net/YongyaoJiang/automated-mobility-mode-detection-based-on-gps-tracking-data)<br />
-<img src='/images/gps.png' width="520" height="310">
+<img src='/images/gps.png' width="530" height="320">
 
 
 
