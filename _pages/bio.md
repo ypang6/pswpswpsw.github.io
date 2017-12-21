@@ -17,7 +17,7 @@ redirect_from:
 
 ## Research interests
 
-* Physics-basd computational modelling 
+* Physics-based computational modelling 
 * High fidelity direct numerical simulation (DNS) of compressible turbulence
 * Application of data-driven methods on scientific and engineering problems
 * Rarefied gas dynamics, direct simulation Monte Carlo (DSMC) 
