@@ -4,6 +4,7 @@ title: "Projects"
 permalink: /projects/
 author_profile: true
 ---
+
 ## OceanWorks / Apache Science Data Analytics Platform (NASA funded)
 In typical investigations, oceanographers follow a traditional workflow for using datasets: search, evaluate, download, and apply tools and algorithms to look for trends. While this workflow has been working very well historically for the oceanographic community, it cannot scale if the research involves massive amount of data. SDAP establishes an integrated data analytic center for Big Science problems. It focuses on technology integration, advancement and maturity. SDAP brings together a number of big data technologies including a NASA funded OceanXtremes (Anomaly detection and ocean science), NEXUS (Deep data analytic platform), DOMS (Distributed in-situ to satellite matchup), MUDROD (Search relevancy and discovery) and VQSS (Virtualized Quality Screening Service) under a single umbrella.
 * Role: Co-I, Lead developer of MUDROD, Apache committer
