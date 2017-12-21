@@ -9,10 +9,10 @@ redirect_from:
 
 ## Education
 
-* __Ph.D.__ in Aerospace Engineering, University of Michigan, Ann Arbor, United States, 2020 (expected)
-* __M.S.E.__ in Mechanical Engineering, University of Michigan, Ann Arbor, United States, 2015
-* __B.S.__ in Applied Mathematics, Beihang University, Beijing, China, 2013
-* __B.E.__ in Aerospace Engineering, Beihang University, Beijing, China, 2013
+* __Ph.D.__ in Aerospace Engineering, University of Michigan, Ann Arbor, 2020 (expected)
+* __M.S.E.__ in Mechanical Engineering, University of Michigan, Ann Arbor, 2015
+* __B.S.__ in Applied Mathematics, Beihang University, 2013
+* __B.E.__ in Aerospace Engineering, Beihang University, 2013
 
 
 ## Research interests
@@ -29,7 +29,7 @@ redirect_from:
   * Supervisor: Prof. Karthik Duraisamy
 
 * 2016 - 2016: Application Engineer Intern
-  * [Exa Corporation](https://www.exa.com/), Brisbane, CA 
+  * [Exa Corporation](https://www.exa.com/)
   * Supervisor: Mr. Adrien Mann
   
 ## Skills
