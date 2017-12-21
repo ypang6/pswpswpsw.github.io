@@ -17,4 +17,7 @@ main:
         
   - title: "Services"
     url: /services/
+
+  - title: "Notes"
+	url: /posts/
     
