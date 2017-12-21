@@ -9,11 +9,11 @@
 locale                   : "en-US"
 title                    : "About me"
 title_separator          : "-"
-name                     : &name "Yongyao Jiang"
-description              : &description "Ph.D. candidate in GeoInformation Science, George Mason University"
-url                      : https://yongyao.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : &name "Shaowu Pan"
+description              : &description "Ph.D. candidate in Aerospace Engineering, University of Michigan, Ann Arbor"
+url                      : https://pswpswpsw.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "yjiang"
+repository               : "pswpswpsw"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -78,12 +78,12 @@ analytics:
 
 # Site Author
 author:
-  name             : "Yongyao Jiang"
-  avatar           : "profile.png"
-  bio              : "Ph.D. candidate in GeoInformation Science, NSF Spatiotempora Innovation Center"
-  location         : "Fairfax, VA"
+  name             : "Shaowu Pan"
+  avatar           : "shaowu.png"
+  bio              : "Ph.D. candidate in Aerospace Engineering"
+  location         : "Ann arbor, MI"
   employer         :
-  googlescholar    : "https://scholar.google.com/citations?user=hsVFXXQAAAAJ&hl=en"
+  googlescholar    : # "https://scholar.google.com/citations?user=hsVFXXQAAAAJ&hl=en"
   email            :
   uri              :
   bitbucket        :
@@ -92,12 +92,12 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "Yongyao"
+  github           : "pswpswpsw"
   google_plus      :
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         : "yjiang8"
+  linkedin         : 
   orcid            : 
   pinterest        :
   soundcloud       :
