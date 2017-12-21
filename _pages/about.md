@@ -2,7 +2,7 @@
 layout: archive
 permalink: /
 title: "About me"
-excerpt: "About me"
+excerpt: "Shaowu Pan"
 author_profile: true
 redirect_from: 
   - /about/
