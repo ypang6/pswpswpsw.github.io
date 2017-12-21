@@ -9,36 +9,33 @@ redirect_from:
 
 ## Education
 
-* __Ph.D__ in GeoInformation Science, George Mason University, 2018 (expected)
-* __M.S.__ in Geographic Information Science, Clark University, 2014
-* __B.S.__ in Remote Sensing, Whuhan University, 2012
+* __Ph.D.__ in Aerospace Engineering, University of Michigan, Ann Arbor, 2020 (expected)
+* __M.S.E.__ in Mechanical Engineering, University of Michigan, Ann Arbor, 2015
+* __B.S.__ in Applied Mathematics, Beihang University, 2013
+* __B.E.__ in Aerospace Engineering, Beihang University, 2013
 
 
 ## Research interests
 
-* Big geospatial data discovery, management, and processing
-* Spatiotemporal data analytics, machine learning applications in broad GIScience domains
-* Geospatial cyberinfrastructure, high performance computing
-* Geographic Information Science and remote sensing
-* Geospatial semantics – semantic similarity, search
+* Physics-basd computational modelling 
+* High fidelity direct numerical simulation (DNS) of compressible turbulence
+* Application of data-driven methods on scientific and engineering problems
+* Rarefied gas dynamics, direct simulation Monte Carlo (DSMC) 
 
 ## Work experience
 
-* 2014 - present: Research Assistant
+* 2016 - present: Research Assistant
   * [NSF Spatiotemporal Innovation Center](http://stcenter.net/stc/), George Mason University
-  * Supervisor: Dr. Chaowei (Phil) Yang
+  * Supervisor: Prof. Karthik Duraisamy
 
-* 2012 - 2014: Research Developer
-  * [Clark Labs](https://clarklabs.org/), Clark University
-  * Supervisor: Dr. Ron Eastman
+* 2016 - 2016: Application Engineer Intern
+  * [Exa Corporation](https://www.exa.com/), Brisbane, CA 
+  * Supervisor: Mr. Adrien Mann
   
 ## Skills
 
-* Programming languages: Java, Python, C++, Delphi, Javascript, HTML5, CSS
-* Data analytics tools: •	Keras/Tensorflow, scikit-learn, Stanford NLP, Genism, Weka, Apache Nutch, Tika
-* Data processing tools: Apache Spark, Hadoop
-* Data visualization tools: OpenLayers, Google Maps & Earth APIs, Kibana, D3.js
-* Data storage tools: Elasticsearch, Mysql, MangoDB, Neo4j, Apache Gora
-
-
+* Programming: Fortran, Python, Cython, C++, Matlab
+* Data analytics: Keras/Tensorflow, scikit-learn
+* Data processing: Hive, Pig
+* Data visualization tools: Paraview, Tecplot, Visit
 
