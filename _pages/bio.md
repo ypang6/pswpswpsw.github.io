@@ -35,6 +35,7 @@ redirect_from:
 ## Skills
 
 * Programming: Fortran, Python, Cython, C++, Matlab
+* HPC: HDF, MPI, OpenMP
 * Data analytics: Keras/Tensorflow, scikit-learn
 * Data processing: Hive, Pig
 * Data visualization tools: Paraview, Tecplot, Visit

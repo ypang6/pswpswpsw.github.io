@@ -9,5 +9,11 @@ redirect_from:
   - /about.html
 ---
 
-Ph.D. candidate in Aerospace Engineering with speciality in computational fluid dynamics, high performance computing, compressible turbulence, machine learning and rarefied gas dynamics.  
+Ph.D. candidate in Aerospace Engineering with speciality in
+
+* computational fluid dynamics
+* high performance computing
+* compressible turbulence
+* machine learning
+* rarefied gas dynamics.  
 
