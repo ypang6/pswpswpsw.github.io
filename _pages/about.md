@@ -9,7 +9,7 @@ redirect_from:
   - /about.html
 ---
 
-Ph.D. candidate in Aerospace Engineering with speciality in
+Ph.D. candidate in Aerospace Engineering with specialities
 
 * Computational Fluid Dynamics
 * High Performance Computing
