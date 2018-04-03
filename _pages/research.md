@@ -5,8 +5,8 @@ title: "Research experience"
 excerpt: "Shaowu Pan"
 author_profile: true
 redirect_from: 
-  - /about/
-  - /about.html
+  - /research/
+  - /research.html
 ---
 
 ## Research experience
