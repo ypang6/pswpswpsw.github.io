@@ -1,11 +1,11 @@
 ---
 layout: archive
-title: "Research experiences"
+title: "Research Experiences"
 permalink: /research/
 author_profile: true
 ---
 
-## Honors and awards
+## Research experience
 
 * Doctoral Fellowship, University of Michigan, Ann Arbor, 2016
 * Rackham Summer Award, University of Michigan, Ann Arbor, 2015
