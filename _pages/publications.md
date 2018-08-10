@@ -8,7 +8,7 @@ author_profile: true
 {% include base_path %}
 
 ## arXiv 
-* __Pan, S.__, Duraisamy, K., (2018). Data-driven Discovery of Closure Models. _arXiv_. [link](https://arxiv.org/abs/1803.09318)
+* __Pan, S.__, Duraisamy, K., (2018). Data-driven Discovery of Closure Models (accepted). _SIAM Journal on Applied Dynamical System_. [link](https://arxiv.org/abs/1803.09318)
 
 ## Peer-reviewed journal articles
 
