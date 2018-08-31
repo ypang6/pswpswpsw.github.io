@@ -26,13 +26,17 @@ redirect_from:
 
 ## Work experience
 
-* 2016 - present: Graduate Research Assistant
+* 2016 Sep - present: Graduate Research Assistant
   * [Computational Aerosciences Laboratory](http://umich.edu/~caslab/), University of Michigan, Ann Arbor
-  * Supervisor: Prof. Karthik Duraisamy
+  * Supervisor: [Prof. Karthik Duraisamy](https://aero.engin.umich.edu/people/karthik-duraisamy/)
 
-* 2016 - 2016: Application Engineer Intern
+* 2016 Jan - 2016 July: Application Engineer Intern
   * [Exa Corporation](https://www.exa.com/)
-  * Supervisor: Mr. Adrien Mann
+  * Supervisor: [Mr. Adrien Mann](https://www.linkedin.com/in/adrienmann/)
+
+* 2014 Mar - 2014 July: Research Engineer Intern
+  * [Advanced Micro-Fabrication Equipment Inc.](http://www.amec-inc.com/) 
+  * Supervisor: [Dr. Ning Zhou](https://www.linkedin.com/in/ning-zhou-58881b57/)
 
 ## Skills
 
