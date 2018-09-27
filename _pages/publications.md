@@ -12,8 +12,6 @@ author_profile: true
 
 * __Pan, S.__, Duraisamy, K., (2018). Long-time predictive modeling of nonlinear dynamical systems using neural networks. _Complexity_. [link](https://arxiv.org/abs/1805.12547)
 
-
-
 * __Pan, S.__, Duraisamy, K., (2018). Data-driven Discovery of Closure Models (accepted). _SIAM Journal on Applied Dynamical System_. [link](https://arxiv.org/abs/1803.09318)
 
 * __Pan, S.__, Johnsen, E., (2017). The role of bulk viscosity on the decay of compressible, homogeneous, isotropic turbulence. _Journal of Fluid Mechanics_. [link](https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/role-of-bulk-viscosity-on-the-decay-of-compressible-homogeneous-isotropic-turbulence/96619135BA0A3ACB20EAC44ADF8261D1)
@@ -32,8 +30,12 @@ author_profile: true
 
 ## Presentations
 
-* __Pan, S.__, Duraisamy, K., (2017). Machine Learning-based discovery of closures for reduced models of dynamical systems. _Bulletin of the American Physical Society, 2017_. [link](http://meetings.aps.org/Meeting/DFD17/Session/M27.7)
+* __Pan, S.__, Duraisamy, K., (2018). Data-driven Discovery of Closure Models. _WCCM 2018, 2018_. [link](http://adsabs.harvard.edu/abs/2015APS..DFDD20005P)
 
+* __Pan, S.__, Duraisamy, K., (2018). Improving Accuracy and Robustness of Artificial Neural Networks to Discover Dynamical Systems from Data. _SIAM UQ, 2018_. [link](http://adsabs.harvard.edu/abs/2015APS..DFDD20005P)
+* __Pan, S.__, Duraisamy, K., (2017). Machine Learning-based discovery of closures for reduced models of dynamical systems. _Bulletin of the American Physical Society, 2017_. [link](http://meetings.aps.org/Meeting/DFD17/Session/M27.7)
 * __Pan, S.__, Johnsen, E., (2015). Bulk viscosity effect on freely decaying compressible homogeneous isotropic turbulence. _APS Meeting Abstracts, 2015_. [link](http://adsabs.harvard.edu/abs/2015APS..DFDD20005P)
+
+
 
 
