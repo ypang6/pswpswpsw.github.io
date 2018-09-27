@@ -10,8 +10,8 @@ main:
   - title: "Awards"
     url: /awards/
 
-  - title: "Research experience"
-    url: /research/
+    #  - title: "Research experience"
+    #  url: /research/
 
 
 #  - title: "Projects"
