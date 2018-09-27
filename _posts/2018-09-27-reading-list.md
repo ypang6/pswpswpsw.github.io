@@ -7,13 +7,9 @@ tags:
   - machine learning
 ---
 
+## Note on M.J ML reading list
+### Elementary
 
-Michael Jordan's Reading List
-===============
-
-
-Elementary
-----------
 
 * Casella, G. and Berger, R.L. (2001). **"Statistical Inference"** Duxbury Press.
 
@@ -48,15 +44,13 @@ Machine learning research also reposes on optimization theory. A good starting b
 * Bertsimas, D. and Tsitsiklis, J. (1997). **"Introduction to Linear Optimization"** Athena.
 
 
-Advanced
----------
+### Advanced
 
 And then you can graduate to:
 
 * Boyd, S. and Vandenberghe, L. (2004). **"Convex Optimization"** Cambridge.
 
-Linear Algebra
---------------
+### Linear Algebra
 
 Getting a full understanding of algorithmic linear algebra is also important. At some point you should feel familiar with most of the material in
 
@@ -66,8 +60,7 @@ It's good to know some information theory. The classic is:
 
 * Cover, T. and Thomas, J. **"Elements of Information Theory"** Wiley.
 
-Functional Analysis
--------------------
+### Functional Analysis
 
 Finally, if you want to start to learn some more abstract math, you might want to start to learn some functional analysis (if you haven't already). Functional analysis is essentially linear algebra in infinite dimensions, and it's necessary for kernel methods, for nonparametric Bayesian methods, and for various other topics. Here's a book that I find very readable:
 
