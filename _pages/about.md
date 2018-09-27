@@ -24,7 +24,7 @@ redirect_from:
 * Application of data-driven methods on scientific and engineering problems
 * Rarefied gas dynamics, direct simulation Monte Carlo (DSMC)
 
-## Work experience
+## Experiences
 
 * 2016 Sep - present: Graduate Research Assistant
   * [Computational Aerosciences Laboratory](http://umich.edu/~caslab/), University of Michigan, Ann Arbor
