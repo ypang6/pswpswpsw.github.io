@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Shaowu Pan - Ph.D. candidate at University of Michigan, Ann Arbor, MI, USA"
+title                    : "Shaowu Pan"
 title_separator          : "-"
 name                     : &name "Shaowu Pan"
-description              : &description "Ph.D. candidate in Aerospace Engineering, University of Michigan, Ann Arbor"
+description              : &description "Ph.D. student in Aerospace Engineering"
 url                      : https://pswpswpsw.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "pswpswpsw"
