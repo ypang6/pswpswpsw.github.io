@@ -17,9 +17,9 @@ redirect_from:
 * __B.E.__ in Aerospace Engineering, Beihang University, 2013
 
 
-## Research interests
+## Research focus
 
-* Physics-based computational modelling
+* Physics-based computational/data-driven modelling
 * High fidelity direct numerical simulation (DNS) of compressible turbulence
 * Application of data-driven methods on scientific and engineering problems
 * Rarefied gas dynamics, direct simulation Monte Carlo (DSMC)
@@ -38,7 +38,7 @@ redirect_from:
   * [Advanced Micro-Fabrication Equipment Inc.](http://www.amec-inc.com/) 
   * Supervisor: [Dr. Ning Zhou](https://www.linkedin.com/in/ning-zhou-58881b57/)
 
-## Skills
+## Tools
 
 * Programming: Fortran, Python, Cython, C++, Matlab
 * HPC: HDF, MPI, OpenMP
