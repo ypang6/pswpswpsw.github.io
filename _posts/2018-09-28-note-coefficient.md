@@ -7,7 +7,7 @@ tags:
   - tsa_class_notes
 ---
 
-## A note on coefficient of determinant
+## Can we use coefficient of determinant for nonlinear regression?
 
 ### Abstract
 
