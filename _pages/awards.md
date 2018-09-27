@@ -5,7 +5,6 @@ permalink: /awards/
 author_profile: true
 ---
 
-// ## Honors and awards
 
 * SIAM Student Travel Grant, SIAM, 2018
 * MICDE Fellowship, University of Michigan, Ann Arbor, 2018
