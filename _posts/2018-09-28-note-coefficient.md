@@ -84,7 +84,9 @@ $$
 \sum_{i}\epsilon_i \overline{y} = 0.
 \end{equation}
 $$
+
 The second one is easy, as long as model _takes constant as linear features_
+
 $$
 \begin{equation}
 \hat{y} = \alpha + g_{\beta}(x).
