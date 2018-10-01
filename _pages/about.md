@@ -21,7 +21,6 @@ redirect_from:
 
 * Physics-based computational/data-driven modelling
 * High fidelity direct numerical simulation (DNS) of compressible turbulence
-* Application of data-driven methods on scientific and engineering problems
 * Rarefied gas dynamics, direct simulation Monte Carlo (DSMC)
 
 ## Experiences
