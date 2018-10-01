@@ -131,7 +131,14 @@ f'(x) = \frac{\frac{x}{1-x} - \log \frac{1}{1-x}}{x^2} \\
 \end{equation}
 $$
 
-Therefore, take $x  = \frac{p+1}{n}$, we have it as a monotonic increasing function with respect to $(p+1)/n$ and when $p \ll n$,  we have **the ratio between adjusted $R^2$ and AIC/BIC**
+Therefore, take $x  = \frac{p+1}{n}$, we have it as a monotonic increasing function with respect to $(p+1)/n$ and when $p \ll n$,  we have the ratio between adjusted $R^2$ and AIC/BIC as the following:
+
+$$
+\begin{equation}
+f'(x) = \frac{\frac{x}{1-x} - \log \frac{1}{1-x}}{x^2} \\
+= \frac{ \frac{1}{1-x} - \log \frac{1}{1-x} - 1}{x^2} \ge 0, \forall x \in (0,1).
+\end{equation}
+$$
 
 
 $$
