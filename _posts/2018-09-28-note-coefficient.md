@@ -1,13 +1,11 @@
 ---
-title: 'Random thought on coefficient of determinant'
+title: 'Can we use coefficient of determinant for nonlinear regression?'
 date: 2018-09-27
-permalink: /posts/2018/09/blog-post-note-coefficient-determinant/
+permalink: /posts/2018/09/blog-post-note-coefficient-determinant-nonlinear-regression/
 tags:
   - regression
   - tsa_class_notes
 ---
-
-## Can we use coefficient of determinant for nonlinear regression?
 
 ### Abstract
 
