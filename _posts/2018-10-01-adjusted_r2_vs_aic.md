@@ -135,16 +135,9 @@ Therefore, take $x  = \frac{p+1}{n}$, we have it as a monotonic increasing funct
 
 $$
 \begin{equation}
-f'(x) = \frac{\frac{x}{1-x} - \log \frac{1}{1-x}}{x^2} \\
-= \frac{ \frac{1}{1-x} - \log \frac{1}{1-x} - 1}{x^2} \ge 0, \forall x \in (0,1).
+\frac{\log(1/(1-(p+1)/n))}{(p+1)/n} < 2C,
 \end{equation}
 $$
 
-
-$$
-\begin{equation}
-\frac{\log 1/(1-(p+1)/n)}{(p+1)/n} < 2C,
-\end{equation}
-$$
 
 where $C = 1, \frac{\log n}{2} $.
