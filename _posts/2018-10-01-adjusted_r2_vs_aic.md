@@ -33,7 +33,7 @@ $$
 
 AIC originates in information theory. In Bayes belief net, there is a criterion called **Minimal Description Length (MDL)**. One would like to choose the Bayes belief net models with the **shortest** MDL.
 
-In general, for a given training set $D = \{ {x}_1,\ldots,{x}_m \}​$, the scoring function on Bayes net $B = \langle G, \Theta \rangle​$ on the training set $D​$ is
+In general, for a given training set $D = \{ {x}_1,\ldots,{x}_m \}$, the scoring function on Bayes net $B = \langle G, \Theta \rangle$ on the training set $D$ is
 
 $$
 \begin{equation}
@@ -41,7 +41,7 @@ s(B|D) = f(\theta)|B| - LL(B|D),
 \end{equation}
 $$
 
-where $f(\theta)​$ is the bits required to describe each parameter while $|B|$ is the number of parameters in the Bayes net. 
+where $$f(\theta)$$ is the bits required to describe each parameter while $$\vert B \vert$$ is the number of parameters in the Bayes net. 
 
 $$
 \begin{equation}
@@ -130,11 +130,11 @@ f'(x) = \frac{\frac{x}{1-x} - \log \frac{1}{1-x}}{x^2} \\
 \end{equation}
 $$
 
-Therefore, take $x  = \frac{p+1}{n}​$, we have it as a monotonic increasing function with respect to $(p+1)/n$ and when $p \ll n$,  we have
+Therefore, take $x  = \frac{p+1}{n}​$, we have it as a monotonic increasing function with respect to $(p+1)/n$ and when $p \ll n$,  we have **the ratio between adjusted $R^2$ and AIC/BIC**
 
 $$
 \begin{equation}
-\textrm{ratio between adjusted $R^2$ and AIC/BIC}= \frac{\log \frac{1}{1-(p+1)/n} / ((p+1)/n)}{2C} < 1
+\frac{\log \frac{1}{1-(p+1)/n} / ((p+1)/n)}{2C} < 1,
 \end{equation}
-$$,
-where $C = 1, \frac{\log n}{2} $.
+$$
+where $$C = 1, \frac{\log n}{2} $$.
