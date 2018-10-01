@@ -140,4 +140,4 @@ $$
 \end{equation}
 $$
 
-where $$C = 1, \frac{\log n}{2} $$.
+where $C = 1, \frac{\log n}{2} $.
