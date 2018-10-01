@@ -49,11 +49,11 @@ LL(B|D) = \sum_{i=1}^m \log P_B({x}_i) \sim -\frac{m}{2} \log(\sigma^2) -\frac{1
 \end{equation}
 $$
 
-which is the log-likelihood of all data and $\sigma^2$ is the uncertainty in the likelihood model. Note that $\sigma^2 = SSE/m​$ as a MLE estimation for the residual variance. Remember that this implies i.i.d, i.e., independently identical distribution. 
+which is the log-likelihood of all data and $\sigma^2$ is the uncertainty in the likelihood model. Note that $\sigma^2 = SSE/m$ as a MLE estimation for the residual variance. Remember that this implies i.i.d, i.e., independently identical distribution. 
 
 MDL induces several concepts which are shown below without proof. Note that the sources are from [here](https://www.goodreads.com/book/show/31193897-machine-learning).
 
-1. AIC
+- AIC
 
 $$
 \begin{equation}
@@ -63,7 +63,8 @@ $$
 
 which assumes each parameter costs $1$ bit for description.
 
-2. BIC
+- BIC
+
 $$
 \begin{equation}
 BIC(B|D) = \frac{\log m}{2}|B| - LL(B|D) = \frac{\log m}{2}p - \frac{1}{2\sigma^2} SSE,
@@ -130,7 +131,8 @@ f'(x) = \frac{\frac{x}{1-x} - \log \frac{1}{1-x}}{x^2} \\
 \end{equation}
 $$
 
-Therefore, take $x  = \frac{p+1}{n}​$, we have it as a monotonic increasing function with respect to $(p+1)/n$ and when $p \ll n$,  we have **the ratio between adjusted $R^2$ and AIC/BIC**
+Therefore, take $x  = \frac{p+1}{n}$, we have it as a monotonic increasing function with respect to $(p+1)/n$ and when $p \ll n$,  we have **the ratio between adjusted $R^2$ and AIC/BIC**
+
 
 $$
 \begin{equation}
