@@ -134,7 +134,8 @@ Therefore, take $x  = \frac{p+1}{n}​$, we have it as a monotonic increasing fu
 
 $$
 \begin{equation}
-\frac{\log \frac{1}{1-(p+1)/n} / ((p+1)/n)}{2C} < 1,
+\frac{\log \frac{1}{1-(p+1)/n}/((p+1)/n)}{2C} < 1,
 \end{equation}
 $$
+
 where $$C = 1, \frac{\log n}{2} $$.
