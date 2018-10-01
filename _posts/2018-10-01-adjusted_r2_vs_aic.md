@@ -1,13 +1,11 @@
 ---
-title: 'Random thought on coefficient of determinant- 2'
+title: 'Adjusted $R^2$ is a weaker penalty than AIC'
 date: 2018-09-27
-permalink: /posts/2018/09/blog-post-note-coefficient-determinant-2/
+permalink: /posts/2018/09/blog-post-adjust-r2-weaker-than-aic/
 tags:
   - regression
   - tsa_class_notes
 ---
-
-## Adjusted $R^2$ is a weaker penalty than AIC
 
 ### Abstract
 
@@ -43,7 +41,15 @@ s(B|D) = f(\theta)|B| - LL(B|D),
 \end{equation}
 $$
 
-where $f(\theta)$ is the bits required to describe each parameter while $|B|$ is the number of parameters in the Bayes net. $LL(B|D) = \sum_{i=1}^m \log P_B({x}_i) \sim -\frac{m}{2} \log(\sigma^2) -\frac{1}{2\sigma^2} SSE \sim -\frac{m}{2}\log(SSE/m)$, which is the log-likelihood of all data and $\sigma^2$ is the uncertainty in the likelihood model. Note that $\sigma^2 = SSE/m$ as a MLE estimation for the residual variance. Remember that this implies i.i.d, i.e., independently identical distribution. 
+where $f(\theta)​$ is the bits required to describe each parameter while $|B|$ is the number of parameters in the Bayes net. 
+
+$$
+\begin{equation}
+LL(B|D) = \sum_{i=1}^m \log P_B({x}_i) \sim -\frac{m}{2} \log(\sigma^2) -\frac{1}{2\sigma^2} SSE \sim -\frac{m}{2}\log(SSE/m),
+\end{equation}
+$$
+
+which is the log-likelihood of all data and $\sigma^2$ is the uncertainty in the likelihood model. Note that $\sigma^2 = SSE/m​$ as a MLE estimation for the residual variance. Remember that this implies i.i.d, i.e., independently identical distribution. 
 
 MDL induces several concepts which are shown below without proof. Note that the sources are from [here](https://www.goodreads.com/book/show/31193897-machine-learning).
 
@@ -126,7 +132,9 @@ $$
 
 Therefore, take $x  = \frac{p+1}{n}​$, we have it as a monotonic increasing function with respect to $(p+1)/n$ and when $p \ll n$,  we have
 
-$$\begin{equation}
+$$
+\begin{equation}
 \textrm{ratio between adjusted $R^2$ and AIC/BIC}= \frac{\log \frac{1}{1-(p+1)/n} / ((p+1)/n)}{2C} < 1
-\end{equation}$$,
+\end{equation}
+$$,
 where $C = 1, \frac{\log n}{2} $.
