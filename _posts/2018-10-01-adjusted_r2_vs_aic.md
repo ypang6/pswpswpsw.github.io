@@ -135,9 +135,10 @@ Therefore, take $x  = \frac{p+1}{n}$, we have it as a monotonic increasing funct
 
 $$
 \begin{equation}
-\frac{\log(1/(1-(p+1)/n))}{(p+1)/n} < 2C,
+\frac{1}{2} < 2c
 \end{equation}
 $$
 
+## \frac{\log(1/(1-(p+1)/n))}{(p+1)/n} < 2C,
 
 where $C = 1, \frac{\log n}{2} $.
