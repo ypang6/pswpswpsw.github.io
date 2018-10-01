@@ -9,9 +9,9 @@ tags:
 
 ## Abstract
 
-This is a note of thought that I bump into randomly. 
+This is a note of thought that I bumped into randomly. 
 
-It has been a long history in statistics on model selection that penalizes the exploding number of parameters. **AIC, i.e., Alkaline information criterion**, is perhaps the most famous one due to its simplicity and generality. While, when $R^2$ is introduced in the class, immediately adjusted $R^2$ is introduced. The later one does not follow the "variance explanation" per se since there is no guarantee about the ratio being kept in $[0,1]$. But, it is supposed to penalize large number of parameters by showing a lower $R^2$. 
+It has been a long history in statistics on model selection that penalizes the exploding number of parameters. **AIC, i.e., Alkaline information criterion**, is perhaps the most famous one due to its simplicity and generality. While, when $R^2$ is introduced in the class, immediately adjusted $R^2$ is introduced. The later one does not follow the "variance explanation" per se since there is no guarantee about the ratio being kept in $[0,1]$. But, it is supposed to penalize large number of parameters by showing a lower $R^2$. In this post, I will show that adjusted $R^2$ has a weaker penalty than AIC/BIC criterion.
 
 ## Introduction
 
