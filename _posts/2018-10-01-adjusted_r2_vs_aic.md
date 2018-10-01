@@ -135,7 +135,7 @@ Therefore, take $x  = \frac{p+1}{n}$, we have it as a monotonic increasing funct
 
 $$
 \begin{equation}
-\frac{1}{2} < 2c
+\frac{1}{2} \lt 2c
 \end{equation}
 $$
 
