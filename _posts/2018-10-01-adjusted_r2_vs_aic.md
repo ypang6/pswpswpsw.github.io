@@ -7,17 +7,17 @@ tags:
   - tsa_class_notes
 ---
 
-### Abstract
+## Abstract
 
 This is a note of thought that I bump into randomly. 
 
 It has been a long history in statistics on model selection that penalizes the exploding number of parameters. **AIC, i.e., Alkaline information criterion**, is perhaps the most famous one due to its simplicity and generality. While, when $R^2$ is introduced in the class, immediately adjusted $R^2$ is introduced. The later one does not follow the "variance explanation" per se since there is no guarantee about the ratio being kept in $[0,1]$. But, it is supposed to penalize large number of parameters by showing a lower $R^2$. 
 
-### Introduction
+## Introduction
 
 Before discussion, let's make the definition clear. $n \in \mathbb{N}$ is the total number of samples. $p$ is the number of predictors (excluding 1).
 
-#### Adjusted $R^2$
+### Adjusted $R^2$
 
 The difference between common $R^2$ and adjusted $R^2$ is that, **adjusted $R^2$ considers the variance explanation by taking independency into account.** Therefore, the more parameter you have, the residuals of all data, would be **less** independent simply due to more and more constraints are imposed by the OLS formulation. 
 
@@ -73,7 +73,7 @@ $$
 
 which assumes each parameter costs $\log m /2$ bits for descriptions.
 
-### Adjusted $R^2$ penalize weaker than AIC/BIC
+## Adjusted $R^2$ penalize weaker than AIC/BIC
 
 Note that for model selection, we hope to select the one maximize criterion. 
 
