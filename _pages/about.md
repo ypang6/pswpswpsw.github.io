@@ -1,13 +1,20 @@
 ---
 layout: archive
 permalink: /
-title: "About me"
+title: "Education"
 excerpt: "Shaowu Pan"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
+
+* __Ph.D.__ in Aerospace Engineering, University of Michigan, Ann Arbor, 2020 (expected)
+* __M.S.E.__ in Mechanical Engineering, University of Michigan, Ann Arbor, 2015
+* __B.S.__ in Applied Mathematics, Beihang University, 2013
+* __B.E.__ in Aerospace Engineering, Beihang University, 2013
+
+
 
 
 ## Research Interests
@@ -17,14 +24,6 @@ redirect_from:
 * Physics-based computational/data-driven modelling
 * High fidelity direct numerical simulation (DNS) of compressible turbulence
 * Rarefied gas dynamics, direct simulation Monte Carlo (DSMC)
-
-## Education
-
-* __Ph.D.__ in Aerospace Engineering, University of Michigan, Ann Arbor, 2020 (expected)
-* __M.S.E.__ in Mechanical Engineering, University of Michigan, Ann Arbor, 2015
-* __B.S.__ in Applied Mathematics, Beihang University, 2013
-* __B.E.__ in Aerospace Engineering, Beihang University, 2013
-
 
 ## Work Experiences
 
