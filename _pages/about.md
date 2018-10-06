@@ -12,7 +12,7 @@ redirect_from:
 
 ## Research Interests
 
-<img src='/images/libre_office_draw_research_graph.png' width="450" height="300">
+<img src='/images/libre_office_draw_research_graph.png' width="500" height="300">
 
 * Physics-based computational/data-driven modelling
 * High fidelity direct numerical simulation (DNS) of compressible turbulence
