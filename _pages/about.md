@@ -25,10 +25,10 @@ I am a third year Ph.D. student in the [Aerospace Engineering](https://aero.engi
 
 <img src='/images/libre_office_draw_research_graph.png' width="500" height="300">
 
-* Physics-based computational/data-driven modelling
+<!---* Physics-based computational/data-driven modelling
 * High fidelity direct numerical simulation (DNS) of compressible turbulence
 * Rarefied gas dynamics, direct simulation Monte Carlo (DSMC)
-
+-->
 <!---
 # Work Experiences
 
