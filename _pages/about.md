@@ -19,6 +19,8 @@ redirect_from:
 
 ## Research focus
 
+<img src='/images/libre_office_draw_research_graph.png' width="450" height="300">
+
 * Physics-based computational/data-driven modelling
 * High fidelity direct numerical simulation (DNS) of compressible turbulence
 * Rarefied gas dynamics, direct simulation Monte Carlo (DSMC)
