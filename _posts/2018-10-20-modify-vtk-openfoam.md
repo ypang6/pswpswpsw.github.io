@@ -22,11 +22,11 @@ In this post, I use **foamToVTK** in [OpenFoam](https://www.openfoam.com/) to co
 sudo pip install vtkInterface 
 ```
 
-### Tutorial: 2D Flow past cylinder
+## Tutorial: 2D Flow past cylinder
 
 The material can be obtained from [Wolf Dynamics](http://www.wolfdynamics.com) at this [link](http://www.wolfdynamics.com/images/begtuts/vortex_shedding.tar.gz). 
 
-#### Prepare data
+### Prepare data
 
 1. `untar` the **.tar** file
 
@@ -43,13 +43,13 @@ The material can be obtained from [Wolf Dynamics](http://www.wolfdynamics.com) a
    icoFoam > log &
    ```
 
-#### Convert OpenFoam default format to VTK
+### Convert OpenFoam default format to VTK
 
 ```bash
 foamToVTK
 ```
 
-#### Using Python to manipulate VTK data
+### Using Python to manipulate VTK data
 
 ```python
 import vtkInterface as vtki
@@ -76,7 +76,7 @@ grid.AddCellScalars(p2_cell, 'p2')
 grid.Write('./VTK/c1_1000_shaowu.vtk')
 ```
 
-#### Visualize the new field in ParaView
+### Visualize the new field in ParaView
 
 ```bash
 paraview  
