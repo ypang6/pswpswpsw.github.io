@@ -7,7 +7,7 @@ tags:
   - tsa_class_notes
 ---
 
-### Abstract
+## Abstract
 
 This is a note of my thoughts on R^2 after taking Time Series Analysis class by Prof. Byon. I will make the following assumptions.
 
@@ -15,7 +15,7 @@ This is a note of my thoughts on R^2 after taking Time Series Analysis class by 
 2. data is sampled i.i.d.
 
 
-### Introduction
+## Introduction
 
 Coefficient of determinant arose from the observation in **linear regression** that 
 
@@ -45,7 +45,7 @@ $$
 
 Note that in the above equation there is two =, which of them is the definition for $R^2$ is not really certain. [Wiki](https://en.wikipedia.org/wiki/Coefficient_of_determination) says it is the second one, while [Jim](http://statisticsbyjim.com/regression/r-squared-invalid-nonlinear-regression/) claim the first one is more natural. Both of them is well defined and equal in the context of *linear regression*. In general, we believe the R^2 is _a statistic that measures how much proportions of variance of the target is explained by predictor variable, excluding the constant_. In such sense, the first one is more natural. 
 
-### Appearance in nonlinear regression
+## Appearance in nonlinear regression
 
 From my viewpoint, there are mainly two aspects of $R^2$  in the context of linear regression, that makes it popular.
 
@@ -62,7 +62,7 @@ $$
 
 Therefore, one need to _make a choice for_ the definition for $R^2$. Most of the time, people like to use the one with SSE since minimizing SSE is what we do and the smaller the higher for $R^2$. Note that _it is implemented in_ in [Scikit-learn](https://github.com/scikit-learn/scikit-learn/blob/bac89c2/sklearn/metrics/regression.py#L448) as the SSE is well-defined for both _linear_ and _nonlinear regression_. However, the variance explanation property might not be hold. Because of this issue, there are some negative viewpoint on the usage of $R^2$. 
 
-### The difference might be small for well-trained nonlinear models
+## The difference might be small for well-trained nonlinear models
 
 The key to make the equality lies in the following condition
 
