@@ -10,7 +10,7 @@ tags:
 
 ## Abstract
 
-In this post, I use **foamToVTK **in [OpenFoam](https://www.openfoam.com/) to convert OpenFoam data into **legacy VTK [(The Visualization ToolKit)](https://www.vtk.org/Wiki/VTK))** format, then use **[vtkInterface](https://github.com/akaszynski/vtkInterface)** for data manipulation in **Python** under **Ubuntu**. 
+In this post, I use **foamToVTK** in [OpenFoam](https://www.openfoam.com/) to convert OpenFoam data into **legacy VTK [(The Visualization ToolKit)](https://www.vtk.org/Wiki/VTK))** format, then use **[vtkInterface](https://github.com/akaszynski/vtkInterface)** for data manipulation in **Python** under **Ubuntu**. 
 
 ## Introduction
 
@@ -18,7 +18,7 @@ In this post, I use **foamToVTK **in [OpenFoam](https://www.openfoam.com/) to co
 
 ### Using pip to install vtkInterface
 
-```
+```bash
 sudo pip install vtkInterface 
 ```
 
@@ -78,8 +78,9 @@ grid.Write('./VTK/c1_1000_shaowu.vtk')
 
 #### Visualize the new field in ParaView
 
-```
+```bash
 paraview  
 ```
 
-![](/home/shaowu/Documents/pswpswpsw.github.io/images/blog-10-20-save.png)
+
+![Screen shot](/images/blog-10-20-save.png)
