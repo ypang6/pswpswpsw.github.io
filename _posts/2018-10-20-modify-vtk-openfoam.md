@@ -16,7 +16,7 @@ In this post, I use **foamToVTK** in [OpenFoam](https://www.openfoam.com/) to co
 
 [**OpenFoam**](https://www.openfoam.com/) is a popular open source code for **computational fluid dynamics** (CFD). Although it contains various helpful postpocessing modules in command line such as **postProcess**, it is still designed for convenience but not flexibility. For example, it only provides operations that are very common in the context of fluid mechanics or vector mathematics and it hides the details of operation such as the numerical scheme to approximate the derivatives. Most of the time, **OpenFoam** saves the data in folder named by the current time and in each folder contains a **special OpenFoam format-txt like** data, which is also designed for convenience such that one can directly read the result in the field data. However, if one wants to manipulate the data in a more flexible sense in the modern data-driven era, a Python-script-driven manipulation of data is extremely favorable. Also, to avoid dealing with the mesh in the script, if would be great if one can simply add the modified field on the original mesh. Fortunately, with the help of an awesome Python package on **Github**: **[vtkInterface](https://github.com/akaszynski/vtkInterface)** , by **[Alex Kaszynski](https://github.com/akaszynski)**, one can easily leverage the powerful libraries in Python environment to postprocessing traditional, mature, standard and specialized scientific computing data and immediately put them back in to again, leverage the existing powerful visualization software in scientific computing community. 
 
-### Using pip to install vtkInterface
+## Using pip to install vtkInterface
 
 ```bash
 sudo pip install vtkInterface 
