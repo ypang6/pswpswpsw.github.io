@@ -1,6 +1,7 @@
 ---
 title: 'Can we use coefficient of determinant for nonlinear regression?'
 date: 2018-09-27
+excerpt: 'A conjecture that justify the use of R^2.'
 permalink: /posts/2018/09/blog-post-note-coefficient-determinant-nonlinear-regression/
 tags:
   - regression
