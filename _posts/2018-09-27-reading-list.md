@@ -1,6 +1,7 @@
 ---
 title: 'Reading List From M.Jordan'
 date: 2018-09-26
+excerpt: 'A nice reading list of statistical learning (the elegant) aspect of ML'
 permalink: /posts/2018/09/blog-post-reading-list/
 tags:
   - reading list
