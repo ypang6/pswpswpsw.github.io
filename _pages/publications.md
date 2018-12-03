@@ -10,9 +10,9 @@ author_profile: true
 
 ## Peer-reviewed journal articles
 
-* __Pan, S.__, Duraisamy, K., (2018). Long-time predictive modeling of nonlinear dynamical systems using neural networks. _Complexity_. [link](https://arxiv.org/abs/1805.12547)
+* __Pan, S.__, Duraisamy, K., (2018). Long-time predictive modeling of nonlinear dynamical systems using neural networks. _Complexity_. [link](https://www.hindawi.com/journals/complexity/2018/4801012/)
 
-* __Pan, S.__, Duraisamy, K., (2018). Data-driven Discovery of Closure Models. _SIAM Journal on Applied Dynamical System_. [link](https://arxiv.org/abs/1803.09318)
+* __Pan, S.__, Duraisamy, K., (2018). Data-driven Discovery of Closure Models. _SIAM Journal on Applied Dynamical System_. [link](https://epubs.siam.org/doi/abs/10.1137/18M1177263?mobileUi=0)
 
 * __Pan, S.__, Johnsen, E., (2017). The role of bulk viscosity on the decay of compressible, homogeneous, isotropic turbulence. _Journal of Fluid Mechanics_. [link](https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/role-of-bulk-viscosity-on-the-decay-of-compressible-homogeneous-isotropic-turbulence/96619135BA0A3ACB20EAC44ADF8261D1)
 
