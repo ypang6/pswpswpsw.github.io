@@ -1,6 +1,7 @@
 ---
 title: 'Adjusted $R^2$ is a weaker penalty than AIC'
 date: 2018-09-27
+excerpt: 'A simple calculus exercise.'
 permalink: /posts/2018/09/blog-post-adjust-r2-weaker-than-aic/
 tags:
   - regression
