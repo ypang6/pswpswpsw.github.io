@@ -1,7 +1,7 @@
 ---
 title: 'The ultimate way to postprocess OpenFoam data in Python'
 date: 2018-09-27
-excerpt: 'Getting industrial standard CFD format data into Python isn't easy as it seems to be. I used a toolkit library and everything works like charm.'
+excerpt: 'Getting industrial standard CFD format data into Python is not that easy as it seems to be. I used a toolkit library and everything works like charm.'
 permalink: /posts/2018/09/blog-post-modify-vtk-openfoam/
 tags:
   - visualization
