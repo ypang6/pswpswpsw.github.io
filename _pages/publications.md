@@ -7,6 +7,10 @@ author_profile: true
 
 {% include base_path %}
 
+## Preprints
+
+* __Pan, S.__, Duraisamy, K., (2019). On the Structure of Time-delay Embedding in Linear Models of Non-linear Dynamical Systems. _arXiv_. [link](https://arxiv.org/abs/1902.05198)
+
 
 ## Peer-reviewed journal articles
 
