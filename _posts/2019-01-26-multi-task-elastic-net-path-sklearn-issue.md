@@ -16,99 +16,55 @@ This post describes a phenomena that we encounter in computing MultitaskElasticN
 
 ### Linear regression
 
-Let's begin with a standard linear regression problem, with $N$ as number of data points, $M$ as the dimension of the data,  $P$ as the number of features used. To find the $W$ with least square of the residuals, we simply solve the following problem,   
+Most useful scientific problem in daily life can be cast into linear regression problem if the features are well designed. 
+So let's begin with a standard linear regression problem, with $N$ as number of data points, $M$ as the dimension of the data,  $P$ as the number of features used. To find the $W$ with least square of the residuals, we simply solve the following problem,   
 $$
 \min \lVert Y - XW \rVert^2_{F},
 $$
 where $X \in \mathbb{R}^{N \times P}$ are features, $Y \in \mathbb{R}^{N \times M}$ are  targets, $W \in \mathbb{R}^{P \times M}$ are model coefficients.
 
-### Unique solution is preferred in modeling scientifc problem  
+### Unique and sparse solution is preferred in modeling scientifc problem  
 
-In general, the above problem can be viewed as a linear inversion problem especially if the problem is ill-condition either due to lack of observations or the heavily correlated features. Thus simply solving the above least square problem won't give us unique solution. However, most of the ground truth behind a inversion problem in scientic community is unique. So what can we do? 
+In general, the above problem can be viewed as a linear inversion problem especially if the problem is ill-condition either due to lack of observations or the heavily correlated features. Thus simply solving the above least square problem won't give us unique solution. However, most of the ground truth behind a inversion problem in scientic community is unique. So what can we do? The standard procedure is to consider regularization: let model to prefer a certain type of solution, for example, sparsity, which is ideal in most of our cases. This naturally leads to the development of **[LASSO](https://en.wikipedia.org/wiki/Lasso_(statistics))**. This would be helpful in noisy data since the model will not only consider MSE but also the sparsity of the solution $W$. 
 
-A standard 
+Further, for cases where features are correlated, even though the truth is a unique solution. Certainly there is no unique solution to the optimization problem, even LASSO the typical $L1$ sparsity is considered. To at least uniquely determine the solution, **[ElasticNet](https://en.wikipedia.org/wiki/Elastic_net_regularization)** is proposed based on **LASSO** simply adding a $L2$ regularization. One needs to carefully tune the **L2** regularization though.
 
-If we only have very few data, certainly it can become an underdetermined system so we don't have a unique solution. However, if the features are statistically correlated, we cannot obtain a unique solution, even if we have a lot of data. 
+### MultiTask learning: dominant features are shared across different tasks
 
+Most of the time, if there is a multi-output (multi-task) linear regression problem, besides sparsity and uniqueness of the solution, another desired property often overlooked is: dominant features are **shared** across different tasks. Similar as before, one can come up with a loss function that considers preference for this desired property. For example, consider the following penalty on $W$
+$$
+\lVert W \rVert_{21} = \sum_{i} \sqrt{\sum_{j} W_{ij}^2 }.
+$$
 
-
-
-
-
+This $L_{2,1}$ is first proposed by [Argyriou et al.](https://ttic.uchicago.edu/~argyriou/papers/mtl_feat.pdf) in 2008. It can be thought as first compute the 2-norm for each row, and then compute 1-norm on the resulting norm vector. Following the similar spirit in LASSO, the second step encourages the **the number of zero rows** in the solution $W$, which is encouraging **a small subset of features**, i.e., common features across all tasks. Now. let's upgrade the previous problem of **ElasticNet** into the following **MultiTaskElasticNet**, we have the new objective function, 
 $$
 \begin{equation}
 \frac{1}{N}  \lVert Y - XW \rVert_{F}^2
 + \alpha  c   \lVert W  \rVert_{21}
 + 0.5 \alpha (1 - c)  \lVert W \rVert_{F}^2
-\end{equation}
+\end{equation}.
 $$
 
+## Does it work? A toy example show the sensetivity of warm start.
 
-## Using pip to install vtkInterface
+Download the case:
+```
+git clone https://github.com/pswpswpsw/example_sensetivity_initial_guess_MultiTaskElasticNet.git
+```
+where I have prepared a case with 1600 data points, for a two tasks regression with 14 features.
 
-```bash
-sudo pip install vtkInterface 
+Our goal is to draw the path of the coefficient, i.e., find the optimal $W$ with each time varying the regularization coefficients $\alpha$ while keep $c$ fixed as 0.5. To optimize the aforementioned MultiTaskElasticNet loss function, we simply take the Sklearn implementation of [MultiTaskElasticNet](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.MultiTaskElasticNet.html). Alternatively, one can also call the [enet_path](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.enet_path.html). 
+
+Then
+```
+python test.py
 ```
 
-## Tutorial: 2D Flow past cylinder
+It is surprise to see that the results are different between **MultiTaskElasticNet** and **enet_path** even with tuned optimization hyperparameters, say increasing the number of iterations. While the later reaches a better local optimum than the former one. Note that **MultiTaskElasticNet** calls the **enet_path**. So there must be something weird! 
 
-The material can be obtained from [Wolf Dynamics](http://www.wolfdynamics.com) at this [link](http://www.wolfdynamics.com/images/begtuts/vortex_shedding.tar.gz). 
-
-### Prepare data
-
-1. `untar` the **.tar** file
-
-   ```bash
-   tar -zxvf vortex_shedding.tar.gz ./
-   ```
-
-2. go to `c1` directory for running a standard case
-
-   ```bash
-   cd c1
-   blockMesh
-   checkMesh
-   icoFoam > log &
-   ```
-
-### Convert OpenFoam default format to VTK
-
-```bash
-foamToVTK
-```
-
-### Using Python to manipulate VTK data
-
-```python
-import vtkInterface as vtki
-import numpy as np
-
-## grid is the central object in VTK where every field is added on to grid
-grid = vtki.UnstructuredGrid('./VTK/c1_1000.vtk')
-
-## point-wise information of geometry is contained
-print grid.points
-
-## get a dictionary contains all cell/point information
-print grid.cell_arrays # note that cell-based and point-based are in different size
-print grid.point_arrays # 
-
-## get a field in numpy array
-p_cell = grid.cell_arrays['p']
-
-## create a new cell field of pressure^2
-p2_cell = p_cell**2
-grid.AddCellScalars(p2_cell, 'p2')
-
-## remember to save the modified vtk
-grid.Write('./VTK/c1_1000_shaowu.vtk')
-```
-
-### Visualize the new field in ParaView
-
-```bash
-paraview  
-```
+Recall that the algorithm in Sklearn is just a simple coordinate descent algorithm but usually sufficient and fast for linear models, the issue turns out to be whether or not reuse previous solution as initial condition. In default, **MultiTaskElasticNet** calls **enet_path** every single time but explicitly disable resuing the coefficient in default. However, directly using **enet_path**  will enable the reusing ofthe coefficient. 
 
 
-![Screen shot](/images/blog-10-20-save.png)
+# Acknowledgement
+
+I thank [Alex Sun](https://www.linkedin.com/in/weitao-sun/) for debugging to figure out the issue of initial condition and [Alexandre Gramfort](http://alexandre.gramfort.net/) for noticing the warm_start could be an issue. 
