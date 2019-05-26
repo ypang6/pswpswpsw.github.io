@@ -18,9 +18,13 @@ This post describes a phenomena that we encounter in computing MultitaskElasticN
 
 Most useful scientific problem in daily life can be cast into linear regression problem if the features are well designed. 
 So let's begin with a standard linear regression problem, with $N$ as number of data points, $M$ as the dimension of the data,  $P$ as the number of features used. To find the $W$ with least square of the residuals, we simply solve the following problem,   
+
 $$
+\begin{equation}
 \min \lVert Y - XW \rVert^2_{F},
+\end{equation}
 $$
+
 where $X \in \mathbb{R}^{N \times P}$ are features, $Y \in \mathbb{R}^{N \times M}$ are  targets, $W \in \mathbb{R}^{P \times M}$ are model coefficients.
 
 ### Unique and sparse solution is preferred in modeling scientifc problem  
