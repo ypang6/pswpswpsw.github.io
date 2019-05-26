@@ -1,5 +1,5 @@
 ---
-title: 'The ultimate way to postprocess OpenFoam data in Python'
+title: 'The ultimate way to postprocess OpenFoam data in Python (updated to Pyvista)'
 date: 2018-09-27
 excerpt: 'Getting industrial standard CFD format data into Python is not that easy as it seems to be. I used a toolkit library and everything works like charm.'
 permalink: /posts/2018/09/blog-post-modify-vtk-openfoam/
@@ -15,12 +15,16 @@ In this post, I use **foamToVTK** in [OpenFoam](https://www.openfoam.com/) to co
 
 ## Introduction
 
-[**OpenFoam**](https://www.openfoam.com/) is a popular open source code for **computational fluid dynamics** (CFD). Although it contains various helpful postpocessing modules in command line such as **postProcess**, it is still designed for convenience but not flexibility. For example, it only provides operations that are very common in the context of fluid mechanics or vector mathematics and it hides the details of operation such as the numerical scheme to approximate the derivatives. Most of the time, **OpenFoam** saves the data in folder named by the current time and in each folder contains a **special OpenFoam format-txt like** data, which is also designed for convenience such that one can directly read the result in the field data. However, if one wants to manipulate the data in a more flexible sense in the modern data-driven era, a Python-script-driven manipulation of data is extremely favorable. Also, to avoid dealing with the mesh in the script, if would be great if one can simply add the modified field on the original mesh. Fortunately, with the help of an awesome Python package on **Github**: **[vtkInterface](https://github.com/akaszynski/vtkInterface)** , by **[Alex Kaszynski](https://github.com/akaszynski)**, one can easily leverage the powerful libraries in Python environment to postprocessing traditional, mature, standard and specialized scientific computing data and immediately put them back in to again, leverage the existing powerful visualization software in scientific computing community. 
+[**OpenFoam**](https://www.openfoam.com/) is a popular open source code for **computational fluid dynamics** (CFD). Although it contains various helpful postpocessing modules in command line such as **postProcess**, it is still designed for convenience but not flexibility. For example, it only provides operations that are very common in the context of fluid mechanics or vector mathematics and it hides the details of operation such as the numerical scheme to approximate the derivatives. Most of the time, **OpenFoam** saves the data in folder named by the current time and in each folder contains a **special OpenFoam format-txt like** data, which is also designed for convenience such that one can directly read the result in the field data. However, if one wants to manipulate the data in a more flexible sense in the modern data-driven era, a Python-script-driven manipulation of data is extremely favorable. Also, to avoid dealing with the mesh in the script, if would be great if one can simply add the modified field on the original mesh. 
+
+Fortunately, with the help of an awesome Python package on **Github**: currently **[Pyvista](https://github.com/pyvista/pyvista)**  previously **[vtkInterface](https://github.com/akaszynski/vtkInterface)** , originally by **[Alex Kaszynski](https://github.com/akaszynski)**, one can easily leverage the powerful libraries in Python environment to postprocessing traditional, mature, standard and specialized scientific computing data and immediately put them back in to again, leverage the existing powerful visualization software in scientific computing community. 
 
 ## Using pip to install vtkInterface
 
+Note that it supports well in Python 3.5+.
+
 ```bash
-sudo pip install vtkInterface 
+sudo pip install pyvista
 ```
 
 ## Tutorial: 2D Flow past cylinder
@@ -53,7 +57,7 @@ foamToVTK
 ### Using Python to manipulate VTK data
 
 ```python
-import vtkInterface as vtki
+import pyvista as vtki
 import numpy as np
 
 ## grid is the central object in VTK where every field is added on to grid
@@ -71,10 +75,10 @@ p_cell = grid.cell_arrays['p']
 
 ## create a new cell field of pressure^2
 p2_cell = p_cell**2
-grid.AddCellScalars(p2_cell, 'p2')
+grid._add_cell_scalar(p2_cell, 'p2')
 
 ## remember to save the modified vtk
-grid.Write('./VTK/c1_1000_shaowu.vtk')
+grid.save('./VTK/c1_1000_shaowu.vtk')ave
 ```
 
 ### Visualize the new field in ParaView
