@@ -38,10 +38,13 @@ Further, for cases where features are correlated, even though the truth is a uni
 Most of the time, if there is a multi-output (multi-task) linear regression problem, besides sparsity and uniqueness of the solution, another desired property often overlooked is: dominant features are **shared** across different tasks. Similar as before, one can come up with a loss function that considers preference for this desired property. For example, consider the following penalty on $W$
 as 
 $$
+\begin{equation}
 \lVert W \rVert_{21} = \sum_{i} \sqrt{\sum_{j} W_{ij}^2 }.
+\end{equation}
 $$
 
 This $$L_{2,1}$$ is first proposed by [Argyriou et al.](https://ttic.uchicago.edu/~argyriou/papers/mtl_feat.pdf) in 2008. It can be thought as first compute the 2-norm for each row, and then compute 1-norm on the resulting norm vector. Following the similar spirit in LASSO, the second step encourages the **the number of zero rows** in the solution $W$, which is encouraging **a small subset of features**, i.e., common features across all tasks. Now. let's upgrade the previous problem of **ElasticNet** into the following **MultiTaskElasticNet**, we have the new objective function,
+
 $$
 \begin{equation}
 \frac{1}{N}  \lVert Y - XW \rVert_{F}^2 + \alpha  c   \lVert W  \rVert_{21} + 0.5 \alpha (1 - c)  \lVert W \rVert_{F}^2
