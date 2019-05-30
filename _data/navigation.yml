@@ -23,6 +23,9 @@ main:
   - title: "Services"
     url: /services/
 
+  - title: "Notes"
+    url: /notes/
+
   - title: "Blog"
     url: /year-archive/
     
