@@ -78,7 +78,7 @@ p2_cell = p_cell**2
 grid._add_cell_scalar(p2_cell, 'p2')
 
 ## remember to save the modified vtk
-grid.save('./VTK/c1_1000_shaowu.vtk')ave
+grid.save('./VTK/c1_1000_shaowu.vtk')
 ```
 
 ### Visualize the new field in ParaView
