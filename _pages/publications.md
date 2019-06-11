@@ -9,9 +9,12 @@ author_profile: true
 
 ## Preprints
 
+* __Pan, S.__, Duraisamy, K., (2019). Physics-Informed Probabilistic Learning of Linear Embeddings of
+  Non-linear Dynamics With Guaranteed Stability. _arXiv_. [link](https://arxiv.org/abs/1906.03663)
+
+
 * Bhatnagar, S., Afshar, Y., __Pan, S.__, Duraisamy, K., Kaushik, S., (2019). Prediction of Aerodynamic Flow Fields Using Convolutional
 Neural Networks. _arXiv_. [link](https://arxiv.org/abs/1905.13166)
-
 
 * __Pan, S.__, Duraisamy, K., (2019). On the Structure of Time-delay Embedding in Linear Models of Non-linear Dynamical Systems. _arXiv_. [link](https://arxiv.org/abs/1902.05198)
 
