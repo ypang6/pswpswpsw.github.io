@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>PPS_SRC.postprocess module &mdash; SPARK 1.2rc1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.2rc1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="SPARK 1.2rc1 documentation" href="index.html" />
+    <link rel="up" title="Post-Processing" href="PPS_SRC.html" />
+    <link rel="next" title="Simple example" href="tutorial.html" />
+    <link rel="prev" title="PPS_SRC.misc module" href="PPS_SRC.misc.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><span><img src="_static/logo.png"></span>
+          SPARK</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.2</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Simple example</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">PPS_SRC.postprocess module</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="PPS_SRC.misc.html" title="Previous Chapter: PPS_SRC.misc module"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; PPS_SRC.misc module</span>
+    </a>
+  </li>
+  <li>
+    <a href="tutorial.html" title="Next Chapter: Simple example"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Simple example &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="section" id="module-PPS_SRC.postprocess">
+<span id="pps-src-postprocess-module"></span><h1>PPS_SRC.postprocess module<a class="headerlink" href="#module-PPS_SRC.postprocess" title="Permalink to this headline">¶</a></h1>
+<p>Modules for postprocessing.</p>
+<p>Note that I used my own <code class="docutils literal"><span class="pre">plt.style</span></code> as <code class="docutils literal"><span class="pre">siads</span></code> style.</p>
+<dl class="class">
+<dt id="PPS_SRC.postprocess.ClassDLPPS">
+<em class="property">class </em><code class="descclassname">PPS_SRC.postprocess.</code><code class="descname">ClassDLPPS</code><span class="sig-paren">(</span><em>pps_dir</em>, <em>eval_dir</em>, <em>model_dir</em>, <em>params</em>, <em>mode='nonBayes'</em><span class="sig-paren">)</span><a class="headerlink" href="#PPS_SRC.postprocess.ClassDLPPS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#PPS_SRC.postprocess.ClassKoopmanPPS" title="PPS_SRC.postprocess.ClassKoopmanPPS"><code class="xref py py-class docutils literal"><span class="pre">PPS_SRC.postprocess.ClassKoopmanPPS</span></code></a></p>
+<p>Class for Postprocessing of Deep Learning Koopman.</p>
+<p>Previously I have a class that is only focusing on the EDMD/KDMD.</p>
+<dl class="method">
+<dt id="PPS_SRC.postprocess.ClassDLPPS.pps_eigenfunction">
+<code class="descname">pps_eigenfunction</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PPS_SRC.postprocess.ClassDLPPS.pps_eigenfunction" title="Permalink to this definition">¶</a></dt>
+<dd><p>plot eigenfunctions over 2D system</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PPS_SRC.postprocess.ClassDLPPS.pps_eigenvalues">
+<code class="descname">pps_eigenvalues</code><span class="sig-paren">(</span><em>mode_force=None</em><span class="sig-paren">)</span><a class="headerlink" href="#PPS_SRC.postprocess.ClassDLPPS.pps_eigenvalues" title="Permalink to this definition">¶</a></dt>
+<dd><p>plot eigenvalues</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>mode_force</strong> (<code class="xref py py-obj docutils literal"><span class="pre">bool</span></code>) &#8211; we can force to use the eigenvalues from eval_dir or model_dir</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PPS_SRC.postprocess.ClassDLPPS.pps_learning_curve">
+<code class="descname">pps_learning_curve</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PPS_SRC.postprocess.ClassDLPPS.pps_learning_curve" title="Permalink to this definition">¶</a></dt>
+<dd><p>plot learning curve of the training process</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PPS_SRC.postprocess.ClassKoopmanPPS">
+<em class="property">class </em><code class="descclassname">PPS_SRC.postprocess.</code><code class="descname">ClassKoopmanPPS</code><span class="sig-paren">(</span><em>pps_dir</em>, <em>eval_dir</em>, <em>model_dir</em>, <em>params</em>, <em>mode='nonBayes'</em><span class="sig-paren">)</span><a class="headerlink" href="#PPS_SRC.postprocess.ClassKoopmanPPS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Base Class postprocessing for Koopman Deep Learning.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>pps_dir</strong> (<code class="xref py py-obj docutils literal"><span class="pre">str</span></code>) &#8211; path to the postprocessing folder. Plots are saved here.</li>
+<li><strong>eval_dir</strong> (<code class="xref py py-obj docutils literal"><span class="pre">str</span></code>) &#8211; path to the eval data folder.</li>
+<li><strong>model_dir</strong> (<code class="xref py py-obj docutils literal"><span class="pre">str</span></code>) &#8211; path to the original model folder.</li>
+<li><strong>params</strong> (<code class="xref py py-obj docutils literal"><span class="pre">dict</span></code>) &#8211; additional params for plotting.</li>
+<li><strong>mode</strong> (<code class="xref py py-obj docutils literal"><span class="pre">str</span></code>) &#8211; strings for determining the mode of postprocessing. It can be <code class="docutils literal"><span class="pre">nonBayes</span></code> or
+<code class="docutils literal"><span class="pre">Standard</span></code>.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="PPS_SRC.postprocess.ClassKoopmanPPS.pps_dir">
+<code class="descname">pps_dir</code><a class="headerlink" href="#PPS_SRC.postprocess.ClassKoopmanPPS.pps_dir" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">str</span></code> &#8211; path to the postprocessing folder. Plots are saved here.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PPS_SRC.postprocess.ClassKoopmanPPS.eval_dir">
+<code class="descname">eval_dir</code><a class="headerlink" href="#PPS_SRC.postprocess.ClassKoopmanPPS.eval_dir" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">str</span></code> &#8211; path to the eval data folder.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PPS_SRC.postprocess.ClassKoopmanPPS.model_dir">
+<code class="descname">model_dir</code><a class="headerlink" href="#PPS_SRC.postprocess.ClassKoopmanPPS.model_dir" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">str</span></code> &#8211; path to the original model folder.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PPS_SRC.postprocess.ClassKoopmanPPS.params">
+<code class="descname">params</code><a class="headerlink" href="#PPS_SRC.postprocess.ClassKoopmanPPS.params" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">dict</span></code> &#8211; additional params for plotting.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PPS_SRC.postprocess.ClassKoopmanPPS.mode">
+<code class="descname">mode</code><a class="headerlink" href="#PPS_SRC.postprocess.ClassKoopmanPPS.mode" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">str</span></code> &#8211; strings for determining the mode of postprocessing. It can be <code class="docutils literal"><span class="pre">nonBayes</span></code> or
+<code class="docutils literal"><span class="pre">Standard</span></code>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PPS_SRC.postprocess.ClassKoopmanPPS.get_cmap">
+<code class="descname">get_cmap</code><span class="sig-paren">(</span><em>n</em>, <em>name='rainbow'</em><span class="sig-paren">)</span><a class="headerlink" href="#PPS_SRC.postprocess.ClassKoopmanPPS.get_cmap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a function that maps each index in 0, 1, ..., n-1 to a distinct
+RGB color; the keyword argument name must be a standard mpl colormap name.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PPS_SRC.postprocess.ClassKoopmanPPS.pps_2d_data_dist">
+<code class="descname">pps_2d_data_dist</code><span class="sig-paren">(</span><em>data_path</em><span class="sig-paren">)</span><a class="headerlink" href="#PPS_SRC.postprocess.ClassKoopmanPPS.pps_2d_data_dist" title="Permalink to this definition">¶</a></dt>
+<dd><p>postprocessing for the training data for 2D system.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data_path</strong> (<code class="xref py py-obj docutils literal"><span class="pre">str</span></code>) &#8211; path to the data files.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PPS_SRC.postprocess.ClassKoopmanPPS.pps_component_trj">
+<code class="descname">pps_component_trj</code><span class="sig-paren">(</span><em>additional_names=None</em>, <em>alpha=0.5</em>, <em>ylim=(-70</em>, <em>70)</em>, <em>fig_size=(8</em>, <em>8)</em>, <em>lw=1</em><span class="sig-paren">)</span><a class="headerlink" href="#PPS_SRC.postprocess.ClassKoopmanPPS.pps_component_trj" title="Permalink to this definition">¶</a></dt>
+<dd><p>postprocessing each component trajectory</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>additional_names</strong> (<code class="xref py py-obj docutils literal"><span class="pre">str</span></code>) &#8211; string for figures to be saved in a more specific name.</li>
+<li><strong>alpha</strong> (<code class="xref py py-obj docutils literal"><span class="pre">float</span></code>) &#8211; level of transparent</li>
+<li><strong>ylim</strong> &#8211; (<code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code>): ylim of figure</li>
+<li><strong>fig_size</strong> &#8211; (<code class="xref py py-obj docutils literal"><span class="pre">tuple</span></code>): figure size</li>
+<li><strong>lw</strong> &#8211; (<code class="xref py py-obj docutils literal"><span class="pre">float</span></code>): line width.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PPS_SRC.postprocess.ClassKoopmanPPS.pps_eigenfunction">
+<code class="descname">pps_eigenfunction</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PPS_SRC.postprocess.ClassKoopmanPPS.pps_eigenfunction" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PPS_SRC.postprocess.ClassKoopmanPPS.pps_eigenmodes_eval">
+<code class="descname">pps_eigenmodes_eval</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PPS_SRC.postprocess.ClassKoopmanPPS.pps_eigenmodes_eval" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PPS_SRC.postprocess.ClassKoopmanPPS.pps_eigenvalues">
+<code class="descname">pps_eigenvalues</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PPS_SRC.postprocess.ClassKoopmanPPS.pps_eigenvalues" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PPS_SRC.postprocess.ClassKoopmanPPS.pps_paraview_cylinder">
+<code class="descname">pps_paraview_cylinder</code><span class="sig-paren">(</span><em>cylinder_folder='./50d_cylinder_flow_pod_case'</em>, <em>pod_path='/media/shaowu/shaowu_main_hard/shaowu/OpenFOAM/shaowu-6/run/vortex_shedding/c6_re100_whole_POD.npz'</em><span class="sig-paren">)</span><a class="headerlink" href="#PPS_SRC.postprocess.ClassKoopmanPPS.pps_paraview_cylinder" title="Permalink to this definition">¶</a></dt>
+<dd><p>postprocessing for cylinder case with paraview.</p>
+<p>This is a very problem specific method. It will use the POD weights and it will use eval trajectory
+to get the full field projected and saved into vtk files. It is a good example for extending to other cases.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>cylinder_folder</strong> (<code class="xref py py-obj docutils literal"><span class="pre">str</span></code>) &#8211; path to the full POD data.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2019, Shaowu Pan.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

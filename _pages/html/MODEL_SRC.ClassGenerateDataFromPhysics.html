@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>MODEL_SRC.ClassGenerateDataFromPhysics module &mdash; SPARK 1.2rc1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.2rc1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="SPARK 1.2rc1 documentation" href="index.html" />
+    <link rel="up" title="Main Model" href="MODEL_SRC.html" />
+    <link rel="next" title="MODEL_SRC.classBayesDLKoopman module" href="MODEL_SRC.classBayesDLKoopman.html" />
+    <link rel="prev" title="MODEL_SRC.ClassDLKoopmanLRAN module" href="MODEL_SRC.ClassDLKoopmanLRAN.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><span><img src="_static/logo.png"></span>
+          SPARK</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.2</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Simple example</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">MODEL_SRC.ClassGenerateDataFromPhysics module</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="MODEL_SRC.ClassDLKoopmanLRAN.html" title="Previous Chapter: MODEL_SRC.ClassDLKoopmanLRAN module"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; MODEL_SRC.Cla...</span>
+    </a>
+  </li>
+  <li>
+    <a href="MODEL_SRC.classBayesDLKoopman.html" title="Next Chapter: MODEL_SRC.classBayesDLKoopman module"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">MODEL_SRC.cla... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="section" id="module-MODEL_SRC.ClassGenerateDataFromPhysics">
+<span id="model-src-classgeneratedatafromphysics-module"></span><h1>MODEL_SRC.ClassGenerateDataFromPhysics module<a class="headerlink" href="#module-MODEL_SRC.ClassGenerateDataFromPhysics" title="Permalink to this headline">¶</a></h1>
+<p>Generating data using LHS according to the physics governing equation</p>
+<dl class="class">
+<dt id="MODEL_SRC.ClassGenerateDataFromPhysics.ClassGenerateXXDotFromPhysics">
+<em class="property">class </em><code class="descclassname">MODEL_SRC.ClassGenerateDataFromPhysics.</code><code class="descname">ClassGenerateXXDotFromPhysics</code><span class="sig-paren">(</span><em>directory='../../EXAMPLES/'</em>, <em>case_name=None</em>, <em>noise_level=0</em><span class="sig-paren">)</span><a class="headerlink" href="#MODEL_SRC.ClassGenerateDataFromPhysics.ClassGenerateXXDotFromPhysics" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Generate time derivative data according to the physics <span class="math">\(\dot{x}=F(x)\)</span>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>directory</strong> (<code class="xref py py-obj docutils literal"><span class="pre">str</span></code>) &#8211; Path to put my all cases. Default value is <code class="docutils literal"><span class="pre">../../EXAMPLES/</span></code></li>
+<li><strong>case_name</strong> (<code class="xref py py-obj docutils literal"><span class="pre">str</span></code>) &#8211; Name of my problem case.</li>
+<li><strong>noise_level</strong> (<code class="xref py py-obj docutils literal"><span class="pre">int</span></code>) &#8211; Percentage of signal-to-noise ratio.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="MODEL_SRC.ClassGenerateDataFromPhysics.ClassGenerateXXDotFromPhysics.dir">
+<code class="descname">dir</code><a class="headerlink" href="#MODEL_SRC.ClassGenerateDataFromPhysics.ClassGenerateXXDotFromPhysics.dir" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">str</span></code> &#8211; Path to put cases.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.ClassGenerateDataFromPhysics.ClassGenerateXXDotFromPhysics.sub_dir">
+<code class="descname">sub_dir</code><a class="headerlink" href="#MODEL_SRC.ClassGenerateDataFromPhysics.ClassGenerateXXDotFromPhysics.sub_dir" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">str</span></code> &#8211; Path to put each data within each cases. The size and noisy
+level of the data can be varied.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.ClassGenerateDataFromPhysics.ClassGenerateXXDotFromPhysics.noise_level">
+<code class="descname">noise_level</code><a class="headerlink" href="#MODEL_SRC.ClassGenerateDataFromPhysics.ClassGenerateXXDotFromPhysics.noise_level" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">int</span></code> &#8211; Signal-to-noise percentage in terms of percentage.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.ClassGenerateDataFromPhysics.ClassGenerateXXDotFromPhysics.XdotTrain">
+<code class="descname">XdotTrain</code><a class="headerlink" href="#MODEL_SRC.ClassGenerateDataFromPhysics.ClassGenerateXXDotFromPhysics.XdotTrain" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code> &#8211; Data contains time derivatives to be saved.
+<code class="docutils literal"><span class="pre">shape</span></code> = (<code class="docutils literal"><span class="pre">n_samples</span></code>, <code class="docutils literal"><span class="pre">n_dim</span></code>)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.ClassGenerateDataFromPhysics.ClassGenerateXXDotFromPhysics.Xtrain">
+<code class="descname">Xtrain</code><a class="headerlink" href="#MODEL_SRC.ClassGenerateDataFromPhysics.ClassGenerateXXDotFromPhysics.Xtrain" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code> &#8211; Data contains states to be saved.
+<code class="docutils literal"><span class="pre">shape</span></code> = (<code class="docutils literal"><span class="pre">n_samples</span></code>, <code class="docutils literal"><span class="pre">n_dim</span></code>)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.ClassGenerateDataFromPhysics.ClassGenerateXXDotFromPhysics.JFTrain">
+<code class="descname">JFTrain</code><a class="headerlink" href="#MODEL_SRC.ClassGenerateDataFromPhysics.ClassGenerateXXDotFromPhysics.JFTrain" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code> &#8211; Data contains the Jacobian to be saved.
+<code class="docutils literal"><span class="pre">shape</span></code> = (<code class="docutils literal"><span class="pre">n_samples</span></code>, <code class="docutils literal"><span class="pre">n_dim</span></code>)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.ClassGenerateDataFromPhysics.ClassGenerateXXDotFromPhysics.case_name">
+<code class="descname">case_name</code><a class="headerlink" href="#MODEL_SRC.ClassGenerateDataFromPhysics.ClassGenerateXXDotFromPhysics.case_name" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">str</span></code> &#8211; Name for the problem case.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.ClassGenerateDataFromPhysics.ClassGenerateXXDotFromPhysics.num_samples">
+<code class="descname">num_samples</code><a class="headerlink" href="#MODEL_SRC.ClassGenerateDataFromPhysics.ClassGenerateXXDotFromPhysics.num_samples" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">int</span></code> &#8211; Total number of data samples.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.ClassGenerateDataFromPhysics.ClassGenerateXXDotFromPhysics.num_samples_each_dim">
+<code class="descname">num_samples_each_dim</code><a class="headerlink" href="#MODEL_SRC.ClassGenerateDataFromPhysics.ClassGenerateXXDotFromPhysics.num_samples_each_dim" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">int</span></code> &#8211; Number of samples on each dimension.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="MODEL_SRC.ClassGenerateDataFromPhysics.ClassGenerateXXDotFromPhysics.make_case_dir">
+<code class="descname">make_case_dir</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MODEL_SRC.ClassGenerateDataFromPhysics.ClassGenerateXXDotFromPhysics.make_case_dir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create directory for cases</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="MODEL_SRC.ClassGenerateDataFromPhysics.ClassGenerateXXDotFromPhysics.samplingX_Xdot">
+<code class="descname">samplingX_Xdot</code><span class="sig-paren">(</span><em>F</em>, <em>range_of_X</em>, <em>num_samples_each_dim=10</em><span class="sig-paren">)</span><a class="headerlink" href="#MODEL_SRC.ClassGenerateDataFromPhysics.ClassGenerateXXDotFromPhysics.samplingX_Xdot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sampling X and Xdot given ground true governing equation using LatinHyperCubic from <a class="reference external" href="https://pythonhosted.org/pyDOE/">pyDOE</a></p>
+<p>In default, we use <a class="reference external" href="https://pythonhosted.org/pyDOE/randomized.html#latin-hypercube">LatinHyperCubic</a>, <code class="xref py py-meth docutils literal"><span class="pre">pyDOE.lhs()</span></code> to generate the sampling
+for the design of experiments (DOE) in the hyper-cubic on <span class="math">\([0, 1]\)</span>. Then we scale it back
+according to <code class="xref py py-attr docutils literal"><span class="pre">range_of_X</span></code>. In default, we use <cite>center</cite> criterion and only one iteration.
+Then we call function <code class="xref py py-attr docutils literal"><span class="pre">F</span></code> to get the time derivative <span class="math">\(\dot{x}\)</span> and Jacobian. However,
+in the most recent code, we don&#8217;t need Jacobian. So one can simply return 0 array.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>F</strong> (<code class="xref py py-obj docutils literal"><span class="pre">function</span></code>) &#8211; a Python function that calls the state <span class="math">\(x\)</span> and return the
+time derivative <span class="math">\(\dot{x}\)</span> and Jacobian. However Jacobian is not used any more so one
+can just leave it as zero array.</li>
+<li><strong>range_of_X</strong> (<code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code>) &#8211; The range for each component to get sampled from.</li>
+<li><strong>num_samples_each_dim</strong> (<code class="xref py py-obj docutils literal"><span class="pre">int</span></code>) &#8211; Number of samples for each component. Default value is 10.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="MODEL_SRC.ClassGenerateDataFromPhysics.ClassGenerateXXDotFromPhysics.save_X_Xdot">
+<code class="descname">save_X_Xdot</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MODEL_SRC.ClassGenerateDataFromPhysics.ClassGenerateXXDotFromPhysics.save_X_Xdot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save data with <a class="reference internal" href="#MODEL_SRC.ClassGenerateDataFromPhysics.ClassGenerateXXDotFromPhysics.XdotTrain" title="MODEL_SRC.ClassGenerateDataFromPhysics.ClassGenerateXXDotFromPhysics.XdotTrain"><code class="xref py py-attr docutils literal"><span class="pre">XdotTrain</span></code></a>, <a class="reference internal" href="#MODEL_SRC.ClassGenerateDataFromPhysics.ClassGenerateXXDotFromPhysics.Xtrain" title="MODEL_SRC.ClassGenerateDataFromPhysics.ClassGenerateXXDotFromPhysics.Xtrain"><code class="xref py py-attr docutils literal"><span class="pre">Xtrain</span></code></a>, <a class="reference internal" href="#MODEL_SRC.ClassGenerateDataFromPhysics.ClassGenerateXXDotFromPhysics.JFTrain" title="MODEL_SRC.ClassGenerateDataFromPhysics.ClassGenerateXXDotFromPhysics.JFTrain"><code class="xref py py-attr docutils literal"><span class="pre">JFTrain</span></code></a> as keys in the <a class="reference internal" href="#MODEL_SRC.ClassGenerateDataFromPhysics.ClassGenerateXXDotFromPhysics.sub_dir" title="MODEL_SRC.ClassGenerateDataFromPhysics.ClassGenerateXXDotFromPhysics.sub_dir"><code class="xref py py-attr docutils literal"><span class="pre">sub_dir</span></code></a>
+with <code class="docutils literal"><span class="pre">num_samples_trainData.npz</span></code>.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2019, Shaowu Pan.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Simple example &mdash; SPARK 1.2rc1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.2rc1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="SPARK 1.2rc1 documentation" href="index.html" />
+    <link rel="prev" title="PPS_SRC.postprocess module" href="PPS_SRC.postprocess.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><span><img src="_static/logo.png"></span>
+          SPARK</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.2</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="modules.html">Modules</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Simple example</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Simple example</a><ul>
+<li><a class="reference internal" href="#d-simple-polynomial-system">2D simple polynomial system</a></li>
+<li><a class="reference internal" href="#examples-of-a-2d-wake-flow-past-cylinder-at">Examples of a 2D wake flow past cylinder at <span class="math">\(Re=100\)</span></a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="PPS_SRC.postprocess.html" title="Previous Chapter: PPS_SRC.postprocess module"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; PPS_SRC.postp...</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="section" id="simple-example">
+<h1>Simple example<a class="headerlink" href="#simple-example" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="d-simple-polynomial-system">
+<h2>2D simple polynomial system<a class="headerlink" href="#d-simple-polynomial-system" title="Permalink to this headline">¶</a></h2>
+<p>To illustrate the power of deep learning in this problem, consider the following simple example from Lusch 2017 paper.</p>
+<p>Note that this example is also the only system known to us has the exact non-trival Koopman operator being explictly clear.</p>
+</div>
+<div class="section" id="examples-of-a-2d-wake-flow-past-cylinder-at">
+<h2>Examples of a 2D wake flow past cylinder at <span class="math">\(Re=100\)</span><a class="headerlink" href="#examples-of-a-2d-wake-flow-past-cylinder-at" title="Permalink to this headline">¶</a></h2>
+<p>Given first <strong>50</strong> POD coefficients, with signal-to-noise ratio as
+0, 10, 20, 30 % on the POD coefficients, we learn the Koopman operators, and eigenfunctions.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><div class="first last figure align-center" id="id1">
+<a class="reference internal image-reference" href="_images/eigenvalues_all_noise.png"><img alt="Distribution of Koopman eigenvalues" src="_images/eigenvalues_all_noise.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-text">Figure 1. Distribution of Koopman eigenvalues</span></p>
+</div>
+</td>
+<td><div class="first last figure align-center" id="id2">
+<a class="reference internal image-reference" href="_images/pred_mean_t1000.png"><img alt="Mean of predicted velocity mag. field at time = 10000 sec" src="_images/pred_mean_t1000.png" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-text">Figure 2. Mean of predicted velocity mag. field at <span class="math">\(t=1000\)</span></span></p>
+</div>
+</td>
+<td><div class="first last figure align-center" id="id3">
+<a class="reference internal image-reference" href="_images/pred_std_t1000.png"><img alt="Stardard deviation of predicted velocity mag. field at time = 1000 sec" src="_images/pred_std_t1000.png" style="width: 70%;" /></a>
+<p class="caption"><span class="caption-text">Figure 3. Stardard deviation of predicted velocity mag. field at <span class="math">\(t=1000\)</span></span></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2019, Shaowu Pan.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

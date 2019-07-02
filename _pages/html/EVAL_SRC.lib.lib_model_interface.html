@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>EVAL_SRC.lib.lib_model_interface module &mdash; SPARK 1.2rc1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.2rc1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="SPARK 1.2rc1 documentation" href="index.html" />
+    <link rel="up" title="EVAL_SRC.lib package" href="EVAL_SRC.lib.html" />
+    <link rel="next" title="EVAL_SRC.main_apo module" href="EVAL_SRC.main_apo.html" />
+    <link rel="prev" title="EVAL_SRC.lib package" href="EVAL_SRC.lib.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><span><img src="_static/logo.png"></span>
+          SPARK</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.2</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Simple example</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">EVAL_SRC.lib.lib_model_interface module</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="EVAL_SRC.lib.html" title="Previous Chapter: EVAL_SRC.lib package"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; EVAL_SRC.lib package</span>
+    </a>
+  </li>
+  <li>
+    <a href="EVAL_SRC.main_apo.html" title="Next Chapter: EVAL_SRC.main_apo module"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">EVAL_SRC.main... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="section" id="module-EVAL_SRC.lib.lib_model_interface">
+<span id="eval-src-lib-lib-model-interface-module"></span><h1>EVAL_SRC.lib.lib_model_interface module<a class="headerlink" href="#module-EVAL_SRC.lib.lib_model_interface" title="Permalink to this headline">¶</a></h1>
+<p>Class of model interface for evaluation module in <code class="docutils literal"><span class="pre">main_apo.py</span></code></p>
+<dl class="class">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassFNN_edward">
+<em class="property">class </em><code class="descclassname">EVAL_SRC.lib.lib_model_interface.</code><code class="descname">ClassFNN_edward</code><span class="sig-paren">(</span><em>sess</em>, <em>layer_structure_list</em>, <em>act_fun_str</em>, <em>prefix</em>, <em>mode</em>, <em>LRAN_T</em>, <em>SVD_DMD</em><span class="sig-paren">)</span><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassFNN_edward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Class of Feedforward neural network given topology, structure, activation function, and recurrent or not,
+SVD_DMD or not, to replicate the model we saved.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">We did this simply because there is no good save_model functionality in edward.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>sess</strong> (<code class="xref py py-obj docutils literal"><span class="pre">class</span></code>) &#8211; the session we used in tensorflow.</li>
+<li><strong>layer_structure_list</strong> (<code class="xref py py-obj docutils literal"><span class="pre">list</span></code>) &#8211; the layer structure we used in constructing the Feedforward neural network.</li>
+<li><strong>act_fun_str</strong> (<code class="xref py py-obj docutils literal"><span class="pre">str</span></code>) &#8211; the name of the activation function to use.</li>
+<li><strong>prefix</strong> (<code class="xref py py-obj docutils literal"><span class="pre">str</span></code>) &#8211; the prefix used in the weights and biases parameters, either <code class="docutils literal"><span class="pre">dec</span></code> or <code class="docutils literal"><span class="pre">enc</span></code>.</li>
+<li><strong>mode</strong> (<code class="xref py py-obj docutils literal"><span class="pre">str</span></code>) &#8211; the type of ADVI to use, either <code class="docutils literal"><span class="pre">MAPSimple</span></code> or <code class="docutils literal"><span class="pre">ADVInoARD</span></code>, <code class="docutils literal"><span class="pre">ADVIARD</span></code>.</li>
+<li><strong>LRAN_T</strong> (<code class="xref py py-obj docutils literal"><span class="pre">int</span></code>) &#8211; the look forward time window length.</li>
+<li><strong>SVD_DMD</strong> (<code class="xref py py-obj docutils literal"><span class="pre">bool</span></code>) &#8211; flag on whether or not <cite>SVD DMD</cite> is enabled.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.LRAN_T">
+<code class="descname">LRAN_T</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.LRAN_T" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">int</span></code> &#8211; the look forward time window length.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.act_fun">
+<code class="descname">act_fun</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.act_fun" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">function</span></code> &#8211; the activation function chosen.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.sess">
+<code class="descname">sess</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.sess" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">class</span></code> &#8211; the session we used in tensorflow.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.prefix">
+<code class="descname">prefix</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.prefix" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">str</span></code> &#8211; the prefix used in the weights and biases parameters, either <code class="docutils literal"><span class="pre">dec</span></code> or <code class="docutils literal"><span class="pre">enc</span></code>.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.mode">
+<code class="descname">mode</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.mode" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">str</span></code> &#8211; the type of ADVI to use, either <code class="docutils literal"><span class="pre">MAPSimple</span></code> or <code class="docutils literal"><span class="pre">ADVInoARD</span></code>, <code class="docutils literal"><span class="pre">ADVIARD</span></code>.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.layer_structure_list">
+<code class="descname">layer_structure_list</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.layer_structure_list" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">list</span></code> &#8211; the layer structure we used in constructing the Feedforward neural network.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.number_layer">
+<code class="descname">number_layer</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.number_layer" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">int</span></code> &#8211; the number of layers in the network.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.graph">
+<code class="descname">graph</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.graph" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">class</span></code> &#8211; the graph assoicated with the session.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.SVD_DMD">
+<code class="descname">SVD_DMD</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.SVD_DMD" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">bool</span></code> &#8211; flag on whether or not <cite>SVD DMD</cite> is enabled.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.x">
+<code class="descname">x</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.x" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">tf.Tensor</span></code> &#8211; the placeholder for the input of FNN.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.w_ph_list">
+<code class="descname">w_ph_list</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.w_ph_list" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">list</span></code> &#8211; a list containing the placeholders for weights. Since we treat all NN parameters
+as placeholder, we naturally have a model to use and a NN constructed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.b_ph_list">
+<code class="descname">b_ph_list</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.b_ph_list" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">list</span></code> &#8211; a list containing the placeohlder for biases.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.output">
+<code class="descname">output</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.output" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">tf.Tensor</span></code> &#8211; the tensor of the output of the FNN.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.rv_w_list">
+<code class="descname">rv_w_list</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.rv_w_list" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">list</span></code> &#8211; a list of all probability distributions of weights in each layer.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.rv_b_list">
+<code class="descname">rv_b_list</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.rv_b_list" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">list</span></code> &#8211; a list of all probability distributions of biases in each layer.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.noise_lin">
+<code class="descname">noise_lin</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.noise_lin" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">tf.Tensor</span></code> &#8211; distribution of linear dynamics noises</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.noise_rec">
+<code class="descname">noise_rec</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.noise_rec" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">tf.Tensor</span></code> &#8211; distribution of reconstruction dynamics noises</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.K_K_X">
+<code class="descname">K_K_X</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.K_K_X" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">tf.Tensor</span></code> &#8211; the distribution of K_K_X (it is a normal with softplus scale)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.K_SD">
+<code class="descname">K_SD</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.K_SD" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">tf.Tensor</span></code> &#8211; the distribution of K_SD (it is log normal)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.num_samples">
+<code class="descname">num_samples</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.num_samples" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">int</span></code> &#8211; the total number of samples for Monte carlo sampling.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.sample_rv_w_list">
+<code class="descname">sample_rv_w_list</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.sample_rv_w_list" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">list</span></code> &#8211; list of samples of weights in each layer</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.sample_rv_b_list">
+<code class="descname">sample_rv_b_list</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.sample_rv_b_list" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">list</span></code> &#8211; list of samples of biases in each layer</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.sample_K">
+<code class="descname">sample_K</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.sample_K" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code> &#8211; array of realization of K matrix.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.sample_lambda_lin">
+<code class="descname">sample_lambda_lin</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.sample_lambda_lin" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code> &#8211; array of realization of scale of linear dynamics noises.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.sample_lambda_rec">
+<code class="descname">sample_lambda_rec</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.sample_lambda_rec" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code> &#8211; array of realization of scale of reconstruction noises.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.sample_noise_lin">
+<code class="descname">sample_noise_lin</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.sample_noise_lin" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code> &#8211; array of realization of linear dynamics noises.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.sample_noise_rec">
+<code class="descname">sample_noise_rec</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.sample_noise_rec" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code> &#8211; array of realization of reconstruction noises.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.construct_FNN">
+<code class="descname">construct_FNN</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.construct_FNN" title="Permalink to this definition">¶</a></dt>
+<dd><p>Construct the feedforward neural network by constructing the graph. Using <a class="reference internal" href="#EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.x" title="EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.x"><code class="xref py py-attr docutils literal"><span class="pre">x</span></code></a> as input,
+output is <a class="reference internal" href="#EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.output" title="EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.output"><code class="xref py py-attr docutils literal"><span class="pre">output</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.construct_RV">
+<code class="descname">construct_RV</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.construct_RV" title="Permalink to this definition">¶</a></dt>
+<dd><p>Construct the distribution of weights and biases and K, and noises.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.construct_linear_FNN">
+<code class="descname">construct_linear_FNN</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.construct_linear_FNN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.ensemble_predict">
+<code class="descname">ensemble_predict</code><span class="sig-paren">(</span><em>x_data</em><span class="sig-paren">)</span><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.ensemble_predict" title="Permalink to this definition">¶</a></dt>
+<dd><p>output the ensemble of the predictions, of all Monte Carlo samplings</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>x_data</strong> (<code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code>) &#8211; the initial condition, i.e., input data.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a list of all predictions for all Monte Carlo samples.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal"><span class="pre">list</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.get_K">
+<code class="descname">get_K</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.get_K" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.get_dependencies">
+<code class="descname">get_dependencies</code><span class="sig-paren">(</span><em>tensor</em><span class="sig-paren">)</span><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.get_dependencies" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.get_lambda_lin">
+<code class="descname">get_lambda_lin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.get_lambda_lin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.get_lambda_rec">
+<code class="descname">get_lambda_rec</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.get_lambda_rec" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.get_noise_lin">
+<code class="descname">get_noise_lin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.get_noise_lin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.get_noise_rec">
+<code class="descname">get_noise_rec</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.get_noise_rec" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.get_placeholder_of_tensor">
+<code class="descname">get_placeholder_of_tensor</code><span class="sig-paren">(</span><em>tensor</em><span class="sig-paren">)</span><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.get_placeholder_of_tensor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.predict">
+<code class="descname">predict</code><span class="sig-paren">(</span><em>x_data</em>, <em>w_list</em>, <em>b_list</em><span class="sig-paren">)</span><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.predict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Given input data <code class="docutils literal"><span class="pre">x_data</span></code>, we output the predictions and given the weights and biases from the
+<code class="docutils literal"><span class="pre">w_list</span></code> and <code class="docutils literal"><span class="pre">b_list</span></code>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>x_data</strong> (<code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code>) &#8211; input data</li>
+<li><strong>w_list</strong> (<code class="xref py py-obj docutils literal"><span class="pre">list</span></code>) &#8211; list of weights for each layer</li>
+<li><strong>b_list</strong> (<code class="xref py py-obj docutils literal"><span class="pre">list</span></code>) &#8211; list of biases for each layer</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the resulting output.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.predict_with_i_realization">
+<code class="descname">predict_with_i_realization</code><span class="sig-paren">(</span><em>x_data</em>, <em>i</em><span class="sig-paren">)</span><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.predict_with_i_realization" title="Permalink to this definition">¶</a></dt>
+<dd><p>predicting with certain realizations</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>x_data</strong> (<code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code>) &#8211; the initial condition, i.e., input data.</li>
+<li><strong>i</strong> (<code class="xref py py-obj docutils literal"><span class="pre">int</span></code>) &#8211; the index of a certain Monte carlo samples.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the array of output for that given realization.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.sampling_RV">
+<code class="descname">sampling_RV</code><span class="sig-paren">(</span><em>num_samples</em><span class="sig-paren">)</span><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassFNN_edward.sampling_RV" title="Permalink to this definition">¶</a></dt>
+<dd><p>sampling Random Variables from their distributions to get <code class="docutils literal"><span class="pre">num_samples</span></code> realizations.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>num_samples</strong> (<code class="xref py py-obj docutils literal"><span class="pre">int</span></code>) &#8211; number of Monte Carlo samples.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman">
+<em class="property">class </em><code class="descclassname">EVAL_SRC.lib.lib_model_interface.</code><code class="descname">ClassModelBayesDLKoopman</code><span class="sig-paren">(</span><em>model_path</em>, <em>n_mc_samples=1</em>, <em>mode='ADVIARD'</em>, <em>n_mc_diff_samples=10</em>, <em>gpu_percent=0.2</em><span class="sig-paren">)</span><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Class of Bayesian Model Interface with Deep Learning Koopman</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>model_path</strong> (<code class="xref py py-obj docutils literal"><span class="pre">str</span></code>) &#8211; path to the Bayesian model.</li>
+<li><strong>n_mc_samples</strong> (<code class="xref py py-obj docutils literal"><span class="pre">int</span></code>) &#8211; the number of Monte carlo samplings.</li>
+<li><strong>mode</strong> (<code class="xref py py-obj docutils literal"><span class="pre">str</span></code>) &#8211; the string for the mode.</li>
+<li><strong>n_mc_diff_samples</strong> (<code class="xref py py-obj docutils literal"><span class="pre">int</span></code>) &#8211; the number of MC samples for differential form, i.e., for that MVOU process part.</li>
+<li><strong>gpu_percentage</strong> (<code class="xref py py-obj docutils literal"><span class="pre">float</span></code>) &#8211; GPU memory ratio.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.sess">
+<code class="descname">sess</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.sess" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">class</span></code> &#8211; current session we are in using Tensorflow with GPU configured.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.graph">
+<code class="descname">graph</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.graph" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">class</span></code> &#8211; the graph.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.encoder_layer_structure">
+<code class="descname">encoder_layer_structure</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.encoder_layer_structure" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">list</span></code> &#8211; a list containing the encoder structures.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.act_fun">
+<code class="descname">act_fun</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.act_fun" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">str</span></code> &#8211; the string for activation functions</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.encoder_POD">
+<code class="descname">encoder_POD</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.encoder_POD" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code> &#8211; POD weights coefficients.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.decoder_POD">
+<code class="descname">decoder_POD</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.decoder_POD" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code> &#8211; POD weights coefficients.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.SVD_DMD">
+<code class="descname">SVD_DMD</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.SVD_DMD" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">bool</span></code> &#8211; enable SVD_DMD or not.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.nonlinear_rec">
+<code class="descname">nonlinear_rec</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.nonlinear_rec" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code> &#8211; enable nonlinear reconstruction or not. Default is True.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.n_mc_samples">
+<code class="descname">n_mc_samples</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.n_mc_samples" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">int</span></code> &#8211; the number of Monte carlo samplings.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.n_mc_diff_samples">
+<code class="descname">n_mc_diff_samples</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.n_mc_diff_samples" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">int</span></code> &#8211; the number of MC samples for differential form, i.e., for that MVOU process part.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.LRAN_T">
+<code class="descname">LRAN_T</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.LRAN_T" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">int</span></code> &#8211; future prediction window length. <code class="docutils literal"><span class="pre">1</span></code> means differential form.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.encoder_fnn_edward">
+<code class="descname">encoder_fnn_edward</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.encoder_fnn_edward" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">class</span></code> &#8211; encoder FNN input-output model.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.decoder_fnn_edward">
+<code class="descname">decoder_fnn_edward</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.decoder_fnn_edward" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">class</span></code> &#8211; encoder FNN input-output model.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.DMD_K">
+<code class="descname">DMD_K</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.DMD_K" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code> &#8211; previous I used this to trully embedded DMD into it. But I didn&#8217;t continue because DMD can be unstable.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.mu_X">
+<code class="descname">mu_X</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.mu_X" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code> &#8211; normalization parameters <span class="math">\(\overline{X}\)</span></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.Lambda_X">
+<code class="descname">Lambda_X</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.Lambda_X" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code> &#8211; normalization parameters <span class="math">\(\Lambda\)</span></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.Lambda_X_inv">
+<code class="descname">Lambda_X_inv</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.Lambda_X_inv" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code> &#8211; normalization parameters <span class="math">\(\Lambda^{-1}\)</span></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.close">
+<code class="descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.close" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.computeEigenPhi">
+<code class="descname">computeEigenPhi</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.computeEigenPhi" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.computePhi">
+<code class="descname">computePhi</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.computePhi" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the <span class="math">\(\phi\)</span> given <span class="math">\(x\)</span></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>x</strong> (<code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code>) &#8211; given state <span class="math">\(x\)</span>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">observables <span class="math">\(\phi\)</span>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.compute_phi_dmd">
+<code class="descname">compute_phi_dmd</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.compute_phi_dmd" title="Permalink to this definition">¶</a></dt>
+<dd><p>compute the <span class="math">\(\phi\)</span> of the contribution from DMD.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>x</strong> (<code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code>) &#8211; input data.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">observables <span class="math">\(\phi\)</span> of DMD contribution.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.compute_phi_nn">
+<code class="descname">compute_phi_nn</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.compute_phi_nn" title="Permalink to this definition">¶</a></dt>
+<dd><p>compute the <span class="math">\(\phi\)</span> of the contribution from neural network.</p>
+<p>First we transform <span class="math">\(x\)</span> into <span class="math">\(\phi\)</span>, then we feed into neural network.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>x</strong> (<code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code>) &#8211; input data.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">observables <span class="math">\(\phi\)</span> of NN contribution.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.get_K">
+<code class="descname">get_K</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.get_K" title="Permalink to this definition">¶</a></dt>
+<dd><p>get realization of K</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">realization of K</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.get_lambda_lin">
+<code class="descname">get_lambda_lin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.get_lambda_lin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.get_lambda_rec">
+<code class="descname">get_lambda_rec</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.get_lambda_rec" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.get_noise_lin">
+<code class="descname">get_noise_lin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.get_noise_lin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.get_noise_rec">
+<code class="descname">get_noise_rec</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.get_noise_rec" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.reconstruct_with_i_realization">
+<code class="descname">reconstruct_with_i_realization</code><span class="sig-paren">(</span><em>phi</em>, <em>i</em><span class="sig-paren">)</span><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.reconstruct_with_i_realization" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute reconstructed state <span class="math">\(x\)</span> from <span class="math">\(\phi\)</span> for certain realization.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>phi</strong> (<code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code>) &#8211; the Koopman observables.</li>
+<li><strong>i</strong> (<code class="xref py py-obj docutils literal"><span class="pre">int</span></code>) &#8211; index for realization.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">states reconstructed.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.transform_eta_to_x">
+<code class="descname">transform_eta_to_x</code><span class="sig-paren">(</span><em>eta</em><span class="sig-paren">)</span><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.transform_eta_to_x" title="Permalink to this definition">¶</a></dt>
+<dd><p>transformation from <span class="math">\(\eta\)</span> to <span class="math">\(x\)</span></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>eta</strong> (<code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code>) &#8211; normalized states <span class="math">\(\eta\)</span></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">physical states <span class="math">\(x\)</span></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.transform_x_to_eta">
+<code class="descname">transform_x_to_eta</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelBayesDLKoopman.transform_x_to_eta" title="Permalink to this definition">¶</a></dt>
+<dd><p>transformation from <span class="math">\(x\)</span> to <span class="math">\(\eta\)</span></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>x</strong> (<code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code>) &#8211; physical states <span class="math">\(x\)</span></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">normalized states <span class="math">\(\eta\)</span></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopman">
+<em class="property">class </em><code class="descclassname">EVAL_SRC.lib.lib_model_interface.</code><code class="descname">ClassModelDLKoopman</code><span class="sig-paren">(</span><em>model_path</em><span class="sig-paren">)</span><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopman" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Class of Deep learning Koopman model</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>model_path</strong> (<code class="xref py py-obj docutils literal"><span class="pre">str</span></code>) &#8211; path for the model that is saved in a simple save from Tensorflow</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopman.sess">
+<code class="descname">sess</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopman.sess" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">class</span></code> &#8211; the session we used in tensorflow.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopman.graph">
+<code class="descname">graph</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopman.graph" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">class</span></code> &#8211; the graph assoicated with the session.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopman.x">
+<code class="descname">x</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopman.x" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">tf.Tensor</span></code> &#8211; input placeholder states <span class="math">\(x\)</span></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopman.xdot">
+<code class="descname">xdot</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopman.xdot" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">tf.Tensor</span></code> &#8211; input placeholder states derivative <span class="math">\(\dot{x}\)</span></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopman.linearEvolving">
+<code class="descname">linearEvolving</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopman.linearEvolving" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code> &#8211; matrix of K</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopman.D">
+<code class="descname">D</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopman.D" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code> &#8211; Koopman eigenvalues</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopman.R">
+<code class="descname">R</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopman.R" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code> &#8211; Koopman eigenvectors</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopman.xrec">
+<code class="descname">xrec</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopman.xrec" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">tf.Tensor</span></code> &#8211; the tensor of the reconstructed states</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopman.linearEvolvingEigen">
+<code class="descname">linearEvolvingEigen</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopman.linearEvolvingEigen" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code> &#8211; Koopman eigenvalues diagonal matrix.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopman.phi">
+<code class="descname">phi</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopman.phi" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">tf.Tensor</span></code> &#8211; tensor of the Koopman observables.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopman.close">
+<code class="descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopman.close" title="Permalink to this definition">¶</a></dt>
+<dd><p>close the session to free the resources</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopman.computeEigenPhi">
+<code class="descname">computeEigenPhi</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopman.computeEigenPhi" title="Permalink to this definition">¶</a></dt>
+<dd><p>compute Koopman eigenfunctions given x</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>x</strong> (<code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code>) &#8211; input state</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">output Koopman eigenfunction values at <span class="math">\(x\)</span>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopman.computePhi">
+<code class="descname">computePhi</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopman.computePhi" title="Permalink to this definition">¶</a></dt>
+<dd><p>compute nonlinear observables, given state x</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>x</strong> (<code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code>) &#8211; state, <span class="math">\(x\)</span></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">phi, <span class="math">\(\phi\)</span></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopman.get_linearEvolving">
+<code class="descname">get_linearEvolving</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopman.get_linearEvolving" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopman.get_linearEvolvingEigen">
+<code class="descname">get_linearEvolvingEigen</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopman.get_linearEvolvingEigen" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopman.reconstruct">
+<code class="descname">reconstruct</code><span class="sig-paren">(</span><em>Phi</em><span class="sig-paren">)</span><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopman.reconstruct" title="Permalink to this definition">¶</a></dt>
+<dd><p>reconstruct state from nonlinear observable Phi</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>Phi</strong> (<code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code>) &#8211; Koopman observable</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">reconstructed states</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopmanLRAN">
+<em class="property">class </em><code class="descclassname">EVAL_SRC.lib.lib_model_interface.</code><code class="descname">ClassModelDLKoopmanLRAN</code><span class="sig-paren">(</span><em>model_path</em><span class="sig-paren">)</span><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopmanLRAN" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Class for Model interface with deterministic LRAN</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>model_path</strong> (<code class="xref py py-obj docutils literal"><span class="pre">str</span></code>) &#8211; the path of the model</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopmanLRAN.sess">
+<code class="descname">sess</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopmanLRAN.sess" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">class</span></code> &#8211; the session we used in tensorflow.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopmanLRAN.graph">
+<code class="descname">graph</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopmanLRAN.graph" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">class</span></code> &#8211; the graph assoicated with the session.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopmanLRAN.x">
+<code class="descname">x</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopmanLRAN.x" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">tf.Tensor</span></code> &#8211; input placeholder states</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopmanLRAN.future">
+<code class="descname">future</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopmanLRAN.future" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">tf.Tensor</span></code> &#8211; output tensor for future step prediction</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopmanLRAN.linearEvolving">
+<code class="descname">linearEvolving</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopmanLRAN.linearEvolving" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">tf.Tensor</span></code> &#8211; the tensor of the K matrix.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopmanLRAN.phi">
+<code class="descname">phi</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopmanLRAN.phi" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">tf.Tensor</span></code> &#8211; the tensor of the Koopman observables</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopmanLRAN.xrec">
+<code class="descname">xrec</code><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopmanLRAN.xrec" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">tf.Tensor</span></code> &#8211; the tensor of the recontructed state</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopmanLRAN.close">
+<code class="descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopmanLRAN.close" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopmanLRAN.computePhi">
+<code class="descname">computePhi</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopmanLRAN.computePhi" title="Permalink to this definition">¶</a></dt>
+<dd><p>compute <span class="math">\(\phi\)</span> given <span class="math">\(x\)</span>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>x</strong> (<code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code>) &#8211; the input states</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">observables.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopmanLRAN.get_linearEvolving">
+<code class="descname">get_linearEvolving</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopmanLRAN.get_linearEvolving" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get K matrix.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Koopman matrix <code class="docutils literal"><span class="pre">K</span></code>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopmanLRAN.reconstruct">
+<code class="descname">reconstruct</code><span class="sig-paren">(</span><em>Phi</em><span class="sig-paren">)</span><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.ClassModelDLKoopmanLRAN.reconstruct" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get reconstruction from <span class="math">\(\phi\)</span></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">reconstruction.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="EVAL_SRC.lib.lib_model_interface.F_2d_duffing_system_interface">
+<code class="descclassname">EVAL_SRC.lib.lib_model_interface.</code><code class="descname">F_2d_duffing_system_interface</code><span class="sig-paren">(</span><em>t</em>, <em>y</em><span class="sig-paren">)</span><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.F_2d_duffing_system_interface" title="Permalink to this definition">¶</a></dt>
+<dd><p>Governing equation for 2D duffing system using Otto 2017 paper: for Python RK4 purpose</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>t</strong> (<code class="xref py py-obj docutils literal"><span class="pre">float</span></code>) &#8211; time</li>
+<li><strong>y</strong> (<code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code>) &#8211; the state of the system <span class="math">\(x\)</span>.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the time derivative <span class="math">\(\dot{x}\)</span></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="EVAL_SRC.lib.lib_model_interface.F_simple_2d_system_interface">
+<code class="descclassname">EVAL_SRC.lib.lib_model_interface.</code><code class="descname">F_simple_2d_system_interface</code><span class="sig-paren">(</span><em>t</em>, <em>y</em><span class="sig-paren">)</span><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.F_simple_2d_system_interface" title="Permalink to this definition">¶</a></dt>
+<dd><p>Governing equation for 2D simple system of Lusch 2017 paper: for Python RK4 purpose</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>t</strong> (<code class="xref py py-obj docutils literal"><span class="pre">float</span></code>) &#8211; time</li>
+<li><strong>y</strong> (<code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code>) &#8211; the state of the system <span class="math">\(x\)</span>.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the time derivative <span class="math">\(\dot{x}\)</span></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="EVAL_SRC.lib.lib_model_interface.myswish_beta">
+<code class="descclassname">EVAL_SRC.lib.lib_model_interface.</code><code class="descname">myswish_beta</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#EVAL_SRC.lib.lib_model_interface.myswish_beta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2019, Shaowu Pan.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

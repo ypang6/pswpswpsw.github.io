@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>MODEL_SRC.classBayesDLKoopman module &mdash; SPARK 1.2rc1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.2rc1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="SPARK 1.2rc1 documentation" href="index.html" />
+    <link rel="up" title="Main Model" href="MODEL_SRC.html" />
+    <link rel="next" title="A posteriori Evaluation" href="EVAL_SRC.html" />
+    <link rel="prev" title="MODEL_SRC.ClassGenerateDataFromPhysics module" href="MODEL_SRC.ClassGenerateDataFromPhysics.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><span><img src="_static/logo.png"></span>
+          SPARK</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.2</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Simple example</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">MODEL_SRC.classBayesDLKoopman module</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="MODEL_SRC.ClassGenerateDataFromPhysics.html" title="Previous Chapter: MODEL_SRC.ClassGenerateDataFromPhysics module"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; MODEL_SRC.Cla...</span>
+    </a>
+  </li>
+  <li>
+    <a href="EVAL_SRC.html" title="Next Chapter: A posteriori Evaluation"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">A posteriori ... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="section" id="module-MODEL_SRC.classBayesDLKoopman">
+<span id="model-src-classbayesdlkoopman-module"></span><h1>MODEL_SRC.classBayesDLKoopman module<a class="headerlink" href="#module-MODEL_SRC.classBayesDLKoopman" title="Permalink to this headline">¶</a></h1>
+<p>It contains three classs of Continuous time Deep Learning Models for Koopman Operator with Bayes</p>
+<p>Class List:</p>
+<ol class="arabic simple">
+<li><a class="reference internal" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainer" title="MODEL_SRC.classBayesDLKoopman.edwardMBTrainer"><code class="xref py py-class docutils literal"><span class="pre">edwardMBTrainer</span></code></a></li>
+<li><a class="reference internal" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainerLRAN" title="MODEL_SRC.classBayesDLKoopman.edwardMBTrainerLRAN"><code class="xref py py-class docutils literal"><span class="pre">edwardMBTrainerLRAN</span></code></a></li>
+<li><a class="reference internal" href="#MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman" title="MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman"><code class="xref py py-class docutils literal"><span class="pre">ClassBayesDLKoopman</span></code></a></li>
+</ol>
+<dl class="class">
+<dt id="MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman">
+<em class="property">class </em><code class="descclassname">MODEL_SRC.classBayesDLKoopman.</code><code class="descname">ClassBayesDLKoopman</code><span class="sig-paren">(</span><em>data</em>, <em>configDict</em>, <em>mc_sample</em>, <em>edward_configDict</em>, <em>cut_data_range=None</em>, <em>LRAN_mode=None</em>, <em>gpu_percentage=0.5</em><span class="sig-paren">)</span><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Class of Deep Leraning Koopman with Bayesian Deep Learning.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>data</strong> (<code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code>) &#8211; training data with key <code class="docutils literal"><span class="pre">Xtrain</span></code> and <code class="docutils literal"><span class="pre">XdotTrain</span></code> for <a class="reference internal" href="#MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.LRAN_mode" title="MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.LRAN_mode"><code class="xref py py-attr docutils literal"><span class="pre">LRAN_mode</span></code></a> =
+<code class="docutils literal"><span class="pre">False</span></code> while only with <code class="docutils literal"><span class="pre">Xtrain</span></code> otherwise.</li>
+<li><strong>configDict</strong> (<code class="xref py py-obj docutils literal"><span class="pre">dict</span></code>) &#8211; config dictionary for deterministic DL Koopman</li>
+<li><strong>mc_sample</strong> (<code class="xref py py-obj docutils literal"><span class="pre">int</span></code>) &#8211; number of Monte carlo sampling in using the reparameterization trick.
+We recommend 1. The higher it is, the less variance there is in the gradient estimation.</li>
+<li><strong>edward_configDict</strong> (<code class="xref py py-obj docutils literal"><span class="pre">dict</span></code>) &#8211; config dictionary for bayesian DL Koopman.</li>
+<li><strong>cut_data_range</strong> (<code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code>) &#8211; Specifiy the range for training data. If <code class="docutils literal"><span class="pre">None</span></code>, then we don&#8217;t use it.</li>
+<li><strong>LRAN_mode</strong> (<code class="xref py py-obj docutils literal"><span class="pre">bool</span></code>) &#8211; Using LRAN or not.</li>
+<li><strong>gpu_percentage</strong> (<code class="xref py py-obj docutils literal"><span class="pre">float</span></code>) &#8211; gpu memory usage ratio. Default value is 0.5.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.model">
+<code class="descname">model</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.model" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">class</span></code> &#8211; Deterministic DL Koopman model class from <code class="docutils literal"><span class="pre">ClassDLKoopmanCont</span></code>.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.residual_vector_rec_loss">
+<code class="descname">residual_vector_rec_loss</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.residual_vector_rec_loss" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">tf.Tensor</span></code> &#8211; residual reconstruction loss vector as the output of deterministic
+network as likelihood.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.residual_vector_lin_loss">
+<code class="descname">residual_vector_lin_loss</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.residual_vector_lin_loss" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">tf.Tensor</span></code> &#8211; residual linear loss vector as the output of deterministic
+network as likelihood.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.z_ph">
+<code class="descname">z_ph</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.z_ph" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">tf.Tensor</span></code> &#8211; concanteted <code class="docutils literal"><span class="pre">z_rec_loss</span></code> and <code class="docutils literal"><span class="pre">z_lin_loss</span></code> as general loss target to minimize.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.vp_dict">
+<code class="descname">vp_dict</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.vp_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">dict</span></code> &#8211; dictionary collection of variational posteriori</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.sess">
+<code class="descname">sess</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.sess" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">class</span></code> &#8211; current session used in Tensorflow.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.graph">
+<code class="descname">graph</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.graph" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">class</span></code> &#8211; current graph being used.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.verbose">
+<code class="descname">verbose</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.verbose" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">bool</span></code> &#8211; logging flags.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.mode">
+<code class="descname">mode</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.mode" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">str</span></code> &#8211; choose which mode to take on ADVI.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.LRAN_mode">
+<code class="descname">LRAN_mode</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.LRAN_mode" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">bool</span></code> &#8211; choose using <code class="docutils literal"><span class="pre">recurrent</span></code> or <code class="docutils literal"><span class="pre">differential</span></code> form.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.dir">
+<code class="descname">dir</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.dir" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">str</span></code> &#8211; path to saving directory.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.mc_sample">
+<code class="descname">mc_sample</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.mc_sample" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">int</span></code> &#8211; number of MC samples to choose for approximating the reparameterization trick.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.init_mode">
+<code class="descname">init_mode</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.init_mode" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">str</span></code> &#8211; <code class="docutils literal"><span class="pre">Standard</span></code> or <code class="docutils literal"><span class="pre">nonBayes</span></code> as using default weights initialization or simply use previous run.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.MAP_dir">
+<code class="descname">MAP_dir</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.MAP_dir" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">str</span></code> &#8211; if <a class="reference internal" href="#MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.init_mode" title="MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.init_mode"><code class="xref py py-attr docutils literal"><span class="pre">init_mode</span></code></a> is turned with <code class="docutils literal"><span class="pre">nonBayes</span></code>, then one needs to give the path to previous trained model.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.init_std_softplus">
+<code class="descname">init_std_softplus</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.init_std_softplus" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">float</span></code> &#8211; initialization of the standard deviation for softplus for the scales. The smaller the more negative, the weights will be smaller.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.optimizer">
+<code class="descname">optimizer</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.optimizer" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">str</span></code> &#8211; the name for the optimizer in tensorflow used in the training process. For example, <code class="docutils literal"><span class="pre">adam</span></code>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.choose_optimizer">
+<code class="descname">choose_optimizer</code><span class="sig-paren">(</span><em>optimizer_name</em><span class="sig-paren">)</span><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.choose_optimizer" title="Permalink to this definition">¶</a></dt>
+<dd><p>choose the optimizer given optimizer names</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ol class="last arabic simple">
+<li><cite>adam</cite></li>
+<li><cite>adadelta</cite></li>
+<li><cite>adagrad</cite></li>
+<li><cite>momentum</cite></li>
+<li><cite>ftrl</cite></li>
+<li><cite>rmsprop</cite></li>
+</ol>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>optimizer_name</strong> (<code class="xref py py-obj docutils literal"><span class="pre">str</span></code>) &#8211; the string for optimizer to choose.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">optimizer.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal"><span class="pre">class</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.save_model">
+<code class="descname">save_model</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.save_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>save model calling the <code class="docutils literal"><span class="pre">save_model</span></code> function in <code class="docutils literal"><span class="pre">ClassDLKoopmanCont</span></code></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.set_VI">
+<code class="descname">set_VI</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.set_VI" title="Permalink to this definition">¶</a></dt>
+<dd><p>set up variational inference with likelihood, priors</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.set_up_K_from_vpdict">
+<code class="descname">set_up_K_from_vpdict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.set_up_K_from_vpdict" title="Permalink to this definition">¶</a></dt>
+<dd><p>get K variational posteriori distribution from <a class="reference internal" href="#MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.vp_dict" title="MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.vp_dict"><code class="xref py py-attr docutils literal"><span class="pre">vp_dict</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.train">
+<code class="descname">train</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.train" title="Permalink to this definition">¶</a></dt>
+<dd><p>training for the Bayesisan DL Koopman model</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">total MSE list.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal"><span class="pre">list</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.update_graph">
+<code class="descname">update_graph</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.ClassBayesDLKoopman.update_graph" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="MODEL_SRC.classBayesDLKoopman.edwardMBTrainer">
+<em class="property">class </em><code class="descclassname">MODEL_SRC.classBayesDLKoopman.</code><code class="descname">edwardMBTrainer</code><span class="sig-paren">(</span><em>mode</em>, <em>inference</em>, <em>n_epoch</em>, <em>n_samples</em>, <em>batch_size</em>, <em>optimizer</em>, <em>x</em>, <em>y</em>, <em>z</em>, <em>z_ph</em>, <em>z_post</em>, <em>logstr</em>, <em>sess</em>, <em>K</em>, <em>init_mode</em>, <em>init_std_softplus</em>, <em>MAP_dir</em>, <em>residual_lin_loss_post</em>, <em>residual_rec_loss_post</em><span class="sig-paren">)</span><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Class of calling <code class="docutils literal"><span class="pre">edward</span></code> to do ADVI for <code class="docutils literal"><span class="pre">differential</span> <span class="pre">form</span></code>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>mode</strong> (<code class="xref py py-obj docutils literal"><span class="pre">str</span></code>) &#8211; Selecting the the type of MFVI framework to use.</li>
+<li><strong>inference</strong> (<code class="xref py py-obj docutils literal"><span class="pre">class</span></code>) &#8211; <code class="docutils literal"><span class="pre">edward.Inference</span></code> class instance. It is the main object for variational inference.</li>
+<li><strong>n_epoch</strong> (<code class="xref py py-obj docutils literal"><span class="pre">int</span></code>) &#8211; number of epoch.</li>
+<li><strong>n_samples</strong> (<code class="xref py py-obj docutils literal"><span class="pre">int</span></code>) &#8211; number of total sampling training data.</li>
+<li><strong>batch_size</strong> (<code class="xref py py-obj docutils literal"><span class="pre">int</span></code>) &#8211; batch size for mini-batch training.</li>
+<li><strong>optimizer</strong> (<code class="xref py py-obj docutils literal"><span class="pre">class</span></code>) &#8211; an optimizer for training. <code class="docutils literal"><span class="pre">tf.train.Adam</span></code> can also be used.</li>
+<li><strong>x</strong> (<code class="xref py py-obj docutils literal"><span class="pre">tf.Tensor</span></code>) &#8211; placeholder for feeding the input data, i.e., <span class="math">\(x\)</span>.</li>
+<li><strong>y</strong> (<code class="xref py py-obj docutils literal"><span class="pre">tf.Tensor</span></code>) &#8211; placeholder for feeding the input data, i.e., <span class="math">\(\dot{x}\)</span>.</li>
+<li><strong>z</strong> (<code class="xref py py-obj docutils literal"><span class="pre">tf.Tensor</span></code>) &#8211; likelihood tensor just to construct the graph.</li>
+<li><strong>z_ph</strong> (<code class="xref py py-obj docutils literal"><span class="pre">tf.Tensor</span></code>) &#8211; placeholder for feeding the likelihood, i.e., zeros.</li>
+<li><strong>z_post</strong> (<code class="xref py py-obj docutils literal"><span class="pre">tf.Tensor</span></code>) &#8211; after copying the posteriori to the true parameters, this is the output placeholder
+that enables one to evaluate the output of the z.</li>
+<li><strong>logstr</strong> (<code class="xref py py-obj docutils literal"><span class="pre">str</span></code>) &#8211; the path to write logs from Edward. Not used anymore.</li>
+<li><strong>sess</strong> (<code class="xref py py-obj docutils literal"><span class="pre">class</span></code>) &#8211; A context manager using this session as the default session.</li>
+<li><strong>K</strong> (<code class="xref py py-obj docutils literal"><span class="pre">tf.Tensor</span></code>) &#8211; Feed the tensor <code class="docutils literal"><span class="pre">K</span></code> matrix.</li>
+<li><strong>init_mode</strong> (<code class="xref py py-obj docutils literal"><span class="pre">str</span></code>) &#8211; The mode we choose to initialize the process of AVDI.</li>
+<li><strong>init_std_softplus</strong> (<code class="xref py py-obj docutils literal"><span class="pre">float</span></code>) &#8211; the initial standard deviation we used in softplus, the more negative,
+the smaller it is.</li>
+<li><strong>MAP_dir</strong> (<code class="xref py py-obj docutils literal"><span class="pre">str</span></code>) &#8211; path to the pre-trained model when <a class="reference internal" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.init_mode" title="MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.init_mode"><code class="xref py py-attr docutils literal"><span class="pre">init_mode</span></code></a> = <code class="docutils literal"><span class="pre">nonBayes</span></code>.</li>
+<li><strong>residual_lin_loss_post</strong> (<code class="xref py py-obj docutils literal"><span class="pre">tf.Tensor</span></code>) &#8211; linear dynamics residuals from model construction in the
+class <code class="docutils literal"><span class="pre">ClassDLKoopmanCont</span></code> defined at <a class="reference internal" href="MODEL_SRC.ClassDLKoopmanCont.html#classdlkoopmancont"><span class="std std-ref">MODEL_SRC.ClassDLKoopmanCont module</span></a>.</li>
+<li><strong>residual_rec_loss_post</strong> (<code class="xref py py-obj docutils literal"><span class="pre">tf.Tensor</span></code>) &#8211; reconstruction dynamics residuals from model construction in the
+class <code class="docutils literal"><span class="pre">ClassDLKoopmanCont</span></code> defined at <a class="reference internal" href="MODEL_SRC.ClassDLKoopmanCont.html#classdlkoopmancont"><span class="std std-ref">MODEL_SRC.ClassDLKoopmanCont module</span></a>.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.sess">
+<code class="descname">sess</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.sess" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">class</span></code> &#8211; A context manager using this session as the default session.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.graph">
+<code class="descname">graph</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.graph" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">class</span></code> &#8211; A <cite>Graph</cite> instance supports an arbitrary number of “collections” that are identified by name.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.mode">
+<code class="descname">mode</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.mode" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">str</span></code> &#8211; Selecting the the type of MFVI framework to use.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>ADVInoARD</li>
+<li>ADVIARD</li>
+<li>MAPSimple</li>
+</ul>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.inference">
+<code class="descname">inference</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.inference" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">class</span></code> &#8211; <code class="docutils literal"><span class="pre">edward.Inference</span></code> class instance. It is the main object for variational inference.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.n_epoch">
+<code class="descname">n_epoch</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.n_epoch" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">int</span></code> &#8211; number of epoch.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.n_samples">
+<code class="descname">n_samples</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.n_samples" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">int</span></code> &#8211; number of total sampling training data.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.batch_size">
+<code class="descname">batch_size</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.batch_size" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">int</span></code> &#8211; batch size for mini-batch training.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.optimizer">
+<code class="descname">optimizer</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.optimizer" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">class</span></code> &#8211; an optimizer for training. <code class="docutils literal"><span class="pre">tf.train.Adam</span></code> can also be used.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.logstr">
+<code class="descname">logstr</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.logstr" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">str</span></code> &#8211; the path to write logs from Edward. Not used anymore.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.x">
+<code class="descname">x</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.x" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">tf.Tensor</span></code> &#8211; placeholder for feeding the input data, i.e., <span class="math">\(x\)</span>.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.y">
+<code class="descname">y</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.y" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">tf.Tensor</span></code> &#8211; placeholder for feeding the input data, i.e., <span class="math">\(\dot{x}\)</span>.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.z">
+<code class="descname">z</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.z" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">tf.Tensor</span></code> &#8211; likelihood tensor just to construct the graph.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.z_ph">
+<code class="descname">z_ph</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.z_ph" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">tf.Tensor</span></code> &#8211; placeholder for feeding the likelihood, i.e., zeros.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.z_post">
+<code class="descname">z_post</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.z_post" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">tf.Tensor</span></code> &#8211; after copying the posteriori to the true parameters, this is the output placeholder
+that enables one to evaluate the output of the z.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.K">
+<code class="descname">K</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.K" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">dict</span></code> &#8211; A collection with keys as``K_K_X`` and <code class="docutils literal"><span class="pre">K_SD</span></code> to map to the probability distribution of those two components. Here we only assume the stabilization form.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.init_mode">
+<code class="descname">init_mode</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.init_mode" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">str</span></code> &#8211; The mode we choose to initialize the process of AVDI.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li><dl class="first docutils">
+<dt><code class="docutils literal"><span class="pre">Standard</span></code></dt>
+<dd>simply initialize the weights just variance-scaling method, with scale initialized very small.</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt><code class="docutils literal"><span class="pre">nonBayes</span></code></dt>
+<dd>simply initialize with a fined-tuned deterministic result. This is helpful for training the case of the Duffing oscillator.</dd>
+</dl>
+</li>
+</ul>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.init_std_softplus">
+<code class="descname">init_std_softplus</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.init_std_softplus" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">float</span></code> &#8211; the initial standard deviation we used in softplus, the more negative ,
+the smaller it is.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.MAP_dir">
+<code class="descname">MAP_dir</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.MAP_dir" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">str</span></code> &#8211; path to the pre-trained model when <a class="reference internal" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.init_mode" title="MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.init_mode"><code class="xref py py-attr docutils literal"><span class="pre">init_mode</span></code></a> = <code class="docutils literal"><span class="pre">nonBayes</span></code>.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.residual_lin_loss_post">
+<code class="descname">residual_lin_loss_post</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.residual_lin_loss_post" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">tf.Tensor</span></code> &#8211; linear dynamics residuals from model construction in the
+class <code class="docutils literal"><span class="pre">ClassDLKoopmanCont</span></code> defined at <a class="reference internal" href="MODEL_SRC.ClassDLKoopmanCont.html#classdlkoopmancont"><span class="std std-ref">MODEL_SRC.ClassDLKoopmanCont module</span></a>.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.residual_rec_loss_post">
+<code class="descname">residual_rec_loss_post</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.residual_rec_loss_post" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">tf.Tensor</span></code> &#8211; reconstruction dynamics residuals from model construction in the
+class <code class="docutils literal"><span class="pre">ClassDLKoopmanCont</span></code> defined at <a class="reference internal" href="MODEL_SRC.ClassDLKoopmanCont.html#classdlkoopmancont"><span class="std std-ref">MODEL_SRC.ClassDLKoopmanCont module</span></a>.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.n_data">
+<code class="descname">n_data</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.n_data" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">int</span></code> &#8211; number of training data.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.x_train">
+<code class="descname">x_train</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.x_train" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code> &#8211; training states.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.y_train">
+<code class="descname">y_train</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.y_train" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code> &#8211; training time derivative.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.x_test">
+<code class="descname">x_test</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.x_test" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code> &#8211; testing states.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.y_test">
+<code class="descname">y_test</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.y_test" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code> &#8211; testing time derivative.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.z_train">
+<code class="descname">z_train</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.z_train" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code> &#8211; feeding training likelihood data, i.e., zeros.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.z_test">
+<code class="descname">z_test</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.z_test" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code> &#8211; feediing testing likelihood data, i.e., zeros.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.data">
+<code class="descname">data</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.data" title="Permalink to this definition">¶</a></dt>
+<dd><p><a class="reference internal" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.generator" title="MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.generator"><code class="xref py py-obj docutils literal"><span class="pre">generator</span></code></a> &#8211; a generator for getting mini-batch training data.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.n_batch">
+<code class="descname">n_batch</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.n_batch" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">int</span></code> &#8211; number of batches in the total training data.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.generator">
+<code class="descname">generator</code><span class="sig-paren">(</span><em>arrays</em>, <em>batch_size</em><span class="sig-paren">)</span><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.generator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generator for mini-batches</p>
+<p>The batches are generated with respect to each array&#8217;s first axis.</p>
+<p class="rubric">Examples</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">generator</span><span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">x_train</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">y_train</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">batch_size</span><span class="p">)</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>arrays</strong> (<code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code>) &#8211; training data with first axis as number of samples.</li>
+<li><strong>batch_size</strong> (<code class="xref py py-obj docutils literal"><span class="pre">int</span></code>) &#8211; batch size in order to divide data to get mini-batches generator.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Yields:</th><td class="field-body"><p class="first last"><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code> &#8211; next batch size data.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.get_graph">
+<code class="descname">get_graph</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.get_graph" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.minibatch_train">
+<code class="descname">minibatch_train</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.minibatch_train" title="Permalink to this definition">¶</a></dt>
+<dd><p>mini-batch training function</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">total MSE list</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal"><span class="pre">list</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.sample_K_and_return_mean">
+<code class="descname">sample_K_and_return_mean</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.sample_K_and_return_mean" title="Permalink to this definition">¶</a></dt>
+<dd><p>MC sampling the variational posteriori for Koopman operator <code class="docutils literal"><span class="pre">K</span></code> then return the mean.</p>
+<p>We just do a Monte carlo sampling with number as <a class="reference internal" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.mc_samples" title="MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.mc_samples"><code class="xref py py-attr docutils literal"><span class="pre">mc_samples</span></code></a>. Default value as 100.
+Note that we simply assumes we using the stabilized form.</p>
+<dl class="attribute">
+<dt id="MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.mc_samples">
+<code class="descname">mc_samples</code><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.mc_samples" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">int</span></code> &#8211; number of Monte carlo samples for getting <code class="docutils literal"><span class="pre">K</span></code>.</p>
+</dd></dl>
+
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">mean Koopman operator matrix.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.set_data">
+<code class="descname">set_data</code><span class="sig-paren">(</span><em>x_train</em>, <em>y_train</em>, <em>x_test</em>, <em>y_test</em><span class="sig-paren">)</span><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainer.set_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set up data for variational inference process.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>x_train</strong> (<code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code>) &#8211; training states, i.e., <span class="math">\(x\)</span>.</li>
+<li><strong>y_train</strong> (<code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code>) &#8211; training time derivative, i.e., <span class="math">\(\dot{x}\)</span></li>
+<li><strong>x_test</strong> (<code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code>) &#8211; testing states</li>
+<li><strong>y_test</strong> (<code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code>) &#8211; testing time derivative</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="MODEL_SRC.classBayesDLKoopman.edwardMBTrainerLRAN">
+<em class="property">class </em><code class="descclassname">MODEL_SRC.classBayesDLKoopman.</code><code class="descname">edwardMBTrainerLRAN</code><span class="sig-paren">(</span><em>mode</em>, <em>inference</em>, <em>n_epoch</em>, <em>n_samples</em>, <em>batch_size</em>, <em>optimizer</em>, <em>x</em>, <em>future_X_list</em>, <em>z</em>, <em>z_ph</em>, <em>z_post</em>, <em>logstr</em>, <em>sess</em>, <em>K</em>, <em>init_mode</em>, <em>init_std_softplus</em>, <em>MAP_dir</em>, <em>residual_lin_loss_post</em>, <em>residual_rec_loss_post</em><span class="sig-paren">)</span><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainerLRAN" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Class of calling <code class="docutils literal"><span class="pre">edward</span></code> to do ADVI for <code class="docutils literal"><span class="pre">recurrent</span> <span class="pre">form</span></code></p>
+<p>The only difference with <a class="reference internal" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainer" title="MODEL_SRC.classBayesDLKoopman.edwardMBTrainer"><code class="xref py py-class docutils literal"><span class="pre">edwardMBTrainer</span></code></a> is that <span class="math">\(\dot{x}\)</span> is not used and we use <code class="docutils literal"><span class="pre">T</span></code> as the time delay steps.</p>
+<dl class="method">
+<dt id="MODEL_SRC.classBayesDLKoopman.edwardMBTrainerLRAN.generator">
+<code class="descname">generator</code><span class="sig-paren">(</span><em>arrays</em>, <em>batch_size</em><span class="sig-paren">)</span><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainerLRAN.generator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate batches, one with respect to each array&#8217;s first axis.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="MODEL_SRC.classBayesDLKoopman.edwardMBTrainerLRAN.get_graph">
+<code class="descname">get_graph</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainerLRAN.get_graph" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="MODEL_SRC.classBayesDLKoopman.edwardMBTrainerLRAN.minibatch_train">
+<code class="descname">minibatch_train</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainerLRAN.minibatch_train" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="MODEL_SRC.classBayesDLKoopman.edwardMBTrainerLRAN.sample_K_and_return_mean">
+<code class="descname">sample_K_and_return_mean</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainerLRAN.sample_K_and_return_mean" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="MODEL_SRC.classBayesDLKoopman.edwardMBTrainerLRAN.set_data">
+<code class="descname">set_data</code><span class="sig-paren">(</span><em>x_train</em>, <em>x_future_train</em>, <em>x_valid</em>, <em>x_future_valid</em><span class="sig-paren">)</span><a class="headerlink" href="#MODEL_SRC.classBayesDLKoopman.edwardMBTrainerLRAN.set_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2019, Shaowu Pan.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

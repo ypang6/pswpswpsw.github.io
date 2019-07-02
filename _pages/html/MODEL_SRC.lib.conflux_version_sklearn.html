@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>MODEL_SRC.lib.conflux_version_sklearn module &mdash; SPARK 1.2rc1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.2rc1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="SPARK 1.2rc1 documentation" href="index.html" />
+    <link rel="up" title="MODEL_SRC.lib package" href="MODEL_SRC.lib.html" />
+    <link rel="next" title="MODEL_SRC.lib.model module" href="MODEL_SRC.lib.model.html" />
+    <link rel="prev" title="MODEL_SRC.lib package" href="MODEL_SRC.lib.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><span><img src="_static/logo.png"></span>
+          SPARK</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.2</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Simple example</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">MODEL_SRC.lib.conflux_version_sklearn module</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="MODEL_SRC.lib.html" title="Previous Chapter: MODEL_SRC.lib package"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; MODEL_SRC.lib package</span>
+    </a>
+  </li>
+  <li>
+    <a href="MODEL_SRC.lib.model.html" title="Next Chapter: MODEL_SRC.lib.model module"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">MODEL_SRC.lib... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="section" id="module-MODEL_SRC.lib.conflux_version_sklearn">
+<span id="model-src-lib-conflux-version-sklearn-module"></span><h1>MODEL_SRC.lib.conflux_version_sklearn module<a class="headerlink" href="#module-MODEL_SRC.lib.conflux_version_sklearn" title="Permalink to this headline">¶</a></h1>
+<p>Replacement from some Sklearn functionality for conflux.</p>
+<dl class="class">
+<dt id="MODEL_SRC.lib.conflux_version_sklearn.StandardScaler">
+<em class="property">class </em><code class="descclassname">MODEL_SRC.lib.conflux_version_sklearn.</code><code class="descname">StandardScaler</code><a class="headerlink" href="#MODEL_SRC.lib.conflux_version_sklearn.StandardScaler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Class for standard scaler (Z-normalization) in Sklearn.</p>
+<dl class="attribute">
+<dt id="MODEL_SRC.lib.conflux_version_sklearn.StandardScaler.mean">
+<code class="descname">mean</code><a class="headerlink" href="#MODEL_SRC.lib.conflux_version_sklearn.StandardScaler.mean" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code> &#8211; mean of the data.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.lib.conflux_version_sklearn.StandardScaler.var_">
+<code class="descname">var_</code><a class="headerlink" href="#MODEL_SRC.lib.conflux_version_sklearn.StandardScaler.var_" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code> &#8211; variance of the data.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.lib.conflux_version_sklearn.StandardScaler.std_">
+<code class="descname">std_</code><a class="headerlink" href="#MODEL_SRC.lib.conflux_version_sklearn.StandardScaler.std_" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code> &#8211; standard deviation of the data.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="MODEL_SRC.lib.conflux_version_sklearn.StandardScaler.fit">
+<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="headerlink" href="#MODEL_SRC.lib.conflux_version_sklearn.StandardScaler.fit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute mean, std, var for data X along its first axis.</p>
+<p>It assumes <cite>X</cite> is in <code class="docutils literal"><span class="pre">(n_samples,</span> <span class="pre">n_vars)</span></code>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>X</strong> (<code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code>) &#8211; input data matrix for fitting the statistics.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="MODEL_SRC.lib.conflux_version_sklearn.StandardScaler.fit_transform">
+<code class="descname">fit_transform</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="headerlink" href="#MODEL_SRC.lib.conflux_version_sklearn.StandardScaler.fit_transform" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform Z normalization on X with the given mean and std.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>X</strong> (<code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code>) &#8211; input data matrix to be fitted and transformed.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Z-normalization array.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="MODEL_SRC.lib.conflux_version_sklearn.StandardScaler.transform">
+<code class="descname">transform</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="headerlink" href="#MODEL_SRC.lib.conflux_version_sklearn.StandardScaler.transform" title="Permalink to this definition">¶</a></dt>
+<dd><p>Transform on input matrix <cite>X</cite></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>X</strong> (<code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code>) &#8211; input data matrix to be transformed.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Z-normalization array.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="MODEL_SRC.lib.conflux_version_sklearn.train_test_split">
+<code class="descclassname">MODEL_SRC.lib.conflux_version_sklearn.</code><code class="descname">train_test_split</code><span class="sig-paren">(</span><em>x</em>, <em>y</em>, <em>test_size</em>, <em>random_state</em><span class="sig-paren">)</span><a class="headerlink" href="#MODEL_SRC.lib.conflux_version_sklearn.train_test_split" title="Permalink to this definition">¶</a></dt>
+<dd><p>Training and testing random split on whole data (feature, target) pair.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>x</strong> (<code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code>) &#8211; feature array.</li>
+<li><strong>y</strong> (<code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code>) &#8211; target array.</li>
+<li><strong>test_size</strong> (<code class="xref py py-obj docutils literal"><span class="pre">float</span></code>) &#8211; ratio of testing of total size.</li>
+<li><strong>random_state</strong> (<code class="xref py py-obj docutils literal"><span class="pre">int</span></code>) &#8211; random seed.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">train feature, valid feature, train target, valid target, random choice index, number of training data.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="xref py py-obj docutils literal"><span class="pre">tuple</span></code></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2019, Shaowu Pan.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
