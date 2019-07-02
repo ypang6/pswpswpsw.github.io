@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>MODEL_SRC.lib.conflux_version_sklearn module</title>
+    
+    <link rel="stylesheet" href="_static/epub.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" /> 
+  </head>
+  <body role="document">
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="MODEL_SRC.lib.model.html" title="MODEL_SRC.lib.model module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="MODEL_SRC.lib.html" title="MODEL_SRC.lib package"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">SPARK 1.2rc1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >Modules</a> &raquo;</li>
+          <li class="nav-item nav-item-2"><a href="MODEL_SRC.html" >Main Model</a> &raquo;</li>
+          <li class="nav-item nav-item-3"><a href="MODEL_SRC.lib.html" accesskey="U">MODEL_SRC.lib package</a> &raquo;</li> 
+      </ul>
+    </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-MODEL_SRC.lib.conflux_version_sklearn">
+<span id="model-src-lib-conflux-version-sklearn-module"></span><h1>MODEL_SRC.lib.conflux_version_sklearn module</h1>
+<p>Replacement from some Sklearn functionality for conflux.</p>
+<dl class="class">
+<dt id="MODEL_SRC.lib.conflux_version_sklearn.StandardScaler">
+<em class="property">class </em><code class="descclassname">MODEL_SRC.lib.conflux_version_sklearn.</code><code class="descname">StandardScaler</code></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Class for standard scaler (Z-normalization) in Sklearn.</p>
+<dl class="attribute">
+<dt id="MODEL_SRC.lib.conflux_version_sklearn.StandardScaler.mean">
+<code class="descname">mean</code></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code> &#8211; mean of the data.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.lib.conflux_version_sklearn.StandardScaler.var_">
+<code class="descname">var_</code></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code> &#8211; variance of the data.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="MODEL_SRC.lib.conflux_version_sklearn.StandardScaler.std_">
+<code class="descname">std_</code></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code> &#8211; standard deviation of the data.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="MODEL_SRC.lib.conflux_version_sklearn.StandardScaler.fit">
+<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span></dt>
+<dd><p>Compute mean, std, var for data X along its first axis.</p>
+<p>It assumes <cite>X</cite> is in <code class="docutils literal"><span class="pre">(n_samples,</span> <span class="pre">n_vars)</span></code>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>X</strong> (<code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code>) &#8211; input data matrix for fitting the statistics.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="MODEL_SRC.lib.conflux_version_sklearn.StandardScaler.fit_transform">
+<code class="descname">fit_transform</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span></dt>
+<dd><p>Perform Z normalization on X with the given mean and std.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>X</strong> (<code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code>) &#8211; input data matrix to be fitted and transformed.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Z-normalization array.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="MODEL_SRC.lib.conflux_version_sklearn.StandardScaler.transform">
+<code class="descname">transform</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span></dt>
+<dd><p>Transform on input matrix <cite>X</cite></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>X</strong> (<code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code>) &#8211; input data matrix to be transformed.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Z-normalization array.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="MODEL_SRC.lib.conflux_version_sklearn.train_test_split">
+<code class="descclassname">MODEL_SRC.lib.conflux_version_sklearn.</code><code class="descname">train_test_split</code><span class="sig-paren">(</span><em>x</em>, <em>y</em>, <em>test_size</em>, <em>random_state</em><span class="sig-paren">)</span></dt>
+<dd><p>Training and testing random split on whole data (feature, target) pair.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>x</strong> (<code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code>) &#8211; feature array.</li>
+<li><strong>y</strong> (<code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code>) &#8211; target array.</li>
+<li><strong>test_size</strong> (<code class="xref py py-obj docutils literal"><span class="pre">float</span></code>) &#8211; ratio of testing of total size.</li>
+<li><strong>random_state</strong> (<code class="xref py py-obj docutils literal"><span class="pre">int</span></code>) &#8211; random seed.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">train feature, valid feature, train target, valid target, random choice index, number of training data.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="xref py py-obj docutils literal"><span class="pre">tuple</span></code></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2019, Shaowu Pan.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.
+    </div>
+  </body>
+</html>

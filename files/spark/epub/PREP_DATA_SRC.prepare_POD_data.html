@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>PREP_DATA_SRC.PreparePODdata module</title>
+    
+    <link rel="stylesheet" href="_static/epub.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" /> 
+  </head>
+  <body role="document">
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="MODEL_SRC.html" title="Main Model"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="PREP_DATA_SRC.make_recurrent_form_noisy_state.html" title="PREP_DATA_SRC.make_recurrent_form_noisy_state module"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">SPARK 1.2rc1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >Modules</a> &raquo;</li>
+          <li class="nav-item nav-item-2"><a href="PREP_DATA_SRC.html" accesskey="U">Data Preparation</a> &raquo;</li> 
+      </ul>
+    </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-PREP_DATA_SRC.PreparePODdata">
+<span id="prep-data-src-preparepoddata-module"></span><h1>PREP_DATA_SRC.PreparePODdata module</h1>
+<p>Prepare POD coefficients from velocity field of VTK files.</p>
+<dl class="class">
+<dt id="PREP_DATA_SRC.PreparePODdata.PreparePODdata">
+<em class="property">class </em><code class="descclassname">PREP_DATA_SRC.PreparePODdata.</code><code class="descname">PreparePODdata</code><span class="sig-paren">(</span><em>vtk_folder</em>, <em>case_name</em><span class="sig-paren">)</span></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Performing dimension reduction via POD on multi-dimensional time series data.</p>
+<p>We read the VTK files using <a class="reference external" href="https://github.com/pyvista">pyvista</a><span class="link-target"> [https://github.com/pyvista]</span> as <code class="docutils literal"><span class="pre">numpy.ndarray</span></code>, then compute singular value
+decomposition (<a class="reference external" href="https://en.wikipedia.org/wiki/Singular_value_decomposition">SVD</a><span class="link-target"> [https://en.wikipedia.org/wiki/Singular_value_decomposition]</span>) <span class="math">\(X=U\Sigma V'\)</span>. Then given that <code class="docutils literal"><span class="pre">X.shape</span> <span class="pre">=</span> <span class="pre">(n_time,</span> <span class="pre">n_dof)</span></code>,
+we reduce the <code class="docutils literal"><span class="pre">n_dof</span></code> simply by considering the POD coefficients:
+<span class="math">\(XV_r = U\Sigma V'V_r = U_r\Sigma_r\)</span>.</p>
+<p>Then we do the following three steps:</p>
+<ol class="arabic simple">
+<li>We compute full SVD and save it.</li>
+<li>We load the full SVD and truncate a few then save it.</li>
+<li><dl class="first docutils">
+<dt>We split the data into training, testing and neglect a few unphysical part in the beginning</dt>
+<dd>then save it.</dd>
+</dl>
+</li>
+</ol>
+<p>Finally, temporal evolution of components will be drawn and saved as <code class="docutils literal"><span class="pre">png</span></code>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>vtk_folder</strong> (<code class="xref py py-obj docutils literal"><span class="pre">str</span></code>) &#8211; folder containing the <code class="docutils literal"><span class="pre">vtk</span></code> files.</li>
+<li><strong>case_name</strong> (<code class="xref py py-obj docutils literal"><span class="pre">str</span></code>) &#8211; folder corresponding to the simulation case.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="PREP_DATA_SRC.PreparePODdata.PreparePODdata.vtk_folder">
+<code class="descname">vtk_folder</code></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">str</span></code> &#8211; folder containing the <code class="docutils literal"><span class="pre">vtk</span></code> files.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PREP_DATA_SRC.PreparePODdata.PreparePODdata.case_name">
+<code class="descname">case_name</code></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">str</span></code> &#8211; folder corresponding to the simulation case.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PREP_DATA_SRC.PreparePODdata.PreparePODdata.UV_concate_cell_array">
+<code class="descname">UV_concate_cell_array</code></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code> &#8211; data containing vectorization of the velocity
+field.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PREP_DATA_SRC.PreparePODdata.PreparePODdata.whole_pod_file_name">
+<code class="descname">whole_pod_file_name</code></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">str</span></code> &#8211; file name for the whole POD coefficient <code class="docutils literal"><span class="pre">npz</span></code> file.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PREP_DATA_SRC.PreparePODdata.PreparePODdata.u">
+<code class="descname">u</code></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code> &#8211; <span class="math">\(U\)</span> in SVD.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PREP_DATA_SRC.PreparePODdata.PreparePODdata.vh">
+<code class="descname">vh</code></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code> &#8211; <span class="math">\(V'\)</span> in SVD.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PREP_DATA_SRC.PreparePODdata.PreparePODdata.s">
+<code class="descname">s</code></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code> &#8211; 1D <span class="math">\(S\)</span> in SVD.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PREP_DATA_SRC.PreparePODdata.PreparePODdata.generate_training_testing_data">
+<code class="descname">generate_training_testing_data</code><span class="sig-paren">(</span><em>rank</em>, <em>dt</em>, <em>init_perc_train</em>, <em>end_perc_train</em>, <em>end_perc_whole</em>, <em>subsample_factor=1</em><span class="sig-paren">)</span></dt>
+<dd><p>Generate train/test data and plot the temporal evolution then save it into <code class="docutils literal"><span class="pre">npz</span></code> file.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>rank</strong> (<code class="xref py py-obj docutils literal"><span class="pre">int</span></code>) &#8211; number of POD modes to keep.</li>
+<li><strong>dt</strong> (<code class="xref py py-obj docutils literal"><span class="pre">float</span></code>) &#8211; time interval between snapshots.</li>
+<li><strong>init_perc_train</strong> (<code class="xref py py-obj docutils literal"><span class="pre">float</span></code>) &#8211; the percentage of the begining of training data.</li>
+<li><strong>end_perc_train</strong> (<code class="xref py py-obj docutils literal"><span class="pre">float</span></code>) &#8211; the percentage of the ending of training data.</li>
+<li><strong>end_perc_whole</strong> (<code class="xref py py-obj docutils literal"><span class="pre">float</span></code>) &#8211; the percentage of the ending of whole data.</li>
+<li><strong>subsample_factor</strong> (<code class="xref py py-obj docutils literal"><span class="pre">int</span></code>) &#8211; ratio of subsampling. 2 means sampling every other
+snapshot. Default value is 1.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PREP_DATA_SRC.PreparePODdata.PreparePODdata.load_pod">
+<code class="descname">load_pod</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd><p>Load the full POD coefficient data from <a class="reference internal" href="#PREP_DATA_SRC.PreparePODdata.PreparePODdata.whole_pod_file_name" title="PREP_DATA_SRC.PreparePODdata.PreparePODdata.whole_pod_file_name"><code class="xref py py-attr docutils literal"><span class="pre">whole_pod_file_name</span></code></a> file.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PREP_DATA_SRC.PreparePODdata.PreparePODdata.read_cell_data">
+<code class="descname">read_cell_data</code><span class="sig-paren">(</span><em>fn_start</em><span class="sig-paren">)</span></dt>
+<dd><p>Read cell data from <code class="docutils literal"><span class="pre">vtk</span></code></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>fn_start</strong> (<code class="xref py py-obj docutils literal"><span class="pre">int</span></code>) &#8211; the index of starting letter in
+<code class="docutils literal"><span class="pre">ls</span> <span class="pre">-lrth</span></code> corresponding to vtk filename</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PREP_DATA_SRC.PreparePODdata.PreparePODdata.run_plot_and_save_pod">
+<code class="descname">run_plot_and_save_pod</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd><p>Perform SVD on snapshots data, i.e., <a class="reference internal" href="#PREP_DATA_SRC.PreparePODdata.PreparePODdata.UV_concate_cell_array" title="PREP_DATA_SRC.PreparePODdata.PreparePODdata.UV_concate_cell_array"><code class="xref py py-attr docutils literal"><span class="pre">UV_concate_cell_array</span></code></a>, then
+save it and further plot the singular value decay.</p>
+<p>Compute svd using <code class="xref py py-meth docutils literal"><span class="pre">scipy.linalg.svd()</span></code></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PREP_DATA_SRC.PreparePODdata.PreparePODdata.save_and_plot_truncated_pod_data">
+<code class="descname">save_and_plot_truncated_pod_data</code><span class="sig-paren">(</span><em>rank</em>, <em>dt</em><span class="sig-paren">)</span></dt>
+<dd><p>Save the truncated POD data.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>rank</strong> (<code class="xref py py-obj docutils literal"><span class="pre">int</span></code>) &#8211; number of ranks to keep.</li>
+<li><strong>dt</strong> (<code class="xref py py-obj docutils literal"><span class="pre">float</span></code>) &#8211; time interval between snapshots.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2019, Shaowu Pan.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>MODEL_SRC.lib.model module</title>
+    
+    <link rel="stylesheet" href="_static/epub.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" /> 
+  </head>
+  <body role="document">
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="MODEL_SRC.lib.utilities.html" title="MODEL_SRC.lib.utilities module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="MODEL_SRC.lib.conflux_version_sklearn.html" title="MODEL_SRC.lib.conflux_version_sklearn module"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">SPARK 1.2rc1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >Modules</a> &raquo;</li>
+          <li class="nav-item nav-item-2"><a href="MODEL_SRC.html" >Main Model</a> &raquo;</li>
+          <li class="nav-item nav-item-3"><a href="MODEL_SRC.lib.html" accesskey="U">MODEL_SRC.lib package</a> &raquo;</li> 
+      </ul>
+    </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-MODEL_SRC.lib.model">
+<span id="model-src-lib-model-module"></span><h1>MODEL_SRC.lib.model module</h1>
+<p>Collection of low dimensional system with known governing equations.</p>
+<dl class="function">
+<dt id="MODEL_SRC.lib.model.F_duffing_2d_system">
+<code class="descclassname">MODEL_SRC.lib.model.</code><code class="descname">F_duffing_2d_system</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span></dt>
+<dd><p>Simple toy problem with multiple attractors in <a class="reference external" href="https://arxiv.org/abs/1712.01378">Otto&#8217;s paper</a><span class="link-target"> [https://arxiv.org/abs/1712.01378]</span>.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Returned Jacobian is not used any more.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">In this example, <span class="math">\(delta=0.5\)</span>, <span class="math">\(beta=-1.0\)</span>, <span class="math">\(alpha=1.0\)</span>.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>x</strong> (<code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code>) &#8211; system state.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A tuple of time derivative and Jacobian.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal"><span class="pre">tuple</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="MODEL_SRC.lib.model.F_simple_2d_system">
+<code class="descclassname">MODEL_SRC.lib.model.</code><code class="descname">F_simple_2d_system</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span></dt>
+<dd><p>Simple toy problem with known Koopman eigenfunctions in <a class="reference external" href="https://www.nature.com/articles/s41467-018-07210-0/">Lusch paper</a><span class="link-target"> [https://www.nature.com/articles/s41467-018-07210-0/]</span>.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Returned Jacobian is not used any more.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">In this example, <span class="math">\(\mu\)</span> = -0.05, <span class="math">\(\lambda\)</span> = -1.0.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>x</strong> (<code class="xref py py-obj docutils literal"><span class="pre">numpy.ndarray</span></code>) &#8211; system state.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A tuple of time derivative and Jacobian.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal"><span class="pre">tuple</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2019, Shaowu Pan.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.
+    </div>
+  </body>
+</html>

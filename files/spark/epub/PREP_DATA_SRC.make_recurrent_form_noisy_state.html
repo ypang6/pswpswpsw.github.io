@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>PREP_DATA_SRC.make_recurrent_form_noisy_state module</title>
+    
+    <link rel="stylesheet" href="_static/epub.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" /> 
+  </head>
+  <body role="document">
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="PREP_DATA_SRC.prepare_POD_data.html" title="PREP_DATA_SRC.PreparePODdata module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="PREP_DATA_SRC.source_code.lib.utilities.html" title="PREP_DATA_SRC.source_code.lib.utilities module"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">SPARK 1.2rc1 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >Modules</a> &raquo;</li>
+          <li class="nav-item nav-item-2"><a href="PREP_DATA_SRC.html" accesskey="U">Data Preparation</a> &raquo;</li> 
+      </ul>
+    </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-PREP_DATA_SRC.make_recurrent_form_noisy_state">
+<span id="prep-data-src-make-recurrent-form-noisy-state-module"></span><h1>PREP_DATA_SRC.make_recurrent_form_noisy_state module</h1>
+<p>Add <a class="reference external" href="https://en.wikipedia.org/wiki/White_noise">Gaussian white noise</a><span class="link-target"> [https://en.wikipedia.org/wiki/White_noise]</span> into the components of the <code class="docutils literal"><span class="pre">Xtrain</span></code> in the <code class="docutils literal"><span class="pre">npz</span></code> file with given SNR ratio.</p>
+<p>We create Gaussian white noise signal into each component of <code class="docutils literal"><span class="pre">Xtrain</span></code>, i.e., each column,
+and save them in new folders in <code class="docutils literal"><span class="pre">CASE_FOLDER</span></code> naming <code class="docutils literal"><span class="pre">CASE_NAME_noise_level_SNR_RATIO</span></code>.</p>
+<p class="rubric">Example</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ python make_recurrent_form_noisy_state.py
+</pre></div>
+</div>
+<dl class="attribute">
+<dt id="PREP_DATA_SRC.make_recurrent_form_noisy_state.SNR_RATIO">
+<code class="descclassname">PREP_DATA_SRC.make_recurrent_form_noisy_state.</code><code class="descname">SNR_RATIO</code></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">float</span></code> &#8211; Please refer to here for more details about <a class="reference external" href="https://en.wikipedia.org/wiki/Signal-to-noise_ratio">Signal-to-noise ratio</a><span class="link-target"> [https://en.wikipedia.org/wiki/Signal-to-noise_ratio]</span>.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PREP_DATA_SRC.make_recurrent_form_noisy_state.FIG_SIZE">
+<code class="descclassname">PREP_DATA_SRC.make_recurrent_form_noisy_state.</code><code class="descname">FIG_SIZE</code></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">tuple</span></code> of <code class="xref py py-obj docutils literal"><span class="pre">int</span></code> &#8211; Size of figure (width, height) saved in the new folder containing noisy data.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PREP_DATA_SRC.make_recurrent_form_noisy_state.PLT_CPNT_LIST">
+<code class="descclassname">PREP_DATA_SRC.make_recurrent_form_noisy_state.</code><code class="descname">PLT_CPNT_LIST</code></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal"><span class="pre">int</span></code> &#8211; List of components to be plotted as illustration of the effect of noisy data.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PREP_DATA_SRC.make_recurrent_form_noisy_state.CASE_FOLDER">
+<code class="descclassname">PREP_DATA_SRC.make_recurrent_form_noisy_state.</code><code class="descname">CASE_FOLDER</code></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">str</span></code> &#8211; Path to the <code class="docutils literal"><span class="pre">result</span></code> folder of a <code class="docutils literal"><span class="pre">case</span></code>.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PREP_DATA_SRC.make_recurrent_form_noisy_state.CASE_NAME">
+<code class="descclassname">PREP_DATA_SRC.make_recurrent_form_noisy_state.</code><code class="descname">CASE_NAME</code></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">str</span></code> &#8211; Case name. Moreover, <code class="docutils literal"><span class="pre">CASE_NAME_noise_level_0</span></code> is the folder containing the
+original data.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PREP_DATA_SRC.make_recurrent_form_noisy_state.DATA_WHOLE_STR">
+<code class="descclassname">PREP_DATA_SRC.make_recurrent_form_noisy_state.</code><code class="descname">DATA_WHOLE_STR</code></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">str</span></code> &#8211; Filename of the whole trajectory of the raw data.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PREP_DATA_SRC.make_recurrent_form_noisy_state.DATA_TRAIN_STR">
+<code class="descclassname">PREP_DATA_SRC.make_recurrent_form_noisy_state.</code><code class="descname">DATA_TRAIN_STR</code></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">str</span></code> &#8211; Filename of the training part of the raw data.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PREP_DATA_SRC.make_recurrent_form_noisy_state.DATA_TEST_STR">
+<code class="descclassname">PREP_DATA_SRC.make_recurrent_form_noisy_state.</code><code class="descname">DATA_TEST_STR</code></dt>
+<dd><p><code class="xref py py-obj docutils literal"><span class="pre">str</span></code> &#8211; Filename of the testing part of the raw data.</p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2019, Shaowu Pan.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.
+    </div>
+  </body>
+</html>
