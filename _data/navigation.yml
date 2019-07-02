@@ -26,8 +26,8 @@ main:
   - title: "Notes"
     url: /notes/
 
-  # - title: "Codes"
-  #   url: /code/
+  - title: "Codes"
+    url: /codes/
 
   - title: "Blog"
     url: /year-archive/
