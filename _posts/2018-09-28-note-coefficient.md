@@ -1,5 +1,5 @@
 ---
-title: 'Can we use coefficient of determinant for nonlinear regression?'
+title: 'Can we use coefficient of determination for nonlinear regression?'
 date: 2018-09-27
 excerpt: 'A conjecture that justify the use of R^2.'
 permalink: /posts/2018/09/blog-post-note-coefficient-determinant-nonlinear-regression/
@@ -18,7 +18,7 @@ This is a note of my thoughts on R^2 after taking Time Series Analysis class by 
 
 ## Introduction
 
-Coefficient of determinant arose from the observation in **linear regression** that 
+Coefficient of determination arose from the observation in **linear regression** that 
 
 $$
 \begin{equation}
@@ -36,7 +36,7 @@ $$
 \end{equation}
 $$
 
-The proof is quite ubiquitous in any textbook or [online materials](https://stats.stackexchange.com/questions/207841/why-is-sst-sse-ssr-one-variable-linear-regression). With this equality, one can find a nondimensionalized version of it as, **coefficient of determinant, $R^2$** as 
+The proof is quite ubiquitous in any textbook or [online materials](https://stats.stackexchange.com/questions/207841/why-is-sst-sse-ssr-one-variable-linear-regression). With this equality, one can find a nondimensionalized version of it as, **coefficient of determination , $R^2$** as 
 
 $$
 \begin{equation}
@@ -44,7 +44,7 @@ R^2 = \frac{SSR}{SST} = 1 - \frac{SSE}{SST}.
 \end{equation}
 $$
 
-Note that in the above equation there is two =, which of them is the definition for $R^2$ is not really certain. [Wiki](https://en.wikipedia.org/wiki/Coefficient_of_determination) says it is the second one, while [Jim](http://statisticsbyjim.com/regression/r-squared-invalid-nonlinear-regression/) claim the first one is more natural. Both of them is well defined and equal in the context of *linear regression*. In general, we believe the R^2 is _a statistic that measures how much proportions of variance of the target is explained by predictor variable, excluding the constant_. In such sense, the first one is more natural. 
+Note that in the above equation there is two =, which of them is the definition for $R^2​$ is not really certain. [Wiki](https://en.wikipedia.org/wiki/Coefficient_of_determination) says it is the second one, while [Jim](http://statisticsbyjim.com/regression/r-squared-invalid-nonlinear-regression/) claim the first one is more natural. Both of them is well defined and equal in the context of *linear regression*. In general, we believe the R^2 is _a statistic that measures how much proportions of variance of the target is explained by predictor variable, excluding the constant_. In such sense, the first one is more natural. 
 
 ## Appearance in nonlinear regression
 
