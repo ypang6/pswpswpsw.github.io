@@ -9,6 +9,7 @@ author_profile: true
 
 * Reviewer
   * IEEE Access
+  * AIAA Journal
 
 * President 
   * MTech (2016 – Present)
