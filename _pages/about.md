@@ -25,6 +25,8 @@ From 2014-2015, I was a M.S.E. student working with [Professor Eric Johnsen](htt
 
 # Research Interests
 
+My research interest lies in advancing theoretical understanding on data-driven predictive reduced-order-modeling (ROM) for real world engineering applications, and developing physics-constrained data-driven models with uncertainty quantification. One of such application is turbulence modeling for fluid dynamical system. 
+
 <img src='/images/libre_office_draw_research_graph.png' width="500" height="300">
 
 <!---* Physics-based computational/data-driven modelling
