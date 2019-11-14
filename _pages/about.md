@@ -25,7 +25,14 @@ From 2014-2015, I was a M.S.E. student and very fortune to work with [Professor 
 
 # Research Interests
 
-My research interest lies in advancing theoretical understanding on data-driven predictive reduced-order-modeling (ROM) for real world engineering applications, and developing physics-constrained data-driven models with uncertainty quantification. One of such application is turbulence modeling for fluid dynamical system. 
+My research interest lies in advancing theoretical understanding on data-driven predictive reduced-order-modeling (ROM) for real world engineering applications, and developing physics-constrained data-driven models with uncertainty quantification. 
+
+Such applications include
+
+* closure modeling for LES
+* modal analysis for multi-scale problem in fluid dynamics
+* control of nonlinear dynamical system using Koopman operator
+* interpretable surrogate modeling for complex systems
 
 <img src='/images/libre_office_draw_research_graph.png' width="500" height="300">
 
