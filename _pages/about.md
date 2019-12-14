@@ -29,7 +29,7 @@ My research interest lies in advancing theoretical understanding on data-driven 
 
 Such applications include
 
-* closure modeling for LES
+* modeling closure for Reduced Order Model (e.g., LES)
 * modal analysis for multi-scale problem in fluid dynamics
 * control of nonlinear dynamical system using Koopman operator
 * interpretable surrogate modeling for complex systems
