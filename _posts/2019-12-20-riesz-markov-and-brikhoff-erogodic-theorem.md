@@ -11,6 +11,7 @@ tags:
 ## Riesz - Markov Theorem
 
 **Theorem**: Let $X$ be a locally compact Hausdorff space. For any positive linear functional $\psi$ on $C(X)$, there is a unique regular Borel measure $\mu$ on $X$ such that
+
 $$
 \begin{equation}
 \forall f \in C(X), \psi(f) = \int_X f(x) d\mu(x)
@@ -20,6 +21,7 @@ $$
 ## Birkhoff's ergodic theorem
 
 **Theorem**: Let $(X, \mathcal{B}, \mu, T)$ be a measure-preserving system ($T: X \mapsto X$ is measure-preserving transformation). For any $f \in \mathcal{L}_{\mu}^1$, 
+
 $$
 \begin{equation}
 \lim_{n\rightarrow \infty} \frac{1}{n} \sum_{i=0}^{n-1} f\circ T^i(x) = \int_X f d\mu,
@@ -44,4 +46,4 @@ Since $\bar{\mathcal{K}_n}$ is a linear operator (so as the corresponding limit)
 
 
 
-Just to take the note here to not confuse one with antoher. 
+Just to take the note here to not confuse one with another. 
