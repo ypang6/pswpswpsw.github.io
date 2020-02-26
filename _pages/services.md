@@ -15,6 +15,6 @@ author_profile: true
   * MTech (2016 – Present)
 
 * Memberships
-  * Society for Industrial and Applied Mathematics (SIAM) (2017 – Present)
-  * American Physical Society (APS) (2015 – Present)
-
+  * Society for Industrial and Applied Mathematics (SIAM) (2017 - Present)
+  * American Physical Society (APS) (2015 - Present)
+  * American Institute of Aeronautics and Astronautics (2020 - Present)
