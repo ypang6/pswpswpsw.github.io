@@ -9,11 +9,14 @@ author_profile: true
 
 ## Preprints
 
+* __Pan, S.__, Arnold-Medabalimi, N., Duraisamy, K., (2020). Sparsity-promoting algorithms for the discovery of informative Koopman invariant subspaces. _arXiv_. [link](https://arxiv.org/abs/2002.10637)
+
+
 * __Pan, S.__, Duraisamy, K., (2019). On the Structure of Time-delay Embedding in Linear Models of Non-linear Dynamical Systems. _arXiv_. [link](https://arxiv.org/abs/1902.05198)
 
 ## Peer-reviewed journal articles
 
-* __Pan, S.__, Duraisamy, K., (2019). Physics-Informed Probabilistic Learning of Linear Embeddings of Non-linear Dynamics With Guaranteed Stability. _SIAM Journal of Applied Dynamical System_. [link](https://arxiv.org/abs/1906.03663)
+* __Pan, S.__, Duraisamy, K., (2020). Physics-Informed Probabilistic Learning of Linear Embeddings of Non-linear Dynamics With Guaranteed Stability. _SIAM Journal of Applied Dynamical System_. [link](https://epubs.siam.org/doi/pdf/10.1137/19M1267246)
 
 
 * Sun, L., Gao, H., __Pan, S.__, Wang, J., (2019). Surrogate Modeling for Fluid Flows Based on Physics-Constrained Deep Learning Without Simulation Data. _Computer Methods in Applied Mechanics and Engineering_. [link](https://arxiv.org/pdf/1906.02382)
