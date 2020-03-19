@@ -10,6 +10,7 @@ author_profile: true
 * Reviewer
   * IEEE Access
   * AIAA Journal
+  * Entropy
 
 * President 
   * MTech (2016 – Present)
