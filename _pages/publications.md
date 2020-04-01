@@ -14,6 +14,8 @@ author_profile: true
 
 2. __Pan, S.__, Duraisamy, K., (2019). On the Structure of Time-delay Embedding in Linear Models of Non-linear Dynamical Systems. _arXiv_. [link](https://arxiv.org/abs/1902.05198)
 
+3.Gao, Q., Li, Q., __Pan, S.__, Wang, H., Wei, R., Wang, J., 3D Particle Reconstruction of Volumetric Particle Image Velocimetry Convolutional Neural Network. _arXiv_. [link](https://arxiv.org/abs/1909.07815)
+
 ## Peer-reviewed journal articles
 
 1. __Pan, S.__, Duraisamy, K., (2020). Physics-Informed Probabilistic Learning of Linear Embeddings of Non-linear Dynamics With Guaranteed Stability. _SIAM Journal of Applied Dynamical System_. [link](https://epubs.siam.org/doi/pdf/10.1137/19M1267246)
@@ -39,17 +41,24 @@ Neural Networks. _Computational Mechanics_. [link](https://rdcu.be/bGzuh)
 
 3. Duraisamy, K., Singh, A., and __Pan, S.__, (2017). Augmentation of Turbulence Models Using Field Inversion and Machine Learning. _AIAA SciTech Forum, 2017_. [link](https://arc.aiaa.org/doi/pdf/10.2514/6.2017-0993)
 
-4. Zhou, N., Wu, Y., Han, W., __Pan, S.__, (2014). An extended CFD model to predict the pumping curve in low pressure plasma etch chamber. _28th International Symposium on Rarefied Gas Dynamics, Xi'An, China, Jul 2014_. [link](http://aip.scitation.org/doi/abs/10.1063/1.4902752)
+4. Mann. A., Kim, M., __Pan, S.__, Neuhierl, B., Perot, F., Ocampo, J., Towards engine-mounted exhaust and muffler aeroacoustics predictions using a Lattice Boltzmann based method, _FISITA World Congress, 2016_.
+
+
+5. Zhou, N., Wu, Y., Han, W., __Pan, S.__, (2014). An extended CFD model to predict the pumping curve in low pressure plasma etch chamber. _28th International Symposium on Rarefied Gas Dynamics, Xi'An, China, Jul 2014_. [link](http://aip.scitation.org/doi/abs/10.1063/1.4902752)
+
 
 
 
 ## Presentations
+
+* __Pan, S.__, Gao, Q., Li, Q., Wang, H., Wei, R., Wang, J., 3D Particle Reconstruction of Volumetric Particle Image Velocimetry with Convolutional Neural Network, _Bulletin of the American Physical Society, 2019_. [link](http://meetings.aps.org/Meeting/DFD19/Session/P11.2) 
 
 * __Pan, S.__, Duraisamy, K., (2018). Data-driven Discovery of Closure Models. _WCCM 2018, 2018_. [link](http://adsabs.harvard.edu/abs/2015APS..DFDD20005P)
 
 * __Pan, S.__, Duraisamy, K., (2018). Improving Accuracy and Robustness of Artificial Neural Networks to Discover Dynamical Systems from Data. _SIAM UQ, 2018_. [link](http://adsabs.harvard.edu/abs/2015APS..DFDD20005P)
 * __Pan, S.__, Duraisamy, K., (2017). Machine Learning-based discovery of closures for reduced models of dynamical systems. _Bulletin of the American Physical Society, 2017_. [link](http://meetings.aps.org/Meeting/DFD17/Session/M27.7)
 * __Pan, S.__, Johnsen, E., (2015). Bulk viscosity effect on freely decaying compressible homogeneous isotropic turbulence. _APS Meeting Abstracts, 2015_. [link](http://adsabs.harvard.edu/abs/2015APS..DFDD20005P)
+
 
 
 

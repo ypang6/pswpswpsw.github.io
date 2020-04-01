@@ -10,12 +10,15 @@ redirect_from:
 ---
 
 Currently I am a fourth year Ph.D. student in the [Aerospace Engineering](https://aero.engin.umich.edu/) and [Scientific Computing](https://micde.umich.edu/ph-d-in-scientific-computing/) at the [MICDE](https://micde.umich.edu/) at University of Michigan, Ann Arbor, USA, working with [Professor Karthik Duraisamy](https://aero.engin.umich.edu/people/karthik-duraisamy/) since 2016. 
-In 2016, I was an application engineer intern in the [Exa Corporation](https://www.exa.com/) working with [Adrien Mann](https://www.linkedin.com/in/adrienmann/).
-From 2014-2015, I was a M.S.E. student and very fortunate to work with [Professor Eric Johnsen](http://www-personal.umich.edu/~ejohnsen/) on direct numerical simulation for compressible turbulence. From 2013-2014, I was a research engineer intern in the [Advanced Micro-Fabrication Equipment Inc.](http://www.amec-inc.com/) in Shanghai, China, working with [Dr. Ning Zhou](https://www.linkedin.com/in/ning-zhou-58881b57/). 
+Previously,
+
+* In 2016, I was an application engineer intern in the [Exa Corporation](https://www.exa.com/) working with [Adrien Mann](https://www.linkedin.com/in/adrienmann/).
+* In 2014-2015, I was a M.S.E. student and very fortunate to work with [Professor Eric Johnsen](http://www-personal.umich.edu/~ejohnsen/) on direct numerical simulation for compressible turbulence. 
+* In 2013-2014, I was a research engineer intern in the [Advanced Micro-Fabrication Equipment Inc.](http://www.amec-inc.com/) in Shanghai, China, working with [Dr. Ning Zhou](https://www.linkedin.com/in/ning-zhou-58881b57/). 
 
 # Education
 
-* __Ph.D.__ in Aerospace Engineering, University of Michigan, Ann Arbor, 2020 (expected)
+* __Ph.D.__ in Aerospace Engineering and Scientific Computing, University of Michigan, Ann Arbor, 2020 (expected)
 * __M.S.E.__ in Mechanical Engineering, University of Michigan, Ann Arbor, 2015
 * __B.S.__ in Applied Mathematics, Beihang University, 2013
 * __B.E.__ in Aerospace Engineering, Beihang University, 2013
@@ -25,7 +28,7 @@ From 2014-2015, I was a M.S.E. student and very fortunate to work with [Professo
 
 # Research Interests
 
-My research interest lies in advancing theoretical understanding on data-driven predictive reduced-order-modeling (ROM) for real world engineering applications, and developing physics-constrained data-driven models with uncertainty quantification. 
+My research interest lies in advancing theoretical understanding on data-driven predictive reduced-order-modeling (ROM) for real world engineering dynamical systems, and developing physics-constrained data-driven models with uncertainty quantification. 
 
 Such applications include
 
