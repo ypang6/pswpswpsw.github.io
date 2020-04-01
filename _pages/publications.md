@@ -1,4 +1,4 @@
----
+1---
 layout: archive
 title: "Publications"
 permalink: /publications/
@@ -14,7 +14,7 @@ author_profile: true
 
 2. __Pan, S.__, Duraisamy, K., (2019). On the Structure of Time-delay Embedding in Linear Models of Non-linear Dynamical Systems. _arXiv_. [link](https://arxiv.org/abs/1902.05198)
 
-3.Gao, Q., Li, Q., __Pan, S.__, Wang, H., Wei, R., Wang, J., 3D Particle Reconstruction of Volumetric Particle Image Velocimetry Convolutional Neural Network. _arXiv_. [link](https://arxiv.org/abs/1909.07815)
+3. Gao, Q., Li, Q., __Pan, S.__, Wang, H., Wei, R., Wang, J., 3D Particle Reconstruction of Volumetric Particle Image Velocimetry Convolutional Neural Network. _arXiv_. [link](https://arxiv.org/abs/1909.07815)
 
 ## Peer-reviewed journal articles
 
