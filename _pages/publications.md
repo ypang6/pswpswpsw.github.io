@@ -9,9 +9,7 @@ author_profile: true
 
 ## Preprints
 
-[__Sparsity-promoting algorithms for the discovery of informative Koopman invariant subspaces__](https://arxiv.org/abs/2002.10637).
-
-__Pan, S.__, Arnold-Medabalimi, N., Duraisamy, K., (2020).  _arXiv_.
+1. __Pan, S.__, Arnold-Medabalimi, N., Duraisamy, K., (2020). [__Sparsity-promoting algorithms for the discovery of informative Koopman invariant subspaces__](https://arxiv.org/abs/2002.10637). _arXiv_.
 
 
 2. __Pan, S.__, Duraisamy, K., (2019). [On the Structure of Time-delay Embedding in Linear Models of Non-linear Dynamical Systems](https://arxiv.org/abs/1902.05198). _arXiv_. 
