@@ -9,12 +9,16 @@ author_profile: true
 
 ## Preprints
 
-1. __Pan, S.__, Arnold-Medabalimi, N., Duraisamy, K., (2020). [Sparsity-promoting algorithms for the discovery of informative Koopman invariant subspaces](https://arxiv.org/abs/2002.10637). _arXiv_.
+1. [__Sparsity-promoting algorithms for the discovery of informative Koopman invariant subspaces__](https://arxiv.org/abs/2002.10637).
+__Pan, S.__, Arnold-Medabalimi, N., Duraisamy, K., (2020).  _arXiv_.
 
 
 2. __Pan, S.__, Duraisamy, K., (2019). [On the Structure of Time-delay Embedding in Linear Models of Non-linear Dynamical Systems](https://arxiv.org/abs/1902.05198). _arXiv_. 
 
 3. Gao, Q., Li, Q., __Pan, S.__, Wang, H., Wei, R., Wang, J., [3D Particle Reconstruction of Volumetric Particle Image Velocimetry Convolutional Neural Network](https://arxiv.org/abs/1909.07815). _arXiv_. 
+
+
+
 
 ## Peer-reviewed journal articles
 
@@ -32,6 +36,8 @@ author_profile: true
 Neural Networks](https://rdcu.be/bGzuh). _Computational Mechanics_. 
 
 7. Gao, Z., Jiang, C., __Pan, S.__, & Lee, C. H., (2015). [Combustion Heat-Release Effects on Supersonic Compressible Turbulent Boundary Layers](https://arc.aiaa.org/doi/abs/10.2514/1.J053585). _AIAA Journal_.
+
+
 
 ## Conference proceedings
 
