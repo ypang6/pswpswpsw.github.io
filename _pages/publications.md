@@ -9,7 +9,8 @@ author_profile: true
 
 ## Preprints
 
-1. [__Sparsity-promoting algorithms for the discovery of informative Koopman invariant subspaces__](https://arxiv.org/abs/2002.10637).
+[__Sparsity-promoting algorithms for the discovery of informative Koopman invariant subspaces__](https://arxiv.org/abs/2002.10637).
+
 __Pan, S.__, Arnold-Medabalimi, N., Duraisamy, K., (2020).  _arXiv_.
 
 
