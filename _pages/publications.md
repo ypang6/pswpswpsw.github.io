@@ -46,7 +46,7 @@ Neural Networks__](https://rdcu.be/bGzuh). __Computational Mechanics__.
 
 3. Duraisamy, K., Singh, A., and __Pan, S.__, (2017). [__Augmentation of Turbulence Models Using Field Inversion and Machine Learning__](https://arc.aiaa.org/doi/pdf/10.2514/6.2017-0993). _AIAA SciTech Forum, 2017_. 
 
-4. Mann. A., Kim, M., __Pan, S.__, Neuhierl, B., Perot, F., Ocampo, J., __Towards engine-mounted exhaust and muffler aeroacoustics predictions using a Lattice Boltzmann based method__, _FISITA World Congress, 2016_.
+4. Mann. A., Kim, M., __Pan, S.__, Neuhierl, B., Perot, F., Ocampo, J., [__Towards engine-mounted exhaust and muffler aeroacoustics predictions using a Lattice Boltzmann based method__](https://www.researchgate.net/publication/309153307_Towards_Engine-Mounted_Exhaust_And_Muffler_Aeroacoustics_Predictions_Using_Lattice_Boltzmann_Method), _FISITA World Congress, 2016_.
 
 
 5. Zhou, N., Wu, Y., Han, W., __Pan, S.__, (2014). [__An extended CFD model to predict the pumping curve in low pressure plasma etch chamber__](http://aip.scitation.org/doi/abs/10.1063/1.4902752). _28th International Symposium on Rarefied Gas Dynamics, Xi'An, China, Jul 2014_.
